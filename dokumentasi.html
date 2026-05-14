@@ -4,16 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dokumentasi PPL | E-Portofolio PPG PJOK</title>
+
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,900;1,800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
     <link rel="stylesheet" href="CSS/dokumentasi.css" />
   </head>
+
   <body>
+    <!-- =========================================
+         NAVBAR (SAMA PERSIS INDEX)
+    ========================================== -->
     <header class="navbar" id="navbar">
       <div class="nav-container">
         <a href="index.html" class="logo">
-          <i class="fa-solid fa-person-running"></i>
-          <span>Edu<span class="text-blue">Sport</span></span>
+          <img src="IMG/logo.png" alt="logo uny" style="width: 40px" />
+          <span>E Portofolio<span class="text-blue"> PPG</span></span>
         </a>
 
         <div class="hamburger" id="hamburger">
@@ -27,73 +34,138 @@
           <a href="profile.html">Profil</a>
 
           <div class="dropdown">
-            <button class="dropbtn active" id="dropbtn">Artefak <i class="fa-solid fa-chevron-down"></i></button>
-            <div class="dropdown-content" id="dropdown-content">
-              <a href="observasi.html"><i class="fa-solid fa-magnifying-glass"></i> Observasi</a>
-              <a href="modulajar.html"><i class="fa-solid fa-book"></i> Modul Ajar</a>
-              <a href="lkpd.html"><i class="fa-solid fa-file-signature"></i> E-LKPD</a>
-              <a href="dokumentasi.html" style="color: var(--blue-primary); font-weight: bold"><i class="fa-solid fa-camera"></i> Dokumentasi</a>
+            <button class="dropbtn" id="dropdownBtn1">
+              E-Portofolio 1
+              <i class="fa-solid fa-chevron-down chevron"></i>
+            </button>
+
+            <div class="dropdown-content" id="dropdownContent1">
+              <a href="observasi.html">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                Observasi
+              </a>
+
+              <a href="modulajar.html">
+                <i class="fa-solid fa-book"></i>
+                Modul Ajar
+              </a>
+
+              <a href="lkpd.html">
+                <i class="fa-solid fa-file-signature"></i>
+                E-LKPD
+              </a>
+
+              <a href="penilaian.html">
+                <i class="fa-solid fa-clipboard-check"></i>
+                Penilaian
+              </a>
+
+              <a href="modelguru.html">
+                <i class="fa-solid fa-chalkboard-teacher"></i>
+                Model Guru
+              </a>
             </div>
           </div>
 
-          <a href="refleksi.html">Refleksi</a>
-          <a href="modelguru.html">Model Guru</a>
+          <div class="dropdown">
+            <button class="dropbtn" id="dropdownBtn2">
+              E-Portofolio 2
+              <i class="fa-solid fa-chevron-down chevron"></i>
+            </button>
+
+            <div class="dropdown-content" id="dropdownContent2">
+              <a href="refleksi.html">
+                <i class="fa-solid fa-brain"></i>
+                Refleksi
+              </a>
+
+              <a href="filosofi.html">
+                <i class="fa-solid fa-lightbulb"></i>
+                Filosofi Mengajar
+              </a>
+            </div>
+          </div>
+
+          <a href="dokumentasi.html" class="active">Dokumentasi</a>
         </nav>
       </div>
     </header>
 
+    <!-- =========================================
+         MAIN (TETAP SAMA PERSIS)
+    ========================================== -->
     <main>
       <section class="hero-dok">
         <div class="hero-dok-overlay"></div>
+
         <div class="container hero-dok-content reveal">
-          <div class="badge-tech"><i class="fa-solid fa-film"></i> Highlight Reel</div>
-          <h1>Galeri & <br /><span class="text-blue">Dokumentasi Praktik</span></h1>
+          <div class="badge-tech">
+            <i class="fa-solid fa-film"></i>
+            Highlight Reel
+          </div>
+
+          <h1>
+            Galeri & <br />
+            <span class="text-blue">Dokumentasi Praktik</span>
+          </h1>
+
           <p>Rekam jejak visual dan audiovisual dari implementasi Modul Ajar, interaksi dengan peserta didik, serta dinamika pembelajaran PJOK di lapangan maupun di kelas.</p>
         </div>
       </section>
 
-      <section class="video-highlight-section">
+      <!-- <section class="video-highlight-section">
         <div class="container">
           <div class="section-title text-center reveal">
             <h2>Video <span class="text-blue">Praktik Mengajar</span></h2>
+
             <p>Cuplikan pelaksanaan pembelajaran siklus PPL yang terintegrasi TPACK.</p>
           </div>
 
           <div class="video-monitor-frame reveal glass-card">
             <div class="monitor-header">
-              <div class="dots"><span></span><span></span><span></span></div>
-              <div class="monitor-title"><i class="fa-solid fa-video"></i> PPL_Siklus_1_Agasta.mp4</div>
+              <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+
+              <div class="monitor-title">
+                <i class="fa-solid fa-video"></i>
+                PPL_Siklus_1_Agasta.mp4
+              </div>
             </div>
+
             <div class="video-wrapper">
               <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video Praktik PPL" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <section class="photo-gallery-section">
         <div class="container">
           <div class="gallery-header reveal">
             <div class="section-title" style="margin-bottom: 0">
-              <h2>Koleksi <span class="text-blue">Momen</span></h2>
+              <h2>Koleksi <span class="text-blue">Foto</span></h2>
+
               <p style="margin-bottom: 0">Potret aksi dan kolaborasi selama kegiatan.</p>
-            </div>
-            <div class="gallery-filters">
-              <span class="filter-pill active">Semua</span>
-              <span class="filter-pill">Lapangan</span>
-              <span class="filter-pill">Kelas</span>
-              <span class="filter-pill">Diskusi</span>
             </div>
           </div>
 
           <div class="dok-grid">
             <div class="dok-item large reveal">
-              <img src="https://images.unsplash.com/photo-1526232761682-d26e03ac148e?auto=format&fit=crop&w=800&q=80" alt="Praktik Lapangan" />
+              <img src="img/orientasi.jpeg" alt="Orientasi PPL Terbimbing" />
+
               <div class="dok-overlay">
                 <div class="dok-meta">
-                  <h3>Pemanasan Dinamis</h3>
-                  <p><i class="fa-solid fa-location-dot"></i> Lapangan Basket SMAN 4</p>
+                  <h3>Orientasi PPL Terbimbing</h3>
+
+                  <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    SMAN 4 Yogyakarta
+                  </p>
                 </div>
+
                 <button class="zoom-btn">
                   <i class="fa-solid fa-expand"></i>
                 </button>
@@ -101,12 +173,18 @@
             </div>
 
             <div class="dok-item reveal" style="transition-delay: 0.1s">
-              <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=600&q=80" alt="Kegiatan Kelas" />
+              <img src="IMG/praktik.jpeg" alt="Praktik Mengajar" />
+
               <div class="dok-overlay">
                 <div class="dok-meta">
-                  <h3>Materi Taktik</h3>
-                  <p><i class="fa-solid fa-chalkboard-user"></i> Ruang Kelas X-1</p>
+                  <h3>Praktik Mengajar</h3>
+
+                  <p>
+                    <i class="fa-solid fa-chalkboard-user"></i>
+                    Murid Kelas XIF6
+                  </p>
                 </div>
+
                 <button class="zoom-btn">
                   <i class="fa-solid fa-expand"></i>
                 </button>
@@ -114,12 +192,18 @@
             </div>
 
             <div class="dok-item reveal" style="transition-delay: 0.2s">
-              <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=600&q=80" alt="TPACK" />
+              <img src="IMG/kunjungan.jpeg" alt="Kunjungan Sekolah" />
+
               <div class="dok-overlay">
                 <div class="dok-meta">
-                  <h3>Evaluasi E-LKPD</h3>
-                  <p><i class="fa-solid fa-laptop-code"></i> Lab Komputer</p>
+                  <h3>Kunjungan DPL</h3>
+
+                  <p>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    Monitoring DPL
+                  </p>
                 </div>
+
                 <button class="zoom-btn">
                   <i class="fa-solid fa-expand"></i>
                 </button>
@@ -127,12 +211,18 @@
             </div>
 
             <div class="dok-item landscape reveal">
-              <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&q=80" alt="Diskusi Kelompok" />
+              <img src="IMG/asesmen basket.jpeg" alt="Asesmen bola basket" />
+
               <div class="dok-overlay">
                 <div class="dok-meta">
-                  <h3>Diskusi Pemecahan Masalah</h3>
-                  <p><i class="fa-solid fa-users"></i> GOR Sekolah</p>
+                  <h3>Asesmen Bola Baket</h3>
+
+                  <p>
+                    <i class="fa-solid fa-users"></i>
+                    Penilaian materi Bola Basket
+                  </p>
                 </div>
+
                 <button class="zoom-btn">
                   <i class="fa-solid fa-expand"></i>
                 </button>
@@ -140,12 +230,18 @@
             </div>
 
             <div class="dok-item reveal" style="transition-delay: 0.1s">
-              <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=600&q=80" alt="Bimbingan" />
+              <img src="IMG/baner observasi.jpeg" alt="foto bersama kelas" />
+
               <div class="dok-overlay">
                 <div class="dok-meta">
-                  <h3>Bimbingan Individu</h3>
-                  <p><i class="fa-solid fa-handshake-angle"></i> Sesi Koreksi Gerak</p>
+                  <h3>Kelas XIF6</h3>
+
+                  <p>
+                    <i class="fa-solid fa-handshake-angle"></i>
+                    Foto bersama murid XIF6
+                  </p>
                 </div>
+
                 <button class="zoom-btn">
                   <i class="fa-solid fa-expand"></i>
                 </button>
@@ -154,62 +250,87 @@
           </div>
 
           <div class="text-center reveal" style="margin-top: 50px">
-            <a href="#" class="btn-outline"> <i class="fa-brands fa-google-drive"></i> Lihat Semua di Google Drive </a>
+            <a href="#" class="btn-outline">
+              <i class="fa-brands fa-google-drive"></i>
+              Lihat Semua di Google Drive
+            </a>
           </div>
         </div>
       </section>
     </main>
 
+    <!-- =========================================
+         FOOTER (SAMA PERSIS INDEX)
+    ========================================== -->
     <footer class="footer">
       <div class="container footer-grid">
         <div class="footer-about">
-          <a href="#" class="logo footer-logo">
-            <i class="fa-solid fa-person-running"></i>
-            <span>Edu<span class="text-blue">Sport</span></span>
+          <a href="index.html" class="logo footer-logo">
+            <img src="IMG/logo.png" alt="logo uny" style="width: 40px" />
+            <span>E Portofolio<span class="text-blue"> PPG</span></span>
           </a>
+
           <p>Mendedikasikan diri untuk mencetak generasi yang sehat bugar secara fisik, dan kuat secara mental melalui Pendidikan Jasmani yang inovatif.</p>
+
           <div class="social-icons">
             <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
             <a href="#"><i class="fa-brands fa-youtube"></i></a>
+
             <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
           </div>
         </div>
 
         <div class="footer-links">
-          <h3>Tautan Cepat</h3>
+          <h3>E-Portofolio 1</h3>
+
           <ul>
-            <li><a href="index.html">Beranda</a></li>
             <li><a href="profile.html">Profil Saya</a></li>
-            <li><a href="refleksi.html">Refleksi PPL</a></li>
+            <li><a href="observasi.html">Observasi</a></li>
+            <li><a href="modulajar.html">Modul Ajar</a></li>
+            <li><a href="lkpd.html">LKPD</a></li>
+            <li><a href="penilaian.html">Penilaian</a></li>
             <li><a href="modelguru.html">Model Guru</a></li>
           </ul>
         </div>
 
         <div class="footer-links">
-          <h3>Artefak</h3>
+          <h3>E-Portofolio 2</h3>
+
           <ul>
-            <li><a href="observasi.html">Hasil Observasi</a></li>
-            <li><a href="modulajar.html">Modul Ajar RPP</a></li>
-            <li><a href="lkpd.html">E-LKPD Digital</a></li>
-            <li><a href="dokumentasi.html">Galeri Video/Foto</a></li>
+            <li><a href="refleksi.html">Refleksi</a></li>
+            <li><a href="filosofi.html">Filosofi Mengajar</a></li>
           </ul>
         </div>
 
         <div class="footer-contact">
           <h3>Info LPTK</h3>
-          <p><i class="fa-solid fa-school"></i> Universitas Negeri Yogyakarta (UNY)</p>
-          <a href="https://maps.app.goo.gl/uXpXQYgR3v4v5rT46" target="_blank" class="maps-link"> <i class="fa-solid fa-map-location-dot"></i> Lihat di Google Maps </a>
+
+          <p>
+            <i class="fa-solid fa-school"></i>
+            Universitas Negeri Yogyakarta (UNY)
+          </p>
+
+          <a href="https://maps.app.goo.gl/uXpXQYgR3v4v5rT46" target="_blank" class="maps-link">
+            <i class="fa-solid fa-map-location-dot"></i>
+            Lihat di Google Maps
+          </a>
         </div>
       </div>
+
       <div class="footer-bottom">
-        <p>© 2026 Agasta Pratama Nugraha - PPG Prajabatan PJOK. All Rights Reserved.</p>
+        <p>© 2026 Muhammad Layyinul Mushthofa - PPG Prajabatan PJOK. All Rights Reserved.</p>
       </div>
     </footer>
 
+    <!-- =========================================
+         SCRIPT
+    ========================================== -->
     <script>
       // Navbar Scroll Effect
       window.addEventListener("scroll", function () {
         const navbar = document.getElementById("navbar");
+
         if (window.scrollY > 50) {
           navbar.classList.add("scrolled");
         } else {
@@ -217,28 +338,68 @@
         }
       });
 
-      // Hamburger Mobile
+      // Hamburger Menu
       const hamburger = document.getElementById("hamburger");
       const navLinks = document.getElementById("nav-links");
+
       hamburger.addEventListener("click", () => {
         hamburger.classList.toggle("active");
         navLinks.classList.toggle("active");
-        document.body.style.overflow = navLinks.classList.contains("active") ? "hidden" : "auto";
-      });
 
-      // Dropdown Mobile
-      const dropbtn = document.getElementById("dropbtn");
-      const dropdownContent = document.getElementById("dropdown-content");
-      dropbtn.addEventListener("click", (e) => {
-        if (window.innerWidth <= 768) {
-          e.preventDefault();
-          dropdownContent.classList.toggle("show");
+        if (navLinks.classList.contains("active")) {
+          document.body.style.overflow = "hidden";
+        } else {
+          document.body.style.overflow = "auto";
         }
       });
 
-      // Scroll Reveal Animation
+      // Dropdown Mobile Logic
+      const dropdownBtns = document.querySelectorAll(".dropbtn");
+
+      dropdownBtns.forEach((btn) => {
+        btn.addEventListener("click", function (e) {
+          if (window.innerWidth <= 900) {
+            e.preventDefault();
+
+            const content = this.nextElementSibling;
+            const chevron = this.querySelector(".chevron");
+
+            document.querySelectorAll(".dropdown-content.show").forEach((openContent) => {
+              if (openContent !== content) {
+                openContent.classList.remove("show");
+
+                const otherChevron = openContent.previousElementSibling?.querySelector(".chevron");
+
+                if (otherChevron) otherChevron.style.transform = "rotate(0deg)";
+              }
+            });
+
+            content.classList.toggle("show");
+
+            if (chevron) {
+              chevron.style.transform = content.classList.contains("show") ? "rotate(180deg)" : "rotate(0deg)";
+            }
+          }
+        });
+      });
+
+      // Klik luar dropdown
+      document.addEventListener("click", function (e) {
+        if (!e.target.closest(".dropdown")) {
+          document.querySelectorAll(".dropdown-content.show").forEach((content) => {
+            content.classList.remove("show");
+
+            const chevron = content.previousElementSibling?.querySelector(".chevron");
+
+            if (chevron) chevron.style.transform = "rotate(0deg)";
+          });
+        }
+      });
+
+      // Reveal Animation
       function revealElements() {
         const reveals = document.querySelectorAll(".reveal");
+
         for (let i = 0; i < reveals.length; i++) {
           const windowHeight = window.innerHeight;
           const elementTop = reveals[i].getBoundingClientRect().top;
@@ -249,7 +410,9 @@
           }
         }
       }
+
       window.addEventListener("scroll", revealElements);
+
       revealElements();
     </script>
   </body>
