@@ -1,0 +1,748 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Pembelajaran | Jejak PPL 2 - E-Portofolio PPG PJOK UNY</title>
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,900;1,800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="../CSS/rancangan.css" />
+    <link rel="shortcut icon" href="../IMG/logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- HEADER / NAVBAR DYNAMIC -->
+    <header class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="../index.html" class="logo">
+          <img src="../IMG/logo.png" alt="logo uny" />
+          <span>E Portofolio<span class="text-blue"> PPG</span></span>
+        </a>
+
+        <div class="hamburger" id="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <nav class="nav-links" id="nav-links">
+          <a href="../index.html">Beranda</a>
+          <a href="../profile.html">Profil</a>
+
+          <div class="dropdown">
+            <button class="dropbtn" id="dropdownBtn1">Jejak PPL 1 <i class="fa-solid fa-chevron-down chevron"></i></button>
+            <div class="dropdown-content" id="dropdownContent1">
+              <a href="../PPL_1/observasi.html"><i class="fa-solid fa-magnifying-glass"></i> Observasi</a>
+              <a href="../PPL_1/modulajar.html"><i class="fa-solid fa-book"></i> Modul Ajar</a>
+              <a href="../PPL_1/lkpd.html"><i class="fa-solid fa-file-signature"></i> E-LKPD</a>
+              <a href="../PPL_1/penilaian.html"><i class="fa-solid fa-clipboard-check"></i> Penilaian</a>
+              <a href="../PPL_1/modelguru.html"><i class="fa-solid fa-chalkboard-teacher"></i> Model Guru</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button class="dropbtn active" id="dropdownBtn2">Jejak PPL 2 <i class="fa-solid fa-chevron-down chevron"></i></button>
+            <div class="dropdown-content" id="dropdownContent2">
+              <a href="rancangan.html"><i class="fa-solid fa-file-lines"></i> Rancangan Pembelajaran</a>
+              <a href="materi.html"><i class="fa-solid fa-book-open"></i> Materi Pembelajaran</a>
+              <a href="media.html" class="active"><i class="fa-solid fa-photo-film"></i> Media Pembelajaran</a>
+              <a href="video.html"><i class="fa-solid fa-video"></i> Video Praktik Mengajar</a>
+              <a href="non-mengajar.html"><i class="fa-solid fa-users-gear"></i> Kegiatan Non-Mengajar</a>
+              <a href="instrumen.html"><i class="fa-solid fa-clipboard-check"></i> Instrumen Penilaian</a>
+            </div>
+          </div>
+
+          <a href="../refleksi.html">Refleksi</a>
+          <a href="../filosofi.html">Filosofi</a>
+          <a href="../dokumentasi.html">Dokumentasi</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO SECTION -->
+      <section class="hero-rancangan">
+        <div class="hero-bg-slant"></div>
+        <div class="hero-blob"></div>
+
+        <div class="container hero-content">
+          <div class="tagline reveal">
+            <i class="fa-solid fa-photo-film"></i> Jejak PPL 2 • Media Pembelajaran Inovatif
+          </div>
+          <h1 class="reveal">Media <span class="text-blue">Pembelajaran</span></h1>
+          <p class="reveal">
+            Dokumentasi media pembelajaran interaktif berbasis visual, slide presentasi digital, dan sarana ajar inovatif PJOK pada siklus UTS dan UAS. Terintegrasi dengan tinjauan kritis analisis media meliputi konteks & tujuan, kelebihan & kekurangan, serta kajian teori pedagogis.
+          </p>
+
+          <!-- Quick Stats -->
+          <div class="quick-stats-bar reveal">
+            <div class="stat-pill">
+              <i class="fa-solid fa-file-pdf"></i>
+              <span>4 Modul Media Presentasi</span>
+            </div>
+            <div class="stat-pill">
+              <i class="fa-solid fa-display"></i>
+              <span>Slide Digital Interaktif</span>
+            </div>
+            <div class="stat-pill">
+              <i class="fa-solid fa-layer-group"></i>
+              <span>UTS & UAS Terpadu</span>
+            </div>
+            <div class="stat-pill">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Fase F (Kelas XI)</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MAIN TABS SECTION (UTS & UAS CONTROLLER) -->
+      <section class="bg-offwhite" style="padding-bottom: 90px; min-height: 80vh;">
+        <div class="container">
+          <!-- Main Switcher Bar -->
+          <div class="main-tabs-wrapper reveal">
+            <div class="sub-menu-nav">
+              <button class="tab-btn active" id="tabBtnUts" onclick="switchMainTab('uts')">
+                <i class="fa-solid fa-medal"></i>
+                <span>UTS</span>
+              </button>
+              <button class="tab-btn" id="tabBtnUas" onclick="switchMainTab('uas')">
+                <i class="fa-solid fa-award"></i>
+                <span>UAS</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- =======================================================
+               TAB 1: UTS (MEDIA SIKLUS 1)
+          ======================================================== -->
+          <div class="tab-panel active" id="panelUts">
+            <div class="section-banner reveal">
+              <div class="banner-left">
+                <h2>Media Pembelajaran UTS <span class="text-blue">(Siklus 1)</span></h2>
+                <p>Media Slide Interaktif & Visual Grafis — Permainan Bola Voli (Fase F SMA Negeri 4 Yogyakarta)</p>
+              </div>
+              <div class="banner-tags">
+                <span class="badge-outline"><i class="fa-solid fa-check"></i> Ujian Tengah Semester</span>
+                <span class="badge-outline"><i class="fa-solid fa-volleyball"></i> Permainan Bola Voli</span>
+                <span class="badge-outline"><i class="fa-solid fa-display"></i> Slide Interaktif</span>
+              </div>
+            </div>
+
+            <!-- PDF Viewer Card (UTS / Siklus 1) -->
+            <div class="pdf-viewer-card reveal">
+              <div class="pdf-header">
+                <div class="pdf-header-title">
+                  <i class="fa-solid fa-file-pdf pdf-icon"></i>
+                  <div class="pdf-header-text">
+                    <h3>Media Pembelajaran Siklus 1 (UTS) - Permainan Bola Voli</h3>
+                    <span>Format: Slide Presentasi Interaktif PDF (13 Slide) • Fase F • Penyusun: Muhammad Layyinul Mushthofa, S.Pd</span>
+                  </div>
+                </div>
+                <div class="pdf-actions">
+                  <button class="btn-pdf-action btn-pdf-fullscreen" onclick="openPdfModal('../Dokumen/PPL_2/Media Siklus 1.pdf', 'Media Pembelajaran Siklus 1 (UTS) - Permainan Bola Voli')">
+                    <i class="fa-solid fa-expand"></i> Layar Penuh
+                  </button>
+                  <a href="../Dokumen/PPL_2/Media Siklus 1.pdf" download class="btn-pdf-action btn-pdf-download">
+                    <i class="fa-solid fa-cloud-arrow-down"></i> Unduh Media
+                  </a>
+                </div>
+              </div>
+
+              <div class="pdf-frame-wrapper">
+                <iframe src="../Dokumen/PPL_2/Media Siklus 1.pdf#toolbar=0" title="Pratinjau Media Pembelajaran Siklus 1 - Bola Voli">
+                  <p>Browser Anda tidak mendukung penampil PDF inline. Silakan unduh dokumen untuk membacanya.</p>
+                </iframe>
+              </div>
+
+              <div class="pdf-fallback-note">
+                <span><i class="fa-solid fa-circle-info"></i> Memuat slide presentasi interaktif 13 halaman: visualisasi teknik passing bawah, passing atas, servis atas/bawah, spike, dan rotasi posisi lapangan bola voli.</span>
+                <a href="../Dokumen/PPL_2/Media Siklus 1.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Buka di Tab Baru</a>
+              </div>
+            </div>
+
+            <!-- Analisis Media Siklus 1 (3 Poin) -->
+            <div class="analisis-section reveal">
+              <div class="analisis-header">
+                <div class="tagline"><i class="fa-solid fa-microscope"></i> Tinjauan Evaluatif Media</div>
+                <h3>Analisis Media Pembelajaran Siklus 1</h3>
+                <p>Refleksi efektivitas media presentasi visual terhadap pemahaman konsep gerak dan taktik bermain bola voli.</p>
+              </div>
+
+              <div class="analisis-grid">
+                <!-- Poin 1 -->
+                <div class="analisis-card point-1">
+                  <div class="point-badge"><i class="fa-solid fa-bullseye"></i> Poin 1 • Konteks & Tujuan</div>
+                  <div class="card-icon-box"><i class="fa-solid fa-compass"></i></div>
+                  <h4>Konteks & Tujuan Media</h4>
+                  <div class="analisis-body">
+                    <p>
+                      <strong>Konteks Visualisasi Gerak Cepat:</strong> Dalam permainan bola voli, kecepatan laju bola menuntut respon persepsi visual yang sangat cepat. Media slide interaktif dirancang untuk membekali siswa gambaran mental (*mental image*) yang utuh mengenai sudut perkenaan lengan saat passing bawah dan rotasi pemain 1-6 sebelum turun ke lapangan.
+                    </p>
+                    <ul class="analisis-list">
+                      <li><i class="fa-solid fa-circle-check"></i> Menjelaskan fase persiapan (*ready stance*), perkenaan bola (*impact point*), dan gerak lanjutan (*follow-through*).</li>
+                      <li><i class="fa-solid fa-circle-check"></i> Memvisualisasikan peta alur rotasi searah jarum jam saat perpindahan hak servis berlangsung.</li>
+                      <li><i class="fa-solid fa-circle-check"></i> Memberikan panduan taktis penempatan bola ke zona kosong pertahanan lawan.</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Poin 2 -->
+                <div class="analisis-card point-2">
+                  <div class="point-badge"><i class="fa-solid fa-scale-balanced"></i> Poin 2 • Kelebihan & Kekurangan</div>
+                  <div class="card-icon-box"><i class="fa-solid fa-chart-pie"></i></div>
+                  <h4>Kelebihan & Kekurangan Media</h4>
+                  <div class="analisis-body">
+                    <div class="split-box kelebihan">
+                      <h5><i class="fa-solid fa-circle-check"></i> Kelebihan Media:</h5>
+                      <ul>
+                        <li><i class="fa-solid fa-check"></i> <strong>Desain Visual Kontras & Menarik:</strong> Penggunaan ilustrasi berwarna tegas mempermudah siswa membedakan posisi jari pada passing atas dan kuncian lengan passing bawah.</li>
+                        <li><i class="fa-solid fa-check"></i> <strong>Aksesibilitas Digital:</strong> File slide PDF ringan dan mudah dibuka melalui gawai masing-masing siswa untuk dipelajari kembali secara mandiri.</li>
+                        <li><i class="fa-solid fa-check"></i> <strong>Sistematika Bertahap:</strong> Alur materi disusun runut mulai dari pemanasan, pengenalan teknik dasar, taktik formasi, hingga lembar evaluasi.</li>
+                      </ul>
+                    </div>
+                    <div class="split-box kekurangan">
+                      <h5><i class="fa-solid fa-circle-exclamation"></i> Kekurangan & Tantangan:</h5>
+                      <ul>
+                        <li><i class="fa-solid fa-triangle-exclamation"></i> <strong>Keterbatasan Animasi Bergerak:</strong> Format PDF statis belum dapat menampilkan rekaman video dinamis secara langsung tanpa tautan eksternal.</li>
+                        <li><i class="fa-solid fa-triangle-exclamation"></i> <strong>Kebutuhan Layar Display:</strong> Penayangan klasikal di luar ruangan memerlukan media proyeksi atau tablet berlayar cerah agar tidak terkendala silau matahari.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Poin 3 -->
+                <div class="analisis-card point-3">
+                  <div class="point-badge"><i class="fa-solid fa-book-bookmark"></i> Poin 3 • Landasan Teori</div>
+                  <div class="card-icon-box"><i class="fa-solid fa-brain"></i></div>
+                  <h4>Kajian Teori Pedagogis Media</h4>
+                  <div class="analisis-body">
+                    <p>
+                      <strong>1. Teori Pembelajaran Multimedia (Richard E. Mayer, 2001):</strong>
+                      Prinsip kedekatan spasial (*spatial contiguity principle*) dan prinsip modalitas menegaskan bahwa siswa belajar lebih mendalam ketika ilustrasi visual posisi gerak disandingkan langsung dengan label teks instruksional yang ringkas.
+                    </p>
+                    <div class="teori-quote">
+                      "Students learn better from words and pictures than from words alone, especially when multimedia eliminates extraneous cognitive load."
+                      <strong>— Richard E. Mayer (Cognitive Theory of Multimedia Learning)</strong>
+                    </div>
+                    <p>
+                      <strong>2. Dual Coding Theory (Allan Paivio, 1986):</strong>
+                      Penyajian informasi motorik melalui dua saluran independen (saluran visual gambar dan saluran verbal teks penjelas) memperkuat retensi memori kerja siswa dalam membentuk skema gerak (*motor schema*).
+                    </p>
+                    <p>
+                      <strong>3. Teori Pembelajaran Observasional (Albert Bandura):</strong>
+                      Model visual peragaan teknik yang ideal memfasilitasi tahap atensi dan retensi siswa sebelum mengaplikasikannya dalam unjuk kerja motorik nyata.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- =======================================================
+               TAB 2: UAS (MEDIA SIKLUS 2, 3, 4)
+          ======================================================== -->
+          <div class="tab-panel" id="panelUas">
+            <div class="section-banner reveal">
+              <div class="banner-left">
+                <h2>Media Pembelajaran UAS <span class="text-blue">(Siklus 2, 3, & 4)</span></h2>
+                <p>Rangkaian media visual interaktif pembelajaran semester akhir: Sepak Bola, Permainan Kasti, dan Atletik Lari Sprint.</p>
+              </div>
+              <div class="banner-tags">
+                <span class="badge-outline"><i class="fa-solid fa-check"></i> UAS</span>
+                <span class="badge-outline"><i class="fa-solid fa-layer-group"></i> 3 Media Siklus Terpadu</span>
+                <span class="badge-outline"><i class="fa-solid fa-display"></i> Slide Interaktif Valid</span>
+              </div>
+            </div>
+
+            <!-- UAS Cycle Sub-tabs Navigator -->
+            <div class="siklus-selector-container reveal">
+              <button class="siklus-btn active" id="btnSiklus2" onclick="switchSiklusTab(2)">
+                <i class="fa-solid fa-futbol"></i>
+                <span>Siklus 2: Sepak Bola</span>
+              </button>
+              <button class="siklus-btn" id="btnSiklus3" onclick="switchSiklusTab(3)">
+                <i class="fa-solid fa-baseball-bat-ball"></i>
+                <span>Siklus 3: Permainan Kasti</span>
+              </button>
+              <button class="siklus-btn" id="btnSiklus4" onclick="switchSiklusTab(4)">
+                <i class="fa-solid fa-person-running"></i>
+                <span>Siklus 4: Atletik (Lari Sprint)</span>
+              </button>
+            </div>
+
+            <!-- ---------------------------------------------------
+                 SIKLUS 2 MEDIA (SEPAK BOLA)
+            ---------------------------------------------------- -->
+            <div class="siklus-panel active" id="siklusPanel2">
+              <!-- PDF Card Siklus 2 -->
+              <div class="pdf-viewer-card reveal">
+                <div class="pdf-header">
+                  <div class="pdf-header-title">
+                    <i class="fa-solid fa-file-pdf pdf-icon"></i>
+                    <div class="pdf-header-text">
+                      <h3>Media Pembelajaran Siklus 2 (UAS) - Permainan Sepak Bola</h3>
+                      <span>Format: Slide Presentasi Interaktif PDF (13 Slide) • Fase F • Penyusun: Muhammad Layyinul Mushthofa, S.Pd</span>
+                    </div>
+                  </div>
+                  <div class="pdf-actions">
+                    <button class="btn-pdf-action btn-pdf-fullscreen" onclick="openPdfModal('../Dokumen/PPL_2/Media Siklus 2.pdf', 'Media Pembelajaran Siklus 2 (UAS) - Permainan Sepak Bola')">
+                      <i class="fa-solid fa-expand"></i> Layar Penuh
+                    </button>
+                    <a href="../Dokumen/PPL_2/Media Siklus 2.pdf" download class="btn-pdf-action btn-pdf-download">
+                      <i class="fa-solid fa-cloud-arrow-down"></i> Unduh Media
+                    </a>
+                  </div>
+                </div>
+
+                <div class="pdf-frame-wrapper">
+                  <iframe src="../Dokumen/PPL_2/Media Siklus 2.pdf#toolbar=0" title="Pratinjau Media Pembelajaran Siklus 2 - Sepak Bola">
+                    <p>Browser Anda tidak mendukung penampil PDF inline. Silakan unduh dokumen untuk membacanya.</p>
+                  </iframe>
+                </div>
+
+                <div class="pdf-fallback-note">
+                  <span><i class="fa-solid fa-circle-info"></i> Memuat materi visual slide interaktif 13 halaman: variasi teknik passing kaki bagian dalam/luar/punggung, controlling terarah, dribbling, shooting, serta skema latihan taktis rondo.</span>
+                  <a href="../Dokumen/PPL_2/Media Siklus 2.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Buka di Tab Baru</a>
+                </div>
+              </div>
+
+              <!-- Analisis Media Siklus 2 (3 Poin) -->
+              <div class="analisis-section reveal">
+                <div class="analisis-header">
+                  <div class="tagline"><i class="fa-solid fa-microscope"></i> Tinjauan Evaluatif Media Siklus 2</div>
+                  <h3>Analisis Media Pembelajaran Siklus 2</h3>
+                  <p>Evaluasi pedagogis media visual presentasi terhadap pemahaman taktik permainan invasi sepak bola.</p>
+                </div>
+                <div class="analisis-grid">
+                  <div class="analisis-card point-1">
+                    <div class="point-badge"><i class="fa-solid fa-bullseye"></i> Poin 1 • Konteks & Tujuan</div>
+                    <div class="card-icon-box"><i class="fa-solid fa-compass"></i></div>
+                    <h4>Konteks & Tujuan Media</h4>
+                    <div class="analisis-body">
+                      <p>
+                        <strong>Visualisasi Ruang Permainan Lapangan Luas:</strong> Lapangan sepak bola yang luas menyulitkan instruksi taktik secara verbal. Media slide memvisualisasikan sudut passing, alur pergerakan membuka ruang (*supporting angle*), dan prinsip rondo 4v2 secara ringkas dan terfokus.
+                      </p>
+                      <ul class="analisis-list">
+                        <li><i class="fa-solid fa-circle-check"></i> Memperjelas titik sentuh bola (*sweet spot*) pada kaki bagian dalam, luar, dan punggung kaki.</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Memandu transisi bertahan ke penyerangan secara visual melalui diagram skematis lapangan.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="analisis-card point-2">
+                    <div class="point-badge"><i class="fa-solid fa-scale-balanced"></i> Poin 2 • Kelebihan & Kekurangan</div>
+                    <div class="card-icon-box"><i class="fa-solid fa-chart-pie"></i></div>
+                    <h4>Kelebihan & Kekurangan Media</h4>
+                    <div class="analisis-body">
+                      <div class="split-box kelebihan">
+                        <h5><i class="fa-solid fa-circle-check"></i> Kelebihan:</h5>
+                        <p>Diagram skema penempatan pemain dan lintasan bola (*ball trajectory*) sangat komunikatif, mempercepat pemahaman peran setiap posisi di tim.</p>
+                      </div>
+                      <div class="split-box kekurangan">
+                        <h5><i class="fa-solid fa-circle-exclamation"></i> Kekurangan:</h5>
+                        <p>Memerlukan ringkasan intisari kartu taktis cetak (*tactical cheat-sheet*) agar guru dapat mereviu instruksi cepat saat di pinggir lapangan.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="analisis-card point-3">
+                    <div class="point-badge"><i class="fa-solid fa-book-bookmark"></i> Poin 3 • Landasan Teori</div>
+                    <div class="card-icon-box"><i class="fa-solid fa-brain"></i></div>
+                    <h4>Kajian Teori Pedagogis</h4>
+                    <div class="analisis-body">
+                      <p><strong>Tactical Games Model (Mitchell, Oslin, & Griffin):</strong> Penggunaan media visual merangsang nalar kognitif siswa untuk memahami alasan taktis (*why and when*) di balik eksekusi teknik operan bola.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ---------------------------------------------------
+                 SIKLUS 3 MEDIA (PERMAINAN KASTI)
+            ---------------------------------------------------- -->
+            <div class="siklus-panel" id="siklusPanel3">
+              <!-- PDF Card Siklus 3 -->
+              <div class="pdf-viewer-card reveal">
+                <div class="pdf-header">
+                  <div class="pdf-header-title">
+                    <i class="fa-solid fa-file-pdf pdf-icon"></i>
+                    <div class="pdf-header-text">
+                      <h3>Media Pembelajaran Siklus 3 (UAS) - Permainan Kasti</h3>
+                      <span>Format: Slide Presentasi Interaktif PDF (13 Slide) • Fase F • Penyusun: Muhammad Layyinul Mushthofa, S.Pd</span>
+                    </div>
+                  </div>
+                  <div class="pdf-actions">
+                    <button class="btn-pdf-action btn-pdf-fullscreen" onclick="openPdfModal('../Dokumen/PPL_2/Media Siklus 3.pdf', 'Media Pembelajaran Siklus 3 (UAS) - Permainan Kasti')">
+                      <i class="fa-solid fa-expand"></i> Layar Penuh
+                    </button>
+                    <a href="../Dokumen/PPL_2/Media Siklus 3.pdf" download class="btn-pdf-action btn-pdf-download">
+                      <i class="fa-solid fa-cloud-arrow-down"></i> Unduh Media
+                    </a>
+                  </div>
+                </div>
+
+                <div class="pdf-frame-wrapper">
+                  <iframe src="../Dokumen/PPL_2/Media Siklus 3.pdf#toolbar=0" title="Pratinjau Media Pembelajaran Siklus 3 - Permainan Kasti">
+                    <p>Browser Anda tidak mendukung penampil PDF inline. Silakan unduh dokumen untuk membacanya.</p>
+                  </iframe>
+                </div>
+
+                <div class="pdf-fallback-note">
+                  <span><i class="fa-solid fa-circle-info"></i> Memuat materi visual slide interaktif 13 halaman: keterampilan gerak dasar melempar, menangkap, memukul bola kasti, denah lapangan bertarget, serta regulasi tiang hinggap (base).</span>
+                  <a href="../Dokumen/PPL_2/Media Siklus 3.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Buka di Tab Baru</a>
+                </div>
+              </div>
+
+              <!-- Analisis Media Siklus 3 (3 Poin) -->
+              <div class="analisis-section reveal">
+                <div class="analisis-header">
+                  <div class="tagline"><i class="fa-solid fa-microscope"></i> Tinjauan Evaluatif Media Siklus 3</div>
+                  <h3>Analisis Media Pembelajaran Siklus 3</h3>
+                  <p>Evaluasi didaktis media visual dalam menyelaraskan pemahaman regulasi dan keterampilan motorik kasti.</p>
+                </div>
+                <div class="analisis-grid">
+                  <div class="analisis-card point-1">
+                    <div class="point-badge"><i class="fa-solid fa-bullseye"></i> Poin 1 • Konteks & Tujuan</div>
+                    <div class="card-icon-box"><i class="fa-solid fa-compass"></i></div>
+                    <h4>Konteks & Tujuan Media</h4>
+                    <div class="analisis-body">
+                      <p>
+                        <strong>Standardisasi Regulasi & Keamanan:</strong> Permainan kasti sering memiliki variasi aturan lokal di kalangan siswa. Media slide menyajikan regulasi baku lapangan, zona batas memukul aman, serta teknik tangkapan bola dua tangan yang meredam resiko cedera.
+                      </p>
+                      <ul class="analisis-list">
+                        <li><i class="fa-solid fa-circle-check"></i> Menjelaskan variasi ayunan kayu pemukul (mendatar, melambung, merendah).</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Menggambarkan rute lari pelari pos hinggap dan koordinasi lemparan regu penjaga.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="analisis-card point-2">
+                    <div class="point-badge"><i class="fa-solid fa-scale-balanced"></i> Poin 2 • Kelebihan & Kekurangan</div>
+                    <div class="card-icon-box"><i class="fa-solid fa-chart-pie"></i></div>
+                    <h4>Kelebihan & Kekurangan Media</h4>
+                    <div class="analisis-body">
+                      <div class="split-box kelebihan">
+                        <h5><i class="fa-solid fa-circle-check"></i> Kelebihan:</h5>
+                        <p>Denah lapangan kasti lengkap dengan tanda batas tiang hinggap dan zona bebas membuat kesepakatan aturan bermain menjadi sangat transparan.</p>
+                      </div>
+                      <div class="split-box kekurangan">
+                        <h5><i class="fa-solid fa-circle-exclamation"></i> Kekurangan:</h5>
+                        <p>Memerlukan penekanan berulang secara lisan mengenai disiplin meletakkan kayu pemukul di kotak pemukul tanpa melemparnya.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="analisis-card point-3">
+                    <div class="point-badge"><i class="fa-solid fa-book-bookmark"></i> Poin 3 • Landasan Teori</div>
+                    <div class="card-icon-box"><i class="fa-solid fa-brain"></i></div>
+                    <h4>Kajian Teori Pedagogis</h4>
+                    <div class="analisis-body">
+                      <p><strong>Motor Development Theory (Gallahue & Ozmun):</strong> Media visual memfasilitasi antisipasi spasial-temporal (*spatial-temporal anticipation*) yang esensial dalam memukul dan menangkap objek bergerak.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ---------------------------------------------------
+                 SIKLUS 4 MEDIA (ATLETIK LARI SPRINT)
+            ---------------------------------------------------- -->
+            <div class="siklus-panel" id="siklusPanel4">
+              <!-- PDF Card Siklus 4 -->
+              <div class="pdf-viewer-card reveal">
+                <div class="pdf-header">
+                  <div class="pdf-header-title">
+                    <i class="fa-solid fa-file-pdf pdf-icon"></i>
+                    <div class="pdf-header-text">
+                      <h3>Media Pembelajaran Siklus 4 (UAS) - Atletik (Lari Sprint)</h3>
+                      <span>Format: Slide Presentasi Interaktif PDF (13 Slide) • Fase F • Penyusun: Muhammad Layyinul Mushthofa, S.Pd</span>
+                    </div>
+                  </div>
+                  <div class="pdf-actions">
+                    <button class="btn-pdf-action btn-pdf-fullscreen" onclick="openPdfModal('../Dokumen/PPL_2/Media Siklus 4.pdf', 'Media Pembelajaran Siklus 4 (UAS) - Atletik Lari Sprint')">
+                      <i class="fa-solid fa-expand"></i> Layar Penuh
+                    </button>
+                    <a href="../Dokumen/PPL_2/Media Siklus 4.pdf" download class="btn-pdf-action btn-pdf-download">
+                      <i class="fa-solid fa-cloud-arrow-down"></i> Unduh Media
+                    </a>
+                  </div>
+                </div>
+
+                <div class="pdf-frame-wrapper">
+                  <iframe src="../Dokumen/PPL_2/Media Siklus 4.pdf#toolbar=0" title="Pratinjau Media Pembelajaran Siklus 4 - Atletik Lari Sprint">
+                    <p>Browser Anda tidak mendukung penampil PDF inline. Silakan unduh dokumen untuk membacanya.</p>
+                  </iframe>
+                </div>
+
+                <div class="pdf-fallback-note">
+                  <span><i class="fa-solid fa-circle-info"></i> Memuat materi visual slide interaktif 13 halaman: biomekanika start jongkok (*crouch start*), fase dorongan akselerasi, sudut postur lari sprint, dan teknik melewati garis finis.</span>
+                  <a href="../Dokumen/PPL_2/Media Siklus 4.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Buka di Tab Baru</a>
+                </div>
+              </div>
+
+              <!-- Analisis Media Siklus 4 (3 Poin) -->
+              <div class="analisis-section reveal">
+                <div class="analisis-header">
+                  <div class="tagline"><i class="fa-solid fa-microscope"></i> Tinjauan Evaluatif Media Siklus 4</div>
+                  <h3>Analisis Media Pembelajaran Siklus 4</h3>
+                  <p>Telaah didaktis media visual tahapan biomekanika start jongkok dan akselerasi lari cepat.</p>
+                </div>
+                <div class="analisis-grid">
+                  <div class="analisis-card point-1">
+                    <div class="point-badge"><i class="fa-solid fa-bullseye"></i> Poin 1 • Konteks & Tujuan</div>
+                    <div class="card-icon-box"><i class="fa-solid fa-compass"></i></div>
+                    <h4>Konteks & Tujuan Media</h4>
+                    <div class="analisis-body">
+                      <p>
+                        <strong>Visualisasi Sudut Biomekanika:</strong> Lari sprint terjadi dalam hitungan detik. Media slide membedah setiap sepersekian detik posisi tubuh: aba-aba "Bersedia" (tumpuan 5 jari), "Siap" (pinggul terangkat lebih tinggi dari bahu), dan "Ya" (dorongan sudut 45 derajat kaki balok).
+                      </p>
+                      <ul class="analisis-list">
+                        <li><i class="fa-solid fa-circle-check"></i> Membantu siswa membedakan panjang langkah (*stride length*) dan frekuensi langkah (*stride rate*).</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Menggambarkan posisi torso condong saat melewati garis finis secara tepat.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="analisis-card point-2">
+                    <div class="point-badge"><i class="fa-solid fa-scale-balanced"></i> Poin 2 • Kelebihan & Kekurangan</div>
+                    <div class="card-icon-box"><i class="fa-solid fa-chart-pie"></i></div>
+                    <h4>Kelebihan & Kekurangan Media</h4>
+                    <div class="analisis-body">
+                      <div class="split-box kelebihan">
+                        <h5><i class="fa-solid fa-circle-check"></i> Kelebihan:</h5>
+                        <p>Gambar tahapan gerak bertingkat (*sequential frame images*) berfungsi sebagai lembar checklist praktis bagi rekan pengamat sebaya.</p>
+                      </div>
+                      <div class="split-box kekurangan">
+                        <h5><i class="fa-solid fa-circle-exclamation"></i> Kekurangan:</h5>
+                        <p>Sudut kemiringan balok start memerlukan penyesuaian individual terhadap panjang tungkai masing-masing peserta didik.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="analisis-card point-3">
+                    <div class="point-badge"><i class="fa-solid fa-book-bookmark"></i> Poin 3 • Landasan Teori</div>
+                    <div class="card-icon-box"><i class="fa-solid fa-brain"></i></div>
+                    <h4>Kajian Teori Pedagogis</h4>
+                    <div class="analisis-body">
+                      <p><strong>Biomechanics of Sports Techniques (Hay, 1993):</strong> Penggunaan media representasi visual sudut kontak kaki dan gaya dorong tanah (*ground reaction force*) membantu optimalisasi kecepatan lari siswa.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FULLSCREEN MODAL -->
+    <div class="pdf-modal" id="pdfModal">
+      <div class="pdf-modal-container">
+        <div class="pdf-modal-header">
+          <h4 id="pdfModalTitle"><i class="fa-solid fa-photo-film"></i> Pratinjau Media Pembelajaran</h4>
+          <button class="pdf-modal-close" onclick="closePdfModal()"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="pdf-modal-body">
+          <iframe id="pdfModalIframe" src="" title="Penampil Media"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="footer-about">
+          <a href="../index.html" class="logo footer-logo">
+            <img src="../IMG/logo.png" alt="logo uny" style="width: 40px" />
+            <span>E Portofolio<span class="text-blue"> PPG</span></span>
+          </a>
+          <p>Mendedikasikan diri untuk mencetak generasi yang sehat bugar secara fisik, dan kuat secara mental melalui Pendidikan Jasmani yang inovatif.</p>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h3>Jejak PPL 1</h3>
+          <ul>
+            <li><a href="../PPL_1/observasi.html">Observasi</a></li>
+            <li><a href="../PPL_1/modulajar.html">Modul Ajar</a></li>
+            <li><a href="../PPL_1/lkpd.html">E-LKPD</a></li>
+            <li><a href="../PPL_1/penilaian.html">Penilaian</a></li>
+            <li><a href="../PPL_1/modelguru.html">Model Guru</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h3>Jejak PPL 2</h3>
+          <ul>
+            <li><a href="rancangan.html">Rancangan Pembelajaran</a></li>
+            <li><a href="materi.html">Materi Pembelajaran</a></li>
+            <li><a href="media.html">Media Pembelajaran</a></li>
+            <li><a href="video.html">Video Praktik Mengajar</a></li>
+            <li><a href="non-mengajar.html">Kegiatan Non-Mengajar</a></li>
+            <li><a href="instrumen.html">Instrumen Penilaian</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h3>Info LPTK</h3>
+          <p><i class="fa-solid fa-school"></i> Universitas Negeri Yogyakarta (UNY)</p>
+          <a href="https://maps.app.goo.gl/uXpXQYgR3v4v5rT46" target="_blank" class="maps-link">
+            <i class="fa-solid fa-map-location-dot"></i> Lihat di Google Maps
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Muhammad Layyinul Mushthofa - PPG Prajabatan PJOK. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- INTERACTIVE SCRIPT -->
+    <script>
+      window.addEventListener("scroll", function () {
+        const navbar = document.getElementById("navbar");
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.getElementById("nav-links");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navLinks.classList.toggle("active");
+      });
+
+      document.querySelectorAll(".nav-links a").forEach((link) => {
+        link.addEventListener("click", () => {
+          hamburger.classList.remove("active");
+          navLinks.classList.remove("active");
+        });
+      });
+
+      const dropdownBtn1 = document.getElementById("dropdownBtn1");
+      const dropdownContent1 = document.getElementById("dropdownContent1");
+      const dropdownBtn2 = document.getElementById("dropdownBtn2");
+      const dropdownContent2 = document.getElementById("dropdownContent2");
+
+      if (dropdownBtn1) {
+        dropdownBtn1.addEventListener("click", (e) => {
+          if (window.innerWidth <= 992) {
+            e.preventDefault();
+            dropdownContent1.classList.toggle("show");
+            dropdownBtn1.classList.toggle("active");
+          }
+        });
+      }
+
+      if (dropdownBtn2) {
+        dropdownBtn2.addEventListener("click", (e) => {
+          if (window.innerWidth <= 992) {
+            e.preventDefault();
+            dropdownContent2.classList.toggle("show");
+            dropdownBtn2.classList.toggle("active");
+          }
+        });
+      }
+
+      window.addEventListener("click", (e) => {
+        if (!e.target.closest(".dropdown")) {
+          if (dropdownContent1) dropdownContent1.classList.remove("show");
+          if (dropdownContent2) dropdownContent2.classList.remove("show");
+          if (dropdownBtn1) dropdownBtn1.classList.remove("active");
+          if (dropdownBtn2) dropdownBtn2.classList.remove("active");
+        }
+      });
+
+      function switchMainTab(tab) {
+        const btnUts = document.getElementById("tabBtnUts");
+        const btnUas = document.getElementById("tabBtnUas");
+        const panelUts = document.getElementById("panelUts");
+        const panelUas = document.getElementById("panelUas");
+
+        if (tab === "uts") {
+          btnUts.classList.add("active");
+          btnUas.classList.remove("active");
+          panelUts.classList.add("active");
+          panelUas.classList.remove("active");
+        } else if (tab === "uas") {
+          btnUas.classList.add("active");
+          btnUts.classList.remove("active");
+          panelUas.classList.add("active");
+          panelUts.classList.remove("active");
+        }
+        setTimeout(revealOnScroll, 100);
+      }
+
+      function switchSiklusTab(cycleNum) {
+        const buttons = document.querySelectorAll(".siklus-btn");
+        const panels = document.querySelectorAll(".siklus-panel");
+
+        buttons.forEach((btn) => btn.classList.remove("active"));
+        panels.forEach((p) => p.classList.remove("active"));
+
+        const targetBtn = document.getElementById("btnSiklus" + cycleNum);
+        const targetPanel = document.getElementById("siklusPanel" + cycleNum);
+
+        if (targetBtn && targetPanel) {
+          targetBtn.classList.add("active");
+          targetPanel.classList.add("active");
+        }
+        setTimeout(revealOnScroll, 100);
+      }
+
+      function openPdfModal(pdfUrl, title) {
+        const modal = document.getElementById("pdfModal");
+        const iframe = document.getElementById("pdfModalIframe");
+        const titleEl = document.getElementById("pdfModalTitle");
+
+        if (titleEl && title) {
+          titleEl.innerHTML = `<i class="fa-solid fa-photo-film"></i> ${title}`;
+        }
+        if (iframe) {
+          iframe.src = pdfUrl;
+        }
+        if (modal) {
+          modal.classList.add("show");
+          document.body.style.overflow = "hidden";
+        }
+      }
+
+      function closePdfModal() {
+        const modal = document.getElementById("pdfModal");
+        const iframe = document.getElementById("pdfModalIframe");
+
+        if (modal) {
+          modal.classList.remove("show");
+          document.body.style.overflow = "auto";
+        }
+        if (iframe) {
+          iframe.src = "";
+        }
+      }
+
+      window.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          closePdfModal();
+        }
+      });
+
+      function revealOnScroll() {
+        const reveals = document.querySelectorAll(".reveal");
+        const windowHeight = window.innerHeight;
+        const revealPoint = 100;
+
+        reveals.forEach((el) => {
+          const revealTop = el.getBoundingClientRect().top;
+          if (revealTop < windowHeight - revealPoint) {
+            el.classList.add("active");
+          }
+        });
+      }
+
+      window.addEventListener("scroll", revealOnScroll);
+      window.addEventListener("DOMContentLoaded", revealOnScroll);
+    </script>
+  </body>
+</html>

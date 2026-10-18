@@ -3,17 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Modul Ajar | E-Portofolio PPG PJOK</title>
+    <title>Instrumen Penilaian | E-Portofolio PPG PJOK</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,900;1,800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <link rel="stylesheet" href="CSS/modulajar.css" />
-    <link rel="shortcut icon" href="IMG/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../CSS/penilaian.css" />
+    <link rel="shortcut icon" href="../IMG/logo.png" type="image/x-icon" />
   </head>
   <body>
     <header class="navbar" id="navbar">
       <div class="nav-container">
-        <a href="index.html" class="logo">
-          <img src="IMG/logo.png" alt="logo uny" style="width: 40px" />
+        <a href="../index.html" class="logo">
+          <img src="../IMG/logo.png" alt="logo uny" style="width: 40px" />
           <span>E Portofolio<span class="text-blue"> PPG</span></span>
         </a>
 
@@ -24,29 +24,35 @@
         </div>
 
         <nav class="nav-links" id="nav-links">
-          <a href="index.html">Beranda</a>
-          <a href="profile.html">Profil</a>
+          <a href="../index.html">Beranda</a>
+          <a href="../profile.html">Profil</a>
 
           <div class="dropdown">
-            <button class="dropbtn" id="dropdownBtn1">E-Portofolio 1 <i class="fa-solid fa-chevron-down chevron"></i></button>
+            <button class="dropbtn" id="dropdownBtn1">Jejak PPL 1 <i class="fa-solid fa-chevron-down chevron"></i></button>
             <div class="dropdown-content" id="dropdownContent1">
               <a href="observasi.html"><i class="fa-solid fa-magnifying-glass"></i> Observasi</a>
               <a href="modulajar.html"><i class="fa-solid fa-book"></i> Modul Ajar</a>
               <a href="lkpd.html"><i class="fa-solid fa-file-signature"></i> E-LKPD</a>
-              <a href="penilaian.html"><i class="fa-solid fa-clipboard-check"></i> Penilaian</a>
+              <a href="penilaian.html" class="active"><i class="fa-solid fa-clipboard-check"></i> Penilaian</a>
               <a href="modelguru.html"><i class="fa-solid fa-chalkboard-teacher"></i> Model Guru</a>
             </div>
           </div>
 
           <div class="dropdown">
-            <button class="dropbtn" id="dropdownBtn2">E-Portofolio 2 <i class="fa-solid fa-chevron-down chevron"></i></button>
+            <button class="dropbtn" id="dropdownBtn2">Jejak PPL 2 <i class="fa-solid fa-chevron-down chevron"></i></button>
             <div class="dropdown-content" id="dropdownContent2">
-              <a href="refleksi.html"><i class="fa-solid fa-brain"></i> Refleksi</a>
-              <a href="filosofi.html"><i class="fa-solid fa-lightbulb"></i> Filosofi Mengajar</a>
+              <a href="../PPL_2/rancangan.html"><i class="fa-solid fa-file-lines"></i> Rancangan Pembelajaran</a>
+              <a href="../PPL_2/materi.html"><i class="fa-solid fa-book-open"></i> Materi Pembelajaran</a>
+              <a href="../PPL_2/media.html"><i class="fa-solid fa-photo-film"></i> Media Pembelajaran</a>
+              <a href="../PPL_2/video.html"><i class="fa-solid fa-video"></i> Video Praktik Mengajar</a>
+              <a href="../PPL_2/non-mengajar.html"><i class="fa-solid fa-users-gear"></i> Kegiatan Non-Mengajar</a>
+              <a href="../PPL_2/instrumen.html"><i class="fa-solid fa-clipboard-check"></i> Instrumen Penilaian</a>
             </div>
           </div>
 
-          <a href="dokumentasi.html">Dokumentasi</a>
+          <a href="../refleksi.html">Refleksi</a>
+          <a href="../filosofi.html">Filosofi</a>
+          <a href="../dokumentasi.html">Dokumentasi</a>
         </nav>
       </div>
     </header>
@@ -55,34 +61,40 @@
       <section class="hero-modul">
         <div class="hero-modul-overlay"></div>
         <div class="container hero-modul-content reveal">
-          <div class="badge-tech"><i class="fa-solid fa-swatchbook"></i> Modul Ajar</div>
-          <h1>Koleksi <span class="text-blue">Modul Ajar</span></h1>
-          <p>
-            Rancangan Pelaksanaan Pembelajaran (RPP) inovatif yang mengintegrasikan pendekatan
-            <i>Teaching Games for Understanding (TGfU)</i>, diferensiasi, dan teknologi untuk pengalaman belajar yang bermakna.
-          </p>
+          <div class="badge-tech"><i class="fa-solid fa-swatchbook"></i> Instrumen Penilaian</div>
+          <h1>Instrumen <span class="text-blue">Penilaian</span></h1>
+          <p>Lampiran 7 Instrumen Penilaian Penyusunan Perangkat Pembelajaran dan Lampiran 8 Instrumen Penilaian Praktik Mengajar.</p>
         </div>
       </section>
 
       <section class="pedagogi-section">
         <div class="container">
           <div class="pedagogi-grid">
+            <!-- Mata Pelajaran -->
             <div class="pedagogi-card reveal glass-card">
-              <div class="p-icon"><i class="fa-solid fa-gamepad"></i></div>
+              <div class="p-icon">
+                <i class="fa-solid fa-dumbbell"></i>
+              </div>
               <p>MATA PELAJARAN</p>
               <h3>PJOK</h3>
             </div>
+
+            <!-- Mahasiswa -->
             <div class="pedagogi-card reveal glass-card" style="transition-delay: 0.1s">
               <div class="p-icon">
-                <i class="fa-solid fa-users-viewfinder"></i>
+                <i class="fa-solid fa-user-graduate"></i>
               </div>
-              <p>FASE / KELAS</p>
-              <h3>XIF6 / F</h3>
-            </div>
-            <div class="pedagogi-card reveal glass-card" style="transition-delay: 0.2s">
-              <div class="p-icon"><i class="fa-solid fa-laptop-code"></i></div>
-              <p>PENYUSUN</p>
+              <p>MAHASISWA</p>
               <h3>Muhammad Layyinul Mushthofa, S.Pd</h3>
+            </div>
+
+            <!-- Guru Pamong -->
+            <div class="pedagogi-card reveal glass-card" style="transition-delay: 0.2s">
+              <div class="p-icon">
+                <i class="fa-solid fa-chalkboard-user"></i>
+              </div>
+              <p>GURU PAMONG</p>
+              <h3>Edy Suyadi, S.Pd</h3>
             </div>
           </div>
         </div>
@@ -91,24 +103,24 @@
       <section class="featured-modul-section">
         <div class="container reveal">
           <div class="section-title text-center">
-            <h2>Modul Ajar <span class="text-blue">PPL</span></h2>
-            <p>Pratinjau langsung Modul Ajar terbaik yang diimplementasikan pada siklus PPL.</p>
+            <h2>Lembar <span class="text-blue">Penilaian</span></h2>
+            <p>Pratinjau langsung hasil penilaian guru pamong terkait praktik mengajar pada saat PPL Terbimbing.</p>
           </div>
 
           <div class="pdf-viewer-container glass-card">
             <div class="pdf-header">
               <div class="pdf-title">
                 <i class="fa-solid fa-file-pdf"></i>
-                Modul Ajar Bola Basket
+                Instrumen Penilaian Penyusunan Perangkat Pembelajaran
               </div>
-              <a href="Dokumen/MODUL AJAR BASKET.pdf" download class="btn-download-sm"> <i class="fa-solid fa-cloud-arrow-down"></i> Unduh Modul </a>
+              <a href="../Dokumen/lampiran 7.pdf" download class="btn-download-sm"> <i class="fa-solid fa-cloud-arrow-down"></i> Unduh Modul </a>
             </div>
 
             <div class="pdf-frame-wrapper">
-              <iframe src="Dokumen/MODUL AJAR BASKET.pdf#toolbar=0" width="100%" height="100%" style="border: none" title="Pratinjau Modul Ajar">
+              <iframe src="../Dokumen/lampiran 7.pdf#toolbar=0" width="100%" height="100%" style="border: none" title="Pratinjau Modul Ajar">
                 <p>
                   Browser Anda tidak mendukung pratinjau PDF. Silakan
-                  <a href="Dokumen/MODUL AJAR BASKET.pdf" download>unduh file PDF</a>
+                  <a href="../Dokumen/lampiran 7.pdf" download>unduh file PDF</a>
                   untuk melihatnya.
                 </p>
               </iframe>
@@ -118,35 +130,16 @@
             <div class="pdf-header">
               <div class="pdf-title">
                 <i class="fa-solid fa-file-pdf"></i>
-                Modul Ajar Badminton
+                Instrumen Penilaian Praktik Mengajar
               </div>
-              <a href="Dokumen/Modul ajar Bulutangkis.pdf" download class="btn-download-sm"> <i class="fa-solid fa-cloud-arrow-down"></i> Unduh Modul </a>
+              <a href="../Dokumen/lampiran 8.pdf" download class="btn-download-sm"> <i class="fa-solid fa-cloud-arrow-down"></i> Unduh Modul </a>
             </div>
 
             <div class="pdf-frame-wrapper">
-              <iframe src="Dokumen/Modul ajar Bulutangkis.pdf#toolbar=0" width="100%" height="100%" style="border: none" title="Pratinjau Modul Ajar">
+              <iframe src="../Dokumen/lampiran 8.pdf#toolbar=0" width="100%" height="100%" style="border: none" title="Pratinjau Modul Ajar">
                 <p>
                   Browser Anda tidak mendukung pratinjau PDF. Silakan
-                  <a href="Dokumen/Modul ajar Bulutangkis.pdf" download>unduh file PDF</a>
-                  untuk melihatnya.
-                </p>
-              </iframe>
-            </div>
-          </div>
-          <div class="pdf-viewer-container glass-card">
-            <div class="pdf-header">
-              <div class="pdf-title">
-                <i class="fa-solid fa-file-pdf"></i>
-                Modul Ajar Atletik Lari 400 Meter
-              </div>
-              <a href="Dokumen/MODUL AJAR ATLETIK LARI 400 METER.pdf" download class="btn-download-sm"> <i class="fa-solid fa-cloud-arrow-down"></i> Unduh Modul </a>
-            </div>
-
-            <div class="pdf-frame-wrapper">
-              <iframe src="Dokumen/MODUL AJAR ATLETIK LARI 400 METER.pdf#toolbar=0" width="100%" height="100%" style="border: none" title="Pratinjau Modul Ajar">
-                <p>
-                  Browser Anda tidak mendukung pratinjau PDF. Silakan
-                  <a href="Dokumen/MODUL AJAR ATLETIK LARI 400 METER.pdf" download>unduh file PDF</a>
+                  <a href="../Dokumen/lampiran 8.pdf" download>unduh file PDF</a>
                   untuk melihatnya.
                 </p>
               </iframe>
@@ -159,8 +152,8 @@
     <footer class="footer">
       <div class="container footer-grid">
         <div class="footer-about">
-          <a href="index.html" class="logo footer-logo">
-            <img src="IMG/logo.png" alt="logo uny" style="width: 40px" />
+          <a href="../index.html" class="logo footer-logo">
+            <img src="../IMG/logo.png" alt="logo uny" style="width: 40px" />
             <span>E Portofolio<span class="text-blue"> PPG</span></span>
           </a>
           <p>Mendedikasikan diri untuk mencetak generasi yang sehat bugar secara fisik, dan kuat secara mental melalui Pendidikan Jasmani yang inovatif.</p>
@@ -172,22 +165,25 @@
         </div>
 
         <div class="footer-links">
-          <h3>E-Portofolio 1</h3>
+          <h3>Jejak PPL 1</h3>
           <ul>
-            <li><a href="profile.html">Profil Saya</a></li>
             <li><a href="observasi.html">Observasi</a></li>
             <li><a href="modulajar.html">Modul Ajar</a></li>
-            <li><a href="lkpd.html">LKPD</a></li>
+            <li><a href="lkpd.html">E-LKPD</a></li>
             <li><a href="penilaian.html">Penilaian</a></li>
             <li><a href="modelguru.html">Model Guru</a></li>
           </ul>
         </div>
 
         <div class="footer-links">
-          <h3>E-Portofolio 2</h3>
+          <h3>Jejak PPL 2</h3>
           <ul>
-            <li><a href="refleksi.html">Refleksi</a></li>
-            <li><a href="filosofi.html">Filosofi Mengajar</a></li>
+            <li><a href="../PPL_2/rancangan.html">Rancangan Pembelajaran</a></li>
+            <li><a href="../PPL_2/materi.html">Materi Pembelajaran</a></li>
+            <li><a href="../PPL_2/media.html">Media Pembelajaran</a></li>
+            <li><a href="../PPL_2/video.html">Video Praktik Mengajar</a></li>
+            <li><a href="../PPL_2/non-mengajar.html">Kegiatan Non-Mengajar</a></li>
+            <li><a href="../PPL_2/instrumen.html">Instrumen Penilaian</a></li>
           </ul>
         </div>
 

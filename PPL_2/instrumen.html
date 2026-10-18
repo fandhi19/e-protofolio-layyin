@@ -1,0 +1,897 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instrumen Penilaian | Jejak PPL 2 - E-Portofolio PPG PJOK UNY</title>
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,900;1,800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="../CSS/rancangan.css" />
+    <link rel="shortcut icon" href="../IMG/logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- HEADER / NAVBAR DYNAMIC -->
+    <header class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="../index.html" class="logo">
+          <img src="../IMG/logo.png" alt="logo uny" />
+          <span>E Portofolio<span class="text-blue"> PPG</span></span>
+        </a>
+
+        <div class="hamburger" id="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <nav class="nav-links" id="nav-links">
+          <a href="../index.html">Beranda</a>
+          <a href="../profile.html">Profil</a>
+
+          <div class="dropdown">
+            <button class="dropbtn" id="dropdownBtn1">Jejak PPL 1 <i class="fa-solid fa-chevron-down chevron"></i></button>
+            <div class="dropdown-content" id="dropdownContent1">
+              <a href="../PPL_1/observasi.html"><i class="fa-solid fa-magnifying-glass"></i> Observasi</a>
+              <a href="../PPL_1/modulajar.html"><i class="fa-solid fa-book"></i> Modul Ajar</a>
+              <a href="../PPL_1/lkpd.html"><i class="fa-solid fa-file-signature"></i> E-LKPD</a>
+              <a href="../PPL_1/penilaian.html"><i class="fa-solid fa-clipboard-check"></i> Penilaian</a>
+              <a href="../PPL_1/modelguru.html"><i class="fa-solid fa-chalkboard-teacher"></i> Model Guru</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button class="dropbtn active" id="dropdownBtn2">Jejak PPL 2 <i class="fa-solid fa-chevron-down chevron"></i></button>
+            <div class="dropdown-content" id="dropdownContent2">
+              <a href="rancangan.html"><i class="fa-solid fa-file-lines"></i> Rancangan Pembelajaran</a>
+              <a href="materi.html"><i class="fa-solid fa-book-open"></i> Materi Pembelajaran</a>
+              <a href="media.html"><i class="fa-solid fa-photo-film"></i> Media Pembelajaran</a>
+              <a href="video.html"><i class="fa-solid fa-video"></i> Video Praktik Mengajar</a>
+              <a href="non-mengajar.html"><i class="fa-solid fa-users-gear"></i> Kegiatan Non-Mengajar</a>
+              <a href="instrumen.html" class="active"><i class="fa-solid fa-clipboard-check"></i> Instrumen Penilaian</a>
+            </div>
+          </div>
+
+          <a href="../refleksi.html">Refleksi</a>
+          <a href="../filosofi.html">Filosofi</a>
+          <a href="../dokumentasi.html">Dokumentasi</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO SECTION -->
+      <section class="hero-rancangan">
+        <div class="hero-bg-slant"></div>
+        <div class="hero-blob"></div>
+
+        <div class="container hero-content">
+          <div class="tagline reveal">
+            <i class="fa-solid fa-clipboard-check"></i> Jejak PPL 2 • Asesmen Autentik & Rubrik Evaluasi
+          </div>
+          <h1 class="reveal">Instrumen <span class="text-blue">Penilaian</span></h1>
+          <p class="reveal">
+            Dokumentasi instrumen asesmen pembelajaran Pendidikan Jasmani, Olahraga, dan Kesehatan (PJOK)
+            pada siklus UTS dan UAS. Mengintegrasikan penilaian autentik tiga ranah (psikomotorik, kognitif, dan afektif)
+            dengan rubrik analitik berbasis bukti dan kajian teori pedagogis evaluasi.
+          </p>
+
+          <!-- Quick Stats -->
+          <div class="quick-stats-bar reveal">
+            <div class="stat-pill">
+              <i class="fa-solid fa-person-running"></i>
+              <span>Ranah Psikomotorik</span>
+            </div>
+            <div class="stat-pill">
+              <i class="fa-solid fa-brain"></i>
+              <span>Ranah Kognitif Taktis</span>
+            </div>
+            <div class="stat-pill">
+              <i class="fa-solid fa-heart"></i>
+              <span>Profil Pelajar Pancasila</span>
+            </div>
+            <div class="stat-pill">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Fase F (Kelas XI)</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MAIN TABS SECTION (UTS & UAS CONTROLLER) -->
+      <section class="bg-offwhite" style="padding-bottom: 90px; min-height: 80vh;">
+        <div class="container">
+          <!-- Main Switcher Bar -->
+          <div class="main-tabs-wrapper reveal">
+            <div class="sub-menu-nav">
+              <button class="tab-btn active" id="tabBtnUts" onclick="switchMainTab('uts')">
+                <i class="fa-solid fa-medal"></i>
+                <span>UTS</span>
+              </button>
+              <button class="tab-btn" id="tabBtnUas" onclick="switchMainTab('uas')">
+                <i class="fa-solid fa-award"></i>
+                <span>UAS</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- =======================================================
+               TAB 1: UTS (INSTRUMEN SIKLUS 1)
+          ======================================================== -->
+          <div class="tab-panel active" id="panelUts">
+            <div class="section-banner reveal">
+              <div class="banner-left">
+                <h2>Instrumen Penilaian Siklus 1 <span class="text-blue">(UTS)</span></h2>
+                <p>Rubrik Asesmen Pembelajaran Permainan Bola Voli Fase F — Kinerja Keterampilan Gerak & Sikap Gotong Royong</p>
+              </div>
+              <div class="banner-tags">
+                <span class="badge-outline"><i class="fa-solid fa-check"></i> UTS</span>
+                <span class="badge-outline"><i class="fa-solid fa-volleyball"></i> Permainan Bola Voli</span>
+                <span class="badge-outline"><i class="fa-solid fa-list-check"></i> 3 Ranah Lengkap</span>
+              </div>
+            </div>
+
+            <!-- Domains Summary Box (UTS) -->
+            <div class="domains-summary-box reveal">
+              <div class="section-banner" style="margin-bottom: 0; padding: 0; border: none; box-shadow: none;">
+                <div class="banner-left">
+                  <h3 style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; color: var(--text-dark);">
+                    <i class="fa-solid fa-layer-group text-blue"></i> Pemetaan Domain Asesmen Siklus 1: Bola Voli
+                  </h3>
+                  <p style="font-size: 0.9rem; color: var(--text-gray);">Kriteria penilaian terpadu yang digunakan guru dan peserta didik selama siklus pertama.</p>
+                </div>
+              </div>
+              <div class="domains-grid">
+                <!-- Psikomotorik -->
+                <div class="domain-card domain-psikomotorik">
+                  <div class="domain-header">
+                    <div class="domain-icon"><i class="fa-solid fa-person-running"></i></div>
+                    <div>
+                      <h4>Psikomotorik (Kinerja)</h4>
+                      <span style="font-size: 0.78rem; color: var(--text-muted); font-weight: 600;">Bobot: 50%</span>
+                    </div>
+                  </div>
+                  <p>Observasi kemampuan passing bawah, passing atas, servis, dan spike dalam situasi bermain bola voli terkoordinasi.</p>
+                  <ul>
+                    <li><i class="fa-solid fa-check"></i> Akurasi & kestabilan passing bawah dan passing atas</li>
+                    <li><i class="fa-solid fa-check"></i> Keberhasilan servis atas/bawah melewati net bertarget</li>
+                    <li><i class="fa-solid fa-check"></i> Kesiapan posisi bertahan (ready stance) dan rotasi tim</li>
+                  </ul>
+                </div>
+
+                <!-- Kognitif -->
+                <div class="domain-card domain-kognitif">
+                  <div class="domain-header">
+                    <div class="domain-icon"><i class="fa-solid fa-brain"></i></div>
+                    <div>
+                      <h4>Kognitif (Pengetahuan)</h4>
+                      <span style="font-size: 0.78rem; color: var(--text-muted); font-weight: 600;">Bobot: 30%</span>
+                    </div>
+                  </div>
+                  <p>Pemahaman nalar taktis, analisis penempatan bola ke ruang kosong, dan regulasi resmi bola voli.</p>
+                  <ul>
+                    <li><i class="fa-solid fa-check"></i> Analisis celah pertahanan lawan di area net dan belakang</li>
+                    <li><i class="fa-solid fa-check"></i> Pengetahuan aturan rotasi posisi 1-6, net fault, dan bola keluar</li>
+                    <li><i class="fa-solid fa-check"></i> Evaluasi strategi pertahanan dan serangan saat time-out</li>
+                  </ul>
+                </div>
+
+                <!-- Afektif -->
+                <div class="domain-card domain-afektif">
+                  <div class="domain-header">
+                    <div class="domain-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+                    <div>
+                      <h4>Afektif (Karakter)</h4>
+                      <span style="font-size: 0.78rem; color: var(--text-muted); font-weight: 600;">Bobot: 20%</span>
+                    </div>
+                  </div>
+                  <p>Penilaian internalisasi dimensi Profil Pelajar Pancasila selama proses pembelajaran berlangsung.</p>
+                  <ul>
+                    <li><i class="fa-solid fa-check"></i> Gotong royong & kerja sama tim inklusif</li>
+                    <li><i class="fa-solid fa-check"></i> Sportivitas & kejujuran mengakui sentuhan bola</li>
+                    <li><i class="fa-solid fa-check"></i> Respek terhadap rekan, lawan, dan keputusan wasit</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- PDF Viewer Card (UTS) -->
+            <div class="pdf-viewer-card reveal">
+              <div class="pdf-header">
+                <div class="pdf-header-title">
+                  <i class="fa-solid fa-file-pdf pdf-icon"></i>
+                  <div class="pdf-header-text">
+                    <h3>Lembar Instrumen & Rubrik Penilaian Siklus 1 (UTS) - Bola Voli</h3>
+                    <span>Format: PDF Dokumen Asesmen • Fase F • Penyusun: Muhammad Layyinul Mushthofa, S.Pd</span>
+                  </div>
+                </div>
+                <div class="pdf-actions">
+                  <button class="btn-pdf-action btn-pdf-fullscreen" onclick="openPdfModal('../Dokumen/PPL_2/Instrumen Siklus 1.pdf', 'Instrumen Penilaian Siklus 1 (UTS) - Permainan Bola Voli')">
+                    <i class="fa-solid fa-expand"></i> Layar Penuh
+                  </button>
+                  <a href="../Dokumen/PPL_2/Instrumen Siklus 1.pdf" download class="btn-pdf-action btn-pdf-download">
+                    <i class="fa-solid fa-cloud-arrow-down"></i> Unduh Rubrik
+                  </a>
+                </div>
+              </div>
+
+              <div class="pdf-frame-wrapper">
+                <iframe src="../Dokumen/PPL_2/Instrumen Siklus 1.pdf#toolbar=0" title="Pratinjau Instrumen Siklus 1 - Bola Voli">
+                  <p>Browser Anda tidak mendukung penampil PDF. Silakan unduh dokumen untuk membacanya.</p>
+                </iframe>
+              </div>
+
+              <div class="pdf-fallback-note">
+                <span><i class="fa-solid fa-circle-info"></i> Memuat rubrik analitik 4 skala pencapaian gerak passing, servis, spike bola voli, serta lembar observasi teman sebaya (*peer-assessment*).</span>
+                <a href="../Dokumen/PPL_2/Instrumen Siklus 1.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Buka di Tab Baru</a>
+              </div>
+            </div>
+
+            <!-- Analisis Instrumen Siklus 1 (3 Poin) -->
+            <div class="analisis-section reveal">
+              <div class="analisis-header">
+                <div class="tagline"><i class="fa-solid fa-microscope"></i> Tinjauan Evaluatif Asesmen</div>
+                <h3>Analisis Instrumen Penilaian Siklus 1</h3>
+                <p>Kajian kritis terhadap validitas isi, objektivitas rubrik, dan kelayakan implementasi asesmen di lapangan.</p>
+              </div>
+
+              <div class="analisis-grid">
+                <!-- Poin 1 -->
+                <div class="analisis-card point-1">
+                  <div class="point-badge"><i class="fa-solid fa-bullseye"></i> Poin 1 • Konteks & Tujuan</div>
+                  <div class="card-icon-box"><i class="fa-solid fa-compass"></i></div>
+                  <h4>Konteks & Tujuan Asesmen</h4>
+                  <div class="analisis-body">
+                    <p>
+                      <strong>Konteks Asesmen Autentik:</strong> Instrumen ini dirancang untuk mendobrak paradigma lama di mana penilaian PJOK hanya mengukur tes teknik terisolasi (misal: menghitung jumlah passing ke dinding selama 30 detik). Penilaian difokuskan pada situasi kontekstual permainan riil.
+                    </p>
+                    <ul class="analisis-list">
+                      <li><i class="fa-solid fa-circle-check"></i> Menilai keterampilan motorik dalam konteks taktik dinamis (*game performance assessment*).</li>
+                      <li><i class="fa-solid fa-circle-check"></i> Mengintegrasikan fungsi asesmen formatif sebagai sarana refleksi belajar (*assessment as learning*).</li>
+                      <li><i class="fa-solid fa-circle-check"></i> Menjamin transparansi kriteria penilaian kepada siswa sejak awal pembelajaran.</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Poin 2 -->
+                <div class="analisis-card point-2">
+                  <div class="point-badge"><i class="fa-solid fa-scale-balanced"></i> Poin 2 • Kelebihan & Kekurangan</div>
+                  <div class="card-icon-box"><i class="fa-solid fa-chart-pie"></i></div>
+                  <h4>Kelebihan & Kekurangan Instrumen</h4>
+                  <div class="analisis-body">
+                    <div class="split-box kelebihan">
+                      <h5><i class="fa-solid fa-circle-check"></i> Kelebihan / Kekuatan:</h5>
+                      <ul>
+                        <li><i class="fa-solid fa-check"></i> <strong>Deskriptor Kinerja Operasional:</strong> Setiap skala penilaian (1-4) memiliki deskriptor perilaku yang jelas, meminimalkan subjektivitas penilaian guru.</li>
+                        <li><i class="fa-solid fa-check"></i> <strong>Pemberdayaan Peer-Assessment:</strong> Format lembar pengamatan teman sebaya ringkas dan mudah dicentang siswa saat mengantre giliran bermain.</li>
+                        <li><i class="fa-solid fa-check"></i> <strong>Holistik & Menyeluruh:</strong> Mengakomodasi siswa yang belum unggul secara fisik melalui poin apresiasi kerja sama dan pemahaman aturan.</li>
+                      </ul>
+                    </div>
+                    <div class="split-box kekurangan">
+                      <h5><i class="fa-solid fa-circle-exclamation"></i> Kekurangan & Tantangan:</h5>
+                      <ul>
+                        <li><i class="fa-solid fa-triangle-exclamation"></i> <strong>Beban Observasi Guru:</strong> Mengamati 32 siswa secara serentak dalam situasi permainan cepat menuntut konsentrasi tinggi.</li>
+                        <li><i class="fa-solid fa-triangle-exclamation"></i> <strong>Objektivitas Teman Sebaya:</strong> Siswa terkadang masih sungkan memberikan nilai rendah kepada teman dekatnya (*halo effect*).</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Poin 3 -->
+                <div class="analisis-card point-3">
+                  <div class="point-badge"><i class="fa-solid fa-book-bookmark"></i> Poin 3 • Landasan Teori</div>
+                  <div class="card-icon-box"><i class="fa-solid fa-brain"></i></div>
+                  <h4>Kajian Teori Pedagogis Asesmen</h4>
+                  <div class="analisis-body">
+                    <p>
+                      <strong>1. Teori Asesmen Autentik (Grant Wiggins, 1998):</strong>
+                      Asesmen autentik menguji kemampuan siswa menerapkan pengetahuan dan keterampilan dalam situasi kehidupan nyata yang bermakna, bukan sekadar tes drill tertulis atau mekanis.
+                    </p>
+                    <div class="teori-quote">
+                      "Assessment is authentic when we directly examine student performance on worthy intellectual and physical tasks."
+                      <strong>— Grant Wiggins (Educative Assessment)</strong>
+                    </div>
+                    <p>
+                      <strong>2. Game Performance Assessment Instrument (GPAI - Oslin, Mitchell, & Griffin, 1998):</strong>
+                      Instrumen mengadaptasi komponen GPAI: *base position, decision making, skill execution, support play,* dan *guard/mark*.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- =======================================================
+               TAB 2: UAS (INSTRUMEN SIKLUS 2, 3, 4)
+          ======================================================== -->
+          <div class="tab-panel" id="panelUas">
+            <div class="section-banner reveal">
+              <div class="banner-left">
+                <h2>Instrumen Penilaian UAS <span class="text-blue">(Siklus 2, 3, & 4)</span></h2>
+                <p>Rubrik asesmen akhir semester: Keterampilan Sepak Bola, Permainan Kasti, dan Atletik Lari Sprint (Fase F).</p>
+              </div>
+              <div class="banner-tags">
+                <span class="badge-outline"><i class="fa-solid fa-check"></i> UAS</span>
+                <span class="badge-outline"><i class="fa-solid fa-layer-group"></i> 3 Rubrik Siklus</span>
+                <span class="badge-outline"><i class="fa-solid fa-square-poll-vertical"></i> Berbasis Kriteria</span>
+              </div>
+            </div>
+
+            <!-- UAS Cycle Sub-tabs Navigator -->
+            <div class="siklus-selector-container reveal">
+              <button class="siklus-btn active" id="btnSiklus2" onclick="switchSiklusTab(2)">
+                <i class="fa-solid fa-futbol"></i>
+                <span>Siklus 2: Sepak Bola</span>
+              </button>
+              <button class="siklus-btn" id="btnSiklus3" onclick="switchSiklusTab(3)">
+                <i class="fa-solid fa-baseball-bat-ball"></i>
+                <span>Siklus 3: Permainan Kasti</span>
+              </button>
+              <button class="siklus-btn" id="btnSiklus4" onclick="switchSiklusTab(4)">
+                <i class="fa-solid fa-person-running"></i>
+                <span>Siklus 4: Atletik (Lari Sprint)</span>
+              </button>
+            </div>
+
+            <!-- SIKLUS 2 INSTRUMEN -->
+            <div class="siklus-panel active" id="siklusPanel2">
+              <div class="domains-summary-box reveal">
+                <div class="section-banner" style="margin-bottom: 0; padding: 0; border: none; box-shadow: none;">
+                  <div class="banner-left">
+                    <h3 style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; color: var(--text-dark);">
+                      <i class="fa-solid fa-layer-group text-blue"></i> Domain Penilaian Siklus 2: Sepak Bola
+                    </h3>
+                    <p style="font-size: 0.9rem; color: var(--text-gray);">Kriteria asesmen kinerja passing, controlling, dribbling, dan kerja sama tim invasi.</p>
+                  </div>
+                </div>
+                <div class="domains-grid">
+                  <div class="domain-card domain-psikomotorik">
+                    <div class="domain-header">
+                      <div class="domain-icon"><i class="fa-solid fa-futbol"></i></div>
+                      <div>
+                        <h4>Psikomotorik</h4>
+                        <span style="font-size: 0.78rem; color: var(--text-muted); font-weight: 600;">Bobot: 50%</span>
+                      </div>
+                    </div>
+                    <p>Akurasi passing (kaki bagian dalam/luar), kelenturan kontrol bola, dribbling terarah, dan shooting ke gawang sasaran.</p>
+                  </div>
+                  <div class="domain-card domain-kognitif">
+                    <div class="domain-header">
+                      <div class="domain-icon"><i class="fa-solid fa-brain"></i></div>
+                      <div>
+                        <h4>Kognitif</h4>
+                        <span style="font-size: 0.78rem; color: var(--text-muted); font-weight: 600;">Bobot: 30%</span>
+                      </div>
+                    </div>
+                    <p>Pemahaman taktik transisi bertahan-menyerang, pengambilan keputusan mengumpan vs membawa bola, dan regulasi offside/faul.</p>
+                  </div>
+                  <div class="domain-card domain-afektif">
+                    <div class="domain-header">
+                      <div class="domain-icon"><i class="fa-solid fa-handshake"></i></div>
+                      <div>
+                        <h4>Afektif</h4>
+                        <span style="font-size: 0.78rem; color: var(--text-muted); font-weight: 600;">Bobot: 20%</span>
+                      </div>
+                    </div>
+                    <p>Penghormatan terhadap keputusan wasit, respek lawan, kejujuran bermain (fair play), dan sportivitas tim.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- PDF Card Siklus 2 -->
+              <div class="pdf-viewer-card reveal">
+                <div class="pdf-header">
+                  <div class="pdf-header-title">
+                    <i class="fa-solid fa-file-pdf pdf-icon"></i>
+                    <div class="pdf-header-text">
+                      <h3>Instrumen Penilaian Permainan Sepak Bola (Siklus 2 - UAS)</h3>
+                      <span>Format: PDF Dokumen Asesmen • Rubrik Kinerja Permainan & Lembar Pengamatan Teman</span>
+                    </div>
+                  </div>
+                  <div class="pdf-actions">
+                    <button class="btn-pdf-action btn-pdf-fullscreen" onclick="openPdfModal('../Dokumen/PPL_2/Instrumen Siklus 2.pdf', 'Instrumen Penilaian Sepak Bola (Siklus 2 - UAS)')">
+                      <i class="fa-solid fa-expand"></i> Layar Penuh
+                    </button>
+                    <a href="../Dokumen/PPL_2/Instrumen Siklus 2.pdf" download class="btn-pdf-action btn-pdf-download">
+                      <i class="fa-solid fa-cloud-arrow-down"></i> Unduh Rubrik
+                    </a>
+                  </div>
+                </div>
+                <div class="pdf-frame-wrapper">
+                  <iframe src="../Dokumen/PPL_2/Instrumen Siklus 2.pdf#toolbar=0" title="Pratinjau Instrumen Siklus 2 - Sepak Bola">
+                    <p>Browser Anda tidak mendukung penampil PDF.</p>
+                  </iframe>
+                </div>
+              </div>
+
+              <!-- Analisis Siklus 2 -->
+              <div class="analisis-section reveal">
+                <div class="analisis-header">
+                  <div class="tagline"><i class="fa-solid fa-microscope"></i> Tinjauan Evaluatif Siklus 2</div>
+                  <h3>Analisis Instrumen Penilaian Siklus 2</h3>
+                  <p>Kajian objektivitas rubrik unjuk kerja sepak bola berbasis Game Performance Assessment Instrument (GPAI).</p>
+                </div>
+                <div class="analisis-grid">
+                  <div class="analisis-card point-1">
+                    <div class="point-badge"><i class="fa-solid fa-bullseye"></i> Poin 1 • Konteks & Tujuan</div>
+                    <div class="card-icon-box"><i class="fa-solid fa-compass"></i></div>
+                    <h4>Konteks & Tujuan Asesmen</h4>
+                    <div class="analisis-body">
+                      <p>Instrumen menilai kecakapan bermain sepak bola yang mengintegrasikan aspek eksekusi keterampilan (passing/controlling) dan ketepatan pengambilan keputusan taktis (*decision making*).</p>
+                    </div>
+                  </div>
+                  <div class="analisis-card point-2">
+                    <div class="point-badge"><i class="fa-solid fa-scale-balanced"></i> Poin 2 • Kelebihan & Kekurangan</div>
+                    <div class="card-icon-box"><i class="fa-solid fa-chart-pie"></i></div>
+                    <h4>Kelebihan & Kekurangan Instrumen</h4>
+                    <div class="analisis-body">
+                      <div class="split-box kelebihan">
+                        <h5><i class="fa-solid fa-circle-check"></i> Kelebihan:</h5>
+                        <p>Format GPAI memberikan skor indeks keterlibatan permainan (*game involvement*) yang membedakan siswa aktif dan pasif secara transparan.</p>
+                      </div>
+                      <div class="split-box kekurangan">
+                        <h5><i class="fa-solid fa-circle-exclamation"></i> Kekurangan:</h5>
+                        <p>Menuntut fokus pengamatan tinggi guru dan bantuan asisten siswa untuk mencatat tally frekuensi umpan sukses.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="analisis-card point-3">
+                    <div class="point-badge"><i class="fa-solid fa-book-bookmark"></i> Poin 3 • Landasan Teori</div>
+                    <div class="card-icon-box"><i class="fa-solid fa-brain"></i></div>
+                    <h4>Kajian Teori Pedagogis Asesmen</h4>
+                    <div class="analisis-body">
+                      <p><strong>Game Performance Assessment Instrument / GPAI (Oslin, Mitchell, & Griffin, 1998):</strong> Asesmen multidimensi yang mengukur keputusan tepat (*appropriate decision*), eksekusi keterampilan, dan pergerakan bantuan (*support*).</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- SIKLUS 3 INSTRUMEN -->
+            <div class="siklus-panel" id="siklusPanel3">
+              <div class="domains-summary-box reveal">
+                <div class="section-banner" style="margin-bottom: 0; padding: 0; border: none; box-shadow: none;">
+                  <div class="banner-left">
+                    <h3 style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; color: var(--text-dark);">
+                      <i class="fa-solid fa-layer-group text-blue"></i> Domain Penilaian Siklus 3: Permainan Kasti
+                    </h3>
+                    <p style="font-size: 0.9rem; color: var(--text-gray);">Kriteria evaluasi keterampilan melempar, menangkap, memukul bola, dan strategi regu.</p>
+                  </div>
+                </div>
+                <div class="domains-grid">
+                  <div class="domain-card domain-psikomotorik">
+                    <div class="domain-header">
+                      <div class="domain-icon"><i class="fa-solid fa-baseball-bat-ball"></i></div>
+                      <div>
+                        <h4>Psikomotorik</h4>
+                        <span style="font-size: 0.78rem; color: var(--text-muted); font-weight: 600;">Bobot: 50%</span>
+                      </div>
+                    </div>
+                    <p>Akurasi lemparan ke sasaran, ketangkasan menangkap bola lambung/datar, serta ketepatan kontak stik pemukul kasti.</p>
+                  </div>
+                  <div class="domain-card domain-kognitif">
+                    <div class="domain-header">
+                      <div class="domain-icon"><i class="fa-solid fa-brain"></i></div>
+                      <div>
+                        <h4>Kognitif</h4>
+                        <span style="font-size: 0.78rem; color: var(--text-muted); font-weight: 600;">Bobot: 30%</span>
+                      </div>
+                    </div>
+                    <p>Pemahaman membaca taktik lari antar pos hinggap (*base*), regulasi lemparan sah, dan perhitungan skor kemenangan regu.</p>
+                  </div>
+                  <div class="domain-card domain-afektif">
+                    <div class="domain-header">
+                      <div class="domain-icon"><i class="fa-solid fa-people-group"></i></div>
+                      <div>
+                        <h4>Afektif</h4>
+                        <span style="font-size: 0.78rem; color: var(--text-muted); font-weight: 600;">Bobot: 20%</span>
+                      </div>
+                    </div>
+                    <p>Kejujuran mengakui sentuhan bola lemparan, soliditas kerja sama regu jaga, dan kepatuhan pada zona keamanan memukul.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- PDF Card Siklus 3 -->
+              <div class="pdf-viewer-card reveal">
+                <div class="pdf-header">
+                  <div class="pdf-header-title">
+                    <i class="fa-solid fa-file-pdf pdf-icon"></i>
+                    <div class="pdf-header-text">
+                      <h3>Instrumen Penilaian Permainan Kasti (Siklus 3 - UAS)</h3>
+                      <span>Format: PDF Dokumen Asesmen • Rubrik Analitik Keterampilan & Lembar Observasi Regu</span>
+                    </div>
+                  </div>
+                  <div class="pdf-actions">
+                    <button class="btn-pdf-action btn-pdf-fullscreen" onclick="openPdfModal('../Dokumen/PPL_2/Instrumen Siklus 3.pdf', 'Instrumen Penilaian Permainan Kasti (Siklus 3 - UAS)')">
+                      <i class="fa-solid fa-expand"></i> Layar Penuh
+                    </button>
+                    <a href="../Dokumen/PPL_2/Instrumen Siklus 3.pdf" download class="btn-pdf-action btn-pdf-download">
+                      <i class="fa-solid fa-cloud-arrow-down"></i> Unduh Rubrik
+                    </a>
+                  </div>
+                </div>
+                <div class="pdf-frame-wrapper">
+                  <iframe src="../Dokumen/PPL_2/Instrumen Siklus 3.pdf#toolbar=0" title="Pratinjau Instrumen Siklus 3 - Permainan Kasti">
+                    <p>Browser Anda tidak mendukung penampil PDF.</p>
+                  </iframe>
+                </div>
+              </div>
+
+              <!-- Analisis Siklus 3 -->
+              <div class="analisis-section reveal">
+                <div class="analisis-header">
+                  <div class="tagline"><i class="fa-solid fa-microscope"></i> Tinjauan Evaluatif Siklus 3</div>
+                  <h3>Analisis Instrumen Penilaian Siklus 3</h3>
+                  <p>Evaluasi format asesmen unjuk kerja kasti terpadu yang memadukan lembar observasi gerak dan penilaian kerja sama regu.</p>
+                </div>
+                <div class="analisis-grid">
+                  <div class="analisis-card point-1">
+                    <div class="point-badge"><i class="fa-solid fa-bullseye"></i> Poin 1 • Konteks & Tujuan</div>
+                    <div class="card-icon-box"><i class="fa-solid fa-compass"></i></div>
+                    <h4>Konteks & Tujuan Asesmen</h4>
+                    <div class="analisis-body">
+                      <p>Instrumen menilai keterampilan gerak dasar manipulatif (melempar, menangkap, memukul) serta kemampuan taktik membaca momen lari antartiang pertolongan.</p>
+                    </div>
+                  </div>
+                  <div class="analisis-card point-2">
+                    <div class="point-badge"><i class="fa-solid fa-scale-balanced"></i> Poin 2 • Kelebihan & Kekurangan</div>
+                    <div class="card-icon-box"><i class="fa-solid fa-chart-pie"></i></div>
+                    <h4>Kelebihan & Kekurangan Instrumen</h4>
+                    <div class="analisis-body">
+                      <div class="split-box kelebihan">
+                        <h5><i class="fa-solid fa-circle-check"></i> Kelebihan:</h5>
+                        <p>Kriteria penilaian memuat deskriptor gerak yang sangat jelas untuk peran pemukul, pelambung, maupun regu penjaga lapangan.</p>
+                      </div>
+                      <div class="split-box kekurangan">
+                        <h5><i class="fa-solid fa-circle-exclamation"></i> Kekurangan:</h5>
+                        <p>Dibutuhkan wasit guru pembantu di tiang hinggap agar penetapan sah atau tidaknya lemparan bola berjalan tertib.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="analisis-card point-3">
+                    <div class="point-badge"><i class="fa-solid fa-book-bookmark"></i> Poin 3 • Landasan Teori</div>
+                    <div class="card-icon-box"><i class="fa-solid fa-brain"></i></div>
+                    <h4>Kajian Teori Pedagogis Asesmen</h4>
+                    <div class="analisis-body">
+                      <p><strong>Taksonomi Psikomotorik Harrow (1972):</strong> Menilai koordinasi gerak fisik terampil (*skilled movements*) dari gerak manipulatif dasar hingga koordinasi adaptif bermain kasti.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- SIKLUS 4 INSTRUMEN -->
+            <div class="siklus-panel" id="siklusPanel4">
+              <div class="domains-summary-box reveal">
+                <div class="section-banner" style="margin-bottom: 0; padding: 0; border: none; box-shadow: none;">
+                  <div class="banner-left">
+                    <h3 style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; color: var(--text-dark);">
+                      <i class="fa-solid fa-layer-group text-blue"></i> Domain Penilaian Siklus 4: Atletik (Lari Sprint)
+                    </h3>
+                    <p style="font-size: 0.9rem; color: var(--text-gray);">Kriteria evaluasi teknik start jongkok, fase akselerasi, dan catatan waktu lari sprint.</p>
+                  </div>
+                </div>
+                <div class="domains-grid">
+                  <div class="domain-card domain-psikomotorik">
+                    <div class="domain-header">
+                      <div class="domain-icon"><i class="fa-solid fa-stopwatch-20"></i></div>
+                      <div>
+                        <h4>Psikomotorik</h4>
+                        <span style="font-size: 0.78rem; color: var(--text-muted); font-weight: 600;">Bobot: 50%</span>
+                      </div>
+                    </div>
+                    <p>Mekanika sikap start jongkok ("Bersedia, Siap, Ya"), sudut tolakan balok, dorongan akselerasi, dan teknik melewati garis finis.</p>
+                  </div>
+                  <div class="domain-card domain-kognitif">
+                    <div class="domain-header">
+                      <div class="domain-icon"><i class="fa-solid fa-brain"></i></div>
+                      <div>
+                        <h4>Kognitif</h4>
+                        <span style="font-size: 0.78rem; color: var(--text-muted); font-weight: 600;">Bobot: 30%</span>
+                      </div>
+                    </div>
+                    <p>Pemahaman biomekanika lari sprint, regulasi lintasan (false start dan jalur lari), serta analisis pembagian kecepatan.</p>
+                  </div>
+                  <div class="domain-card domain-afektif">
+                    <div class="domain-header">
+                      <div class="domain-icon"><i class="fa-solid fa-medal"></i></div>
+                      <div>
+                        <h4>Afektif</h4>
+                        <span style="font-size: 0.78rem; color: var(--text-muted); font-weight: 600;">Bobot: 20%</span>
+                      </div>
+                    </div>
+                    <p>Daya juang (*grit*), kedisiplinan mentaati lintasan, sportivitas menerima hasil catatan waktu, dan respek kawan.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- PDF Card Siklus 4 -->
+              <div class="pdf-viewer-card reveal">
+                <div class="pdf-header">
+                  <div class="pdf-header-title">
+                    <i class="fa-solid fa-file-pdf pdf-icon"></i>
+                    <div class="pdf-header-text">
+                      <h3>Instrumen Penilaian Atletik: Lari Sprint (Siklus 4 - UAS)</h3>
+                      <span>Format: PDF Dokumen Asesmen • Rubrik Biomekanika Start & Format Pencatatan Waktu Digital</span>
+                    </div>
+                  </div>
+                  <div class="pdf-actions">
+                    <button class="btn-pdf-action btn-pdf-fullscreen" onclick="openPdfModal('../Dokumen/PPL_2/Instrumen Siklus 4.pdf', 'Instrumen Penilaian Atletik Lari Sprint (Siklus 4 - UAS)')">
+                      <i class="fa-solid fa-expand"></i> Layar Penuh
+                    </button>
+                    <a href="../Dokumen/PPL_2/Instrumen Siklus 4.pdf" download class="btn-pdf-action btn-pdf-download">
+                      <i class="fa-solid fa-cloud-arrow-down"></i> Unduh Rubrik
+                    </a>
+                  </div>
+                </div>
+                <div class="pdf-frame-wrapper">
+                  <iframe src="../Dokumen/PPL_2/Instrumen Siklus 4.pdf#toolbar=0" title="Pratinjau Instrumen Siklus 4 - Atletik Lari Sprint">
+                    <p>Browser Anda tidak mendukung penampil PDF.</p>
+                  </iframe>
+                </div>
+              </div>
+
+              <!-- Analisis Siklus 4 -->
+              <div class="analisis-section reveal">
+                <div class="analisis-header">
+                  <div class="tagline"><i class="fa-solid fa-microscope"></i> Tinjauan Evaluatif Siklus 4</div>
+                  <h3>Analisis Instrumen Penilaian Siklus 4</h3>
+                  <p>Refleksi instrumen asesmen nomor atletik lari sprint berbasis biomekanika dan waktu kuantitatif.</p>
+                </div>
+                <div class="analisis-grid">
+                  <div class="analisis-card point-1">
+                    <div class="point-badge"><i class="fa-solid fa-bullseye"></i> Poin 1 • Konteks & Tujuan</div>
+                    <div class="card-icon-box"><i class="fa-solid fa-compass"></i></div>
+                    <h4>Konteks & Tujuan Asesmen</h4>
+                    <div class="analisis-body">
+                      <p>Instrumen berfokus pada pembentukan kesadaran diri (*self-awareness*) terhadap kesehatan kardiovaskular, membekali siswa instrumen pemantau nadi yang dapat mereka gunakan seumur hidup.</p>
+                    </div>
+                  </div>
+                  <div class="analisis-card point-2">
+                    <div class="point-badge"><i class="fa-solid fa-scale-balanced"></i> Poin 2 • Kelebihan & Kekurangan</div>
+                    <div class="card-icon-box"><i class="fa-solid fa-chart-pie"></i></div>
+                    <h4>Kelebihan & Kekurangan Instrumen</h4>
+                    <div class="analisis-body">
+                      <div class="split-box kelebihan">
+                        <h5><i class="fa-solid fa-circle-check"></i> Kelebihan:</h5>
+                        <p>Format logbook mandiri sangat aplikatif, siswa dapat melacak kenaikan repetisi dari sirkuit ke sirkuit secara visual.</p>
+                      </div>
+                      <div class="split-box kekurangan">
+                        <h5><i class="fa-solid fa-circle-exclamation"></i> Kekurangan:</h5>
+                        <p>Koreksi teknik push-up dan plank pada seluruh siswa memerlukan perhatian intensif agar tidak terjadi cedera pinggang bawah.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="analisis-card point-3">
+                    <div class="point-badge"><i class="fa-solid fa-book-bookmark"></i> Poin 3 • Landasan Teori</div>
+                    <div class="card-icon-box"><i class="fa-solid fa-brain"></i></div>
+                    <h4>Kajian Teori Pedagogis Asesmen</h4>
+                    <div class="analisis-body">
+                      <p><strong>Physical Literacy Assessment Standards (Corbin, 2016):</strong> Menilai kebugaran tidak hanya sebagai hasil tes fisik (*fitness product*), melainkan sebagai proses pemahaman dan pembiasaan aktivitas (*fitness process*).</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FULLSCREEN MODAL -->
+    <div class="pdf-modal" id="pdfModal">
+      <div class="pdf-modal-container">
+        <div class="pdf-modal-header">
+          <h4 id="pdfModalTitle"><i class="fa-solid fa-file-pdf"></i> Pratinjau Dokumen Instrumen Penilaian</h4>
+          <button class="pdf-modal-close" onclick="closePdfModal()"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="pdf-modal-body">
+          <iframe id="pdfModalIframe" src="" title="Penampil Dokumen Instrumen"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="footer-about">
+          <a href="../index.html" class="logo footer-logo">
+            <img src="../IMG/logo.png" alt="logo uny" style="width: 40px" />
+            <span>E Portofolio<span class="text-blue"> PPG</span></span>
+          </a>
+          <p>Mendedikasikan diri untuk mencetak generasi yang sehat bugar secara fisik, dan kuat secara mental melalui Pendidikan Jasmani yang inovatif.</p>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h3>Jejak PPL 1</h3>
+          <ul>
+            <li><a href="../PPL_1/observasi.html">Observasi</a></li>
+            <li><a href="../PPL_1/modulajar.html">Modul Ajar</a></li>
+            <li><a href="../PPL_1/lkpd.html">E-LKPD</a></li>
+            <li><a href="../PPL_1/penilaian.html">Penilaian</a></li>
+            <li><a href="../PPL_1/modelguru.html">Model Guru</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h3>Jejak PPL 2</h3>
+          <ul>
+            <li><a href="rancangan.html">Rancangan Pembelajaran</a></li>
+            <li><a href="materi.html">Materi Pembelajaran</a></li>
+            <li><a href="media.html">Media Pembelajaran</a></li>
+            <li><a href="video.html">Video Praktik Mengajar</a></li>
+            <li><a href="non-mengajar.html">Kegiatan Non-Mengajar</a></li>
+            <li><a href="instrumen.html">Instrumen Penilaian</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h3>Info LPTK</h3>
+          <p><i class="fa-solid fa-school"></i> Universitas Negeri Yogyakarta (UNY)</p>
+          <a href="https://maps.app.goo.gl/uXpXQYgR3v4v5rT46" target="_blank" class="maps-link">
+            <i class="fa-solid fa-map-location-dot"></i> Lihat di Google Maps
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Muhammad Layyinul Mushthofa - PPG Prajabatan PJOK. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- INTERACTIVE JAVASCRIPT -->
+    <script>
+      window.addEventListener("scroll", function () {
+        const navbar = document.getElementById("navbar");
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.getElementById("nav-links");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navLinks.classList.toggle("active");
+      });
+
+      document.querySelectorAll(".nav-links a").forEach((link) => {
+        link.addEventListener("click", () => {
+          hamburger.classList.remove("active");
+          navLinks.classList.remove("active");
+        });
+      });
+
+      const dropdownBtn1 = document.getElementById("dropdownBtn1");
+      const dropdownContent1 = document.getElementById("dropdownContent1");
+      const dropdownBtn2 = document.getElementById("dropdownBtn2");
+      const dropdownContent2 = document.getElementById("dropdownContent2");
+
+      if (dropdownBtn1) {
+        dropdownBtn1.addEventListener("click", (e) => {
+          if (window.innerWidth <= 992) {
+            e.preventDefault();
+            dropdownContent1.classList.toggle("show");
+            dropdownBtn1.classList.toggle("active");
+          }
+        });
+      }
+
+      if (dropdownBtn2) {
+        dropdownBtn2.addEventListener("click", (e) => {
+          if (window.innerWidth <= 992) {
+            e.preventDefault();
+            dropdownContent2.classList.toggle("show");
+            dropdownBtn2.classList.toggle("active");
+          }
+        });
+      }
+
+      window.addEventListener("click", (e) => {
+        if (!e.target.closest(".dropdown")) {
+          if (dropdownContent1) dropdownContent1.classList.remove("show");
+          if (dropdownContent2) dropdownContent2.classList.remove("show");
+          if (dropdownBtn1) dropdownBtn1.classList.remove("active");
+          if (dropdownBtn2) dropdownBtn2.classList.remove("active");
+        }
+      });
+
+      function switchMainTab(tab) {
+        const btnUts = document.getElementById("tabBtnUts");
+        const btnUas = document.getElementById("tabBtnUas");
+        const panelUts = document.getElementById("panelUts");
+        const panelUas = document.getElementById("panelUas");
+
+        if (tab === "uts") {
+          btnUts.classList.add("active");
+          btnUas.classList.remove("active");
+          panelUts.classList.add("active");
+          panelUas.classList.remove("active");
+        } else if (tab === "uas") {
+          btnUas.classList.add("active");
+          btnUts.classList.remove("active");
+          panelUas.classList.add("active");
+          panelUas.classList.remove("active");
+        }
+        setTimeout(revealOnScroll, 100);
+      }
+
+      function switchSiklusTab(cycleNum) {
+        const buttons = document.querySelectorAll(".siklus-btn");
+        const panels = document.querySelectorAll(".siklus-panel");
+
+        buttons.forEach((btn) => btn.classList.remove("active"));
+        panels.forEach((p) => p.classList.remove("active"));
+
+        const targetBtn = document.getElementById("btnSiklus" + cycleNum);
+        const targetPanel = document.getElementById("siklusPanel" + cycleNum);
+
+        if (targetBtn && targetPanel) {
+          targetBtn.classList.add("active");
+          targetPanel.classList.add("active");
+        }
+        setTimeout(revealOnScroll, 100);
+      }
+
+      function openPdfModal(pdfUrl, title) {
+        const modal = document.getElementById("pdfModal");
+        const iframe = document.getElementById("pdfModalIframe");
+        const titleEl = document.getElementById("pdfModalTitle");
+
+        if (titleEl && title) {
+          titleEl.innerHTML = `<i class="fa-solid fa-file-pdf"></i> ${title}`;
+        }
+        if (iframe) {
+          iframe.src = pdfUrl;
+        }
+        if (modal) {
+          modal.classList.add("show");
+          document.body.style.overflow = "hidden";
+        }
+      }
+
+      function closePdfModal() {
+        const modal = document.getElementById("pdfModal");
+        const iframe = document.getElementById("pdfModalIframe");
+
+        if (modal) {
+          modal.classList.remove("show");
+          document.body.style.overflow = "auto";
+        }
+        if (iframe) {
+          iframe.src = "";
+        }
+      }
+
+      window.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          closePdfModal();
+        }
+      });
+
+      function revealOnScroll() {
+        const reveals = document.querySelectorAll(".reveal");
+        const windowHeight = window.innerHeight;
+        const revealPoint = 100;
+
+        reveals.forEach((el) => {
+          const revealTop = el.getBoundingClientRect().top;
+          if (revealTop < windowHeight - revealPoint) {
+            el.classList.add("active");
+          }
+        });
+      }
+
+      window.addEventListener("scroll", revealOnScroll);
+      window.addEventListener("DOMContentLoaded", revealOnScroll);
+    </script>
+  </body>
+</html>

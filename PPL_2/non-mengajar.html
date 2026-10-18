@@ -1,0 +1,588 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kegiatan Non-Mengajar | Jejak PPL 2 - E-Portofolio PPG PJOK UNY</title>
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,900;1,800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="../CSS/rancangan.css" />
+    <link rel="shortcut icon" href="../IMG/logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- HEADER / NAVBAR DYNAMIC -->
+    <header class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="../index.html" class="logo">
+          <img src="../IMG/logo.png" alt="logo uny" />
+          <span>E Portofolio<span class="text-blue"> PPG</span></span>
+        </a>
+
+        <div class="hamburger" id="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <nav class="nav-links" id="nav-links">
+          <a href="../index.html">Beranda</a>
+          <a href="../profile.html">Profil</a>
+
+          <div class="dropdown">
+            <button class="dropbtn" id="dropdownBtn1">Jejak PPL 1 <i class="fa-solid fa-chevron-down chevron"></i></button>
+            <div class="dropdown-content" id="dropdownContent1">
+              <a href="../PPL_1/observasi.html"><i class="fa-solid fa-magnifying-glass"></i> Observasi</a>
+              <a href="../PPL_1/modulajar.html"><i class="fa-solid fa-book"></i> Modul Ajar</a>
+              <a href="../PPL_1/lkpd.html"><i class="fa-solid fa-file-signature"></i> E-LKPD</a>
+              <a href="../PPL_1/penilaian.html"><i class="fa-solid fa-clipboard-check"></i> Penilaian</a>
+              <a href="../PPL_1/modelguru.html"><i class="fa-solid fa-chalkboard-teacher"></i> Model Guru</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button class="dropbtn active" id="dropdownBtn2">Jejak PPL 2 <i class="fa-solid fa-chevron-down chevron"></i></button>
+            <div class="dropdown-content" id="dropdownContent2">
+              <a href="rancangan.html"><i class="fa-solid fa-file-lines"></i> Rancangan Pembelajaran</a>
+              <a href="materi.html"><i class="fa-solid fa-book-open"></i> Materi Pembelajaran</a>
+              <a href="media.html"><i class="fa-solid fa-photo-film"></i> Media Pembelajaran</a>
+              <a href="video.html"><i class="fa-solid fa-video"></i> Video Praktik Mengajar</a>
+              <a href="non-mengajar.html" class="active"><i class="fa-solid fa-users-gear"></i> Kegiatan Non-Mengajar</a>
+              <a href="instrumen.html"><i class="fa-solid fa-clipboard-check"></i> Instrumen Penilaian</a>
+            </div>
+          </div>
+
+          <a href="../refleksi.html">Refleksi</a>
+          <a href="../filosofi.html">Filosofi</a>
+          <a href="../dokumentasi.html">Dokumentasi</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO SECTION -->
+      <section class="hero-rancangan">
+        <div class="hero-bg-slant"></div>
+        <div class="hero-blob"></div>
+
+        <div class="container hero-content">
+          <div class="tagline reveal">
+            <i class="fa-solid fa-handshake-angle"></i> Jejak PPL 2 • Pengabdian & Manajemen Sekolah
+          </div>
+          <h1 class="reveal">Kegiatan <span class="text-blue">Non-Mengajar</span></h1>
+          <p class="reveal">
+            Dokumentasi kontribusi aktif mahasiswa PPG Prajabatan PJOK dalam ekosistem persekolahan di SMAN 4 Yogyakarta.
+            Meliputi pelaksanaan piket kantor dan ketertiban sekolah, pengawasan Asesmen Sumatif Tengah Semester (ASTS), 
+            serta kepanitiaan Semarak Lomba Kemerdekaan 12 Agustus.
+          </p>
+
+          <!-- Quick Stats Highlights -->
+          <div class="quick-stats-bar reveal">
+            <div class="stat-pill">
+              <i class="fa-solid fa-building-columns"></i>
+              <span>Piket Kantor & Lobi</span>
+            </div>
+            <div class="stat-pill">
+              <i class="fa-solid fa-pen-nib"></i>
+              <span>Pengawas Ujian ASTS</span>
+            </div>
+            <div class="stat-pill">
+              <i class="fa-solid fa-flag"></i>
+              <span>Panitia Lomba 12 Agustus</span>
+            </div>
+            <div class="stat-pill">
+              <i class="fa-solid fa-award"></i>
+              <span>Kompetensi Sosial & Manajerial</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTENT SECTION -->
+      <section class="bg-offwhite" style="padding: 40px 0 90px; min-height: 80vh;">
+        <div class="container">
+          <!-- Filter Controller Bar -->
+          <div class="main-tabs-wrapper reveal" style="padding: 0 0 30px;">
+            <div class="filter-sub-nav">
+              <button class="tab-btn active" id="filterAll" onclick="filterActivity('all')">
+                <i class="fa-solid fa-layer-group"></i>
+                <span>Semua Kegiatan</span>
+              </button>
+              <button class="tab-btn" id="filterPiket" onclick="filterActivity('piket')">
+                <i class="fa-solid fa-id-badge"></i>
+                <span>Piket Kantor</span>
+              </button>
+              <button class="tab-btn" id="filterAsts" onclick="filterActivity('asts')">
+                <i class="fa-solid fa-clipboard-user"></i>
+                <span>Ujian ASTS</span>
+              </button>
+              <button class="tab-btn" id="filterLomba" onclick="filterActivity('lomba')">
+                <i class="fa-solid fa-trophy"></i>
+                <span>Lomba 12 Ags</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- =======================================================
+               KEGIATAN 1: PIKET KANTOR & ADMINISTRASI SEKOLAH
+          ======================================================== -->
+          <div class="non-activity-card activity-item reveal" data-category="piket">
+            <div class="activity-card-header">
+              <div class="activity-header-left">
+                <i class="fa-solid fa-id-card-clip"></i>
+                <div>
+                  <h3>1. Piket Kantor & Pelayanan Administrasi Sekolah</h3>
+                  <span>Kategori: Manajerial Sekolah & Kedisiplinan • Pelaksanaan: Terjadwal Berkala PPL 2</span>
+                </div>
+              </div>
+              <div class="banner-tags">
+                <span class="badge-outline" style="background: rgba(255,255,255,0.15); color: white; border-color: rgba(255,255,255,0.3);">
+                  <i class="fa-solid fa-school"></i> Lobi & Tata Usaha
+                </span>
+                <span class="badge-outline" style="background: rgba(255,255,255,0.15); color: white; border-color: rgba(255,255,255,0.3);">
+                  <i class="fa-solid fa-users"></i> Pelayanan Publik
+                </span>
+              </div>
+            </div>
+
+            <div class="activity-card-body">
+              <!-- Left Description Column -->
+              <div class="activity-desc-col">
+                <h4><i class="fa-solid fa-circle-info text-blue"></i> Uraian Pelaksanaan Kegiatan</h4>
+                <p>
+                  Sebagai bagian integral dari penugasan non-mengajar PPL 2 di SMAN 4 Yogyakarta, saya melaksanakan tugas piket kantor dan lobi sekolah. Kegiatan ini bertujuan mendukung kelancaran operasional administrasi sekolah, menjembatani komunikasi dengan wali murid dan tamu dinas, serta mengawal ketertiban siswa selama jam kegiatan belajar mengajar berlangsung.
+                </p>
+
+                <h4><i class="fa-solid fa-list-check text-blue"></i> Peran & Tanggung Jawab Utama</h4>
+                <ul class="activity-duties-list">
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <strong>Penerimaan Tamu Sekolah:</strong> Menyambut, mencatat buku tamu kedinasan, orang tua murid, serta mengarahkan ke bagian kepala sekolah, humas, atau guru yang bersangkutan dengan ramah dan santun.
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <strong>Penertiban Presensi & Izin Masuk/Keluar:</strong> Menangani peserta didik yang terlambat, memeriksa alasan kedatangan, memberikan kartu disposisi izin masuk kelas, serta mencatat siswa yang izin meninggalkan sekolah karena sakit atau urusan mendesak.
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <strong>Pendampingan Kelas Pengganti (*Guru Inval*):</strong> Mendampingi kelas yang gurunya berhalangan hadir untuk memberikan tugas atau memastikan suasana belajar mandiri tetap kondusif dan tertib.
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <strong>Pusat Informasi & Komunikasi Cepat:</strong> Menyampaikan pengumuman penting sekolah melalui pengeras suara sentral dan membantu pengarsipan dokumen surat masuk/keluar.
+                  </li>
+                </ul>
+
+                <div class="competency-impact-box">
+                  <h5><i class="fa-solid fa-award"></i> Refleksi Pengembangan Kompetensi Guru:</h5>
+                  <p>
+                    Tugas piket kantor memperkuat <strong>Kompetensi Kepribadian</strong> (kedisiplinan, integritas, keramahan) dan <strong>Kompetensi Sosial</strong> guru dalam memahami alur manajerial persekolahan, membangun empati terhadap siswa yang menghadapi masalah di rumah, serta menjalin kerja sama harmonis dengan tenaga kependidikan (TU dan staf keamanan).
+                  </p>
+                </div>
+              </div>
+
+              <!-- Right Photo Showcase Column -->
+              <div class="activity-gallery-col">
+                <div class="activity-main-photo-frame" onclick="openLightbox('../IMG/kunjungan.jpeg', 'Dokumentasi Piket Kantor: Pelayanan Administrasi & Koordinasi Meja Piket SMAN 4 Yogyakarta')">
+                  <img src="../IMG/kunjungan.jpeg" alt="Foto Piket Kantor" onerror="this.src='../IMG/cover dokumentasi.jpeg';" />
+                  <div class="photo-badge-label">
+                    <span><i class="fa-solid fa-camera"></i> Meja Piket & Layanan Tamu</span>
+                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                  </div>
+                </div>
+
+                <div class="activity-thumb-grid">
+                  <div class="activity-thumb-item" onclick="openLightbox('../IMG/orientasi.jpeg', 'Dokumentasi Koordinasi Harian & Penertiban Presensi Siswa')">
+                    <img src="../IMG/orientasi.jpeg" alt="Foto Koordinasi Piket" onerror="this.src='../IMG/profil.png';" />
+                    <div class="thumb-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+                  </div>
+                  <div class="activity-thumb-item" onclick="openLightbox('../IMG/cover dokumentasi.jpeg', 'Dokumentasi Pengawasan Tata Tertib dan Lingkungan Sekolah')">
+                    <img src="../IMG/cover dokumentasi.jpeg" alt="Foto Ketertiban Sekolah" onerror="this.src='../IMG/logo.png';" />
+                    <div class="thumb-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- =======================================================
+               KEGIATAN 2: MENGAWAS UJIAN ASTS
+          ======================================================== -->
+          <div class="non-activity-card activity-item reveal" data-category="asts">
+            <div class="activity-card-header">
+              <div class="activity-header-left">
+                <i class="fa-solid fa-clipboard-check"></i>
+                <div>
+                  <h3>2. Mengawas Ujian ASTS (Asesmen Sumatif Tengah Semester)</h3>
+                  <span>Kategori: Evaluasi Akademik & Tata Tertib • Pelaksanaan: Pekan Ujian ASTS Semester Ganjil</span>
+                </div>
+              </div>
+              <div class="banner-tags">
+                <span class="badge-outline" style="background: rgba(255,255,255,0.15); color: white; border-color: rgba(255,255,255,0.3);">
+                  <i class="fa-solid fa-pen-ruler"></i> Asesmen Sumatif
+                </span>
+                <span class="badge-outline" style="background: rgba(255,255,255,0.15); color: white; border-color: rgba(255,255,255,0.3);">
+                  <i class="fa-solid fa-scale-balanced"></i> Integritas Ujian
+                </span>
+              </div>
+            </div>
+
+            <div class="activity-card-body">
+              <!-- Left Description Column -->
+              <div class="activity-desc-col">
+                <h4><i class="fa-solid fa-circle-info text-blue"></i> Uraian Pelaksanaan Kegiatan</h4>
+                <p>
+                  Dalam penyelenggaraan Asesmen Sumatif Tengah Semester (ASTS), saya ditugaskan oleh pihak kurikulum sekolah sebagai pengawas ruang ujian. Tugas ini menuntut ketelitian tinggi, objektivitas, serta kemampuan menciptakan suasana ruang ujian yang tenang, adil, dan menjunjung tinggi nilai kejujuran akademik.
+                </p>
+
+                <h4><i class="fa-solid fa-list-check text-blue"></i> Peran & Tanggung Jawab Utama</h4>
+                <ul class="activity-duties-list">
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <strong>Sterilisasi & Pengkondisian Ruang:</strong> Memastikan denah duduk siswa sesuai nomor ujian, papan tulis bersih, serta tas dan telepon genggam terkumpul rapi di bagian depan kelas.
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <strong>Pembacaan Tata Tertib & Verifikasi Peserta:</strong> Membacakan tata tertib resmi ASTS, memeriksa kesesuaian kartu peserta ujian dengan lembar presensi, dan membagikan naskah soal/token digital tepat waktu.
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <strong>Pengawasan Kepatuhan Akademik:</strong> Berkeliling secara berkala untuk mencegah praktik kecurangan, mengawasi kepatuhan durasi pengerjaan, serta melayani pertanyaan administratif siswa secara netral.
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <strong>Pemberkasan & Berita Acara Ujian:</strong> Menghitung kelengkapan lembar jawab, mengisi dan menandatangani Berita Acara Pelaksanaan Asesmen, serta menyerahkan berkas ke sekretariat panitia ASTS.
+                  </li>
+                </ul>
+
+                <div class="competency-impact-box">
+                  <h5><i class="fa-solid fa-award"></i> Refleksi Pengembangan Kompetensi Guru:</h5>
+                  <p>
+                    Pengalaman mengawas ASTS melatih <strong>Kompetensi Pedagogik</strong> dalam memahami alur asesmen sumatif terstandar, serta menumbuhkan ketegasan humanis guru dalam mendidik karakter integritas, kejujuran, dan kemandirian siswa sejak dini.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Right Photo Showcase Column -->
+              <div class="activity-gallery-col">
+                <div class="activity-main-photo-frame" onclick="openLightbox('../IMG/asesmen basket.jpeg', 'Dokumentasi Pengawasan Ujian: Pemantauan Ketertiban Ruang Asesmen ASTS')">
+                  <img src="../IMG/asesmen basket.jpeg" alt="Foto Pengawas Ujian ASTS" onerror="this.src='../IMG/praktik.jpeg';" />
+                  <div class="photo-badge-label">
+                    <span><i class="fa-solid fa-camera"></i> Ruang Pengawasan Ujian ASTS</span>
+                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                  </div>
+                </div>
+
+                <div class="activity-thumb-grid">
+                  <div class="activity-thumb-item" onclick="openLightbox('../IMG/praktik.jpeg', 'Dokumentasi Verifikasi Presensi Peserta dan Lembar Ujian')">
+                    <img src="../IMG/praktik.jpeg" alt="Foto Berkas Ujian" onerror="this.src='../IMG/profil.png';" />
+                    <div class="thumb-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+                  </div>
+                  <div class="activity-thumb-item" onclick="openLightbox('../IMG/baner observasi.jpeg', 'Dokumentasi Penyerahan Berita Acara ke Panitia ASTS')">
+                    <img src="../IMG/baner observasi.jpeg" alt="Foto Panitia ASTS" onerror="this.src='../IMG/logo.png';" />
+                    <div class="thumb-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- =======================================================
+               KEGIATAN 3: PANITIA LOMBA 12 AGUSTUS
+          ======================================================== -->
+          <div class="non-activity-card activity-item reveal" data-category="lomba">
+            <div class="activity-card-header">
+              <div class="activity-header-left">
+                <i class="fa-solid fa-trophy"></i>
+                <div>
+                  <h3>3. Panitia Kegiatan Lomba 12 Agustus (HUT Kemerdekaan RI)</h3>
+                  <span>Kategori: Kepanitiaan Event & Olahraga Rekreasi • Pelaksanaan: 12 Agustus</span>
+                </div>
+              </div>
+              <div class="banner-tags">
+                <span class="badge-outline" style="background: rgba(255,255,255,0.15); color: white; border-color: rgba(255,255,255,0.3);">
+                  <i class="fa-solid fa-flag"></i> Semarak 17 Agustus
+                </span>
+                <span class="badge-outline" style="background: rgba(255,255,255,0.15); color: white; border-color: rgba(255,255,255,0.3);">
+                  <i class="fa-solid fa-volleyball"></i> Olahraga Rekreasi
+                </span>
+              </div>
+            </div>
+
+            <div class="activity-card-body">
+              <!-- Left Description Column -->
+              <div class="activity-desc-col">
+                <h4><i class="fa-solid fa-circle-info text-blue"></i> Uraian Pelaksanaan Kegiatan</h4>
+                <p>
+                  Dalam rangka memperingati Hari Ulang Tahun Kemerdekaan Republik Indonesia, SMAN 4 Yogyakarta menyelenggarakan rangkaian perlombaan kebersamaan pada tanggal 12 Agustus. Saya dipercaya menjadi bagian dari panitia pelaksana sekaligus koordinator lapangan untuk mengelola pertandingan olahraga rekreasi dan ketangkasan tradisional antar kelas.
+                </p>
+
+                <h4><i class="fa-solid fa-list-check text-blue"></i> Peran & Tanggung Jawab Utama</h4>
+                <ul class="activity-duties-list">
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <strong>Perancangan Teknis Perlombaan:</strong> Menyusun petunjuk teknis (*technical guidelines*) dan bagan pertandingan untuk cabang lomba (voli terpal air, estafet balap karung helm, tarik tambang, dan estafet ketangkasan).
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <strong>Penyusunan Sarana & Keamanan Lapangan:</strong> Mengatur layout lapangan pertandingan, memastikan ketersediaan batas garis aman, serta menginspeksi peralatan lomba agar tidak mencederai peserta.
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <strong>Wasit & Juri Pertandingan Lapangan:</strong> Memimpin jalannya perlombaan sebagai wasit utama, menegakkan peraturan secara adil dan tegas, serta meredakan potensi gesekan suporter antar kelas.
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <strong>Rekapitulasi Poin & Seremoni Apresiasi:</strong> Mencatat hasil kemenangan setiap babak, menentukan juara umum lomba kemerdekaan, serta membantu jalannya penganugerahan piala dan hadiah.
+                  </li>
+                </ul>
+
+                <div class="competency-impact-box">
+                  <h5><i class="fa-solid fa-award"></i> Refleksi Pengembangan Kompetensi Guru:</h5>
+                  <p>
+                    Sebagai calon guru PJOK, kegiatan kepanitiaan ini menjadi wadah konkret mengaplikasikan <strong>Manajemen Penyelenggaraan Pertandingan Olahraga</strong>, kepemimpinan lapangan (*field leadership*), mitigasi keselamatan, serta mempererat hubungan emosional yang hangat dengan seluruh warga sekolah.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Right Photo Showcase Column -->
+              <div class="activity-gallery-col">
+                <div class="activity-main-photo-frame" onclick="openLightbox('../IMG/foto voli.jpeg', 'Dokumentasi Panitia Lomba 12 Agustus: Lapangan Pertandingan Olahraga Rekreasi & Voli Terpal')">
+                  <img src="../IMG/foto voli.jpeg" alt="Foto Panitia Lomba Kemerdekaan" onerror="this.src='../IMG/gaya voli.jpeg';" />
+                  <div class="photo-badge-label">
+                    <span><i class="fa-solid fa-camera"></i> Kemeriahan Lomba 12 Agustus</span>
+                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                  </div>
+                </div>
+
+                <div class="activity-thumb-grid">
+                  <div class="activity-thumb-item" onclick="openLightbox('../IMG/gaya voli.jpeg', 'Dokumentasi Aksi Perlombaan dan Semangat Antar Kelas')">
+                    <img src="../IMG/gaya voli.jpeg" alt="Aksi Lomba" onerror="this.src='../IMG/silat.jpeg';" />
+                    <div class="thumb-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+                  </div>
+                  <div class="activity-thumb-item" onclick="openLightbox('../IMG/silat.jpeg', 'Dokumentasi Kebersamaan Panitia Guru, Mahasiswa PPL & Siswa')">
+                    <img src="../IMG/silat.jpeg" alt="Kebersamaan Panitia" onerror="this.src='../IMG/mendaki.jpg';" />
+                    <div class="thumb-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FULLSCREEN LIGHTBOX MODAL -->
+    <div class="lightbox-modal" id="lightboxModal">
+      <button class="lightbox-close-btn" onclick="closeLightbox()">&times;</button>
+      <div class="lightbox-image-box">
+        <img id="lightboxImg" src="" alt="Perbesaran Foto Kegiatan Non-Mengajar" />
+      </div>
+      <div class="lightbox-caption-text" id="lightboxCaption">
+        Dokumentasi Kegiatan Non-Mengajar PPL 2
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="footer-about">
+          <a href="../index.html" class="logo footer-logo">
+            <img src="../IMG/logo.png" alt="logo uny" style="width: 40px" />
+            <span>E Portofolio<span class="text-blue"> PPG</span></span>
+          </a>
+          <p>Mendedikasikan diri untuk mencetak generasi yang sehat bugar secara fisik, dan kuat secara mental melalui Pendidikan Jasmani yang inovatif.</p>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h3>Jejak PPL 1</h3>
+          <ul>
+            <li><a href="../PPL_1/observasi.html">Observasi</a></li>
+            <li><a href="../PPL_1/modulajar.html">Modul Ajar</a></li>
+            <li><a href="../PPL_1/lkpd.html">E-LKPD</a></li>
+            <li><a href="../PPL_1/penilaian.html">Penilaian</a></li>
+            <li><a href="../PPL_1/modelguru.html">Model Guru</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h3>Jejak PPL 2</h3>
+          <ul>
+            <li><a href="rancangan.html">Rancangan Pembelajaran</a></li>
+            <li><a href="materi.html">Materi Pembelajaran</a></li>
+            <li><a href="media.html">Media Pembelajaran</a></li>
+            <li><a href="video.html">Video Praktik Mengajar</a></li>
+            <li><a href="non-mengajar.html">Kegiatan Non-Mengajar</a></li>
+            <li><a href="instrumen.html">Instrumen Penilaian</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h3>Info LPTK</h3>
+          <p><i class="fa-solid fa-school"></i> Universitas Negeri Yogyakarta (UNY)</p>
+          <a href="https://maps.app.goo.gl/uXpXQYgR3v4v5rT46" target="_blank" class="maps-link">
+            <i class="fa-solid fa-map-location-dot"></i> Lihat di Google Maps
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Muhammad Layyinul Mushthofa - PPG Prajabatan PJOK. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- INTERACTIVE JAVASCRIPT -->
+    <script>
+      // 1. Navbar Scroll Effect
+      window.addEventListener("scroll", function () {
+        const navbar = document.getElementById("navbar");
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+
+      // 2. Mobile Hamburger Toggle
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.getElementById("nav-links");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navLinks.classList.toggle("active");
+      });
+
+      document.querySelectorAll(".nav-links a").forEach((link) => {
+        link.addEventListener("click", () => {
+          hamburger.classList.remove("active");
+          navLinks.classList.remove("active");
+        });
+      });
+
+      // 3. Dropdown Toggles for Mobile
+      const dropdownBtn1 = document.getElementById("dropdownBtn1");
+      const dropdownContent1 = document.getElementById("dropdownContent1");
+      const dropdownBtn2 = document.getElementById("dropdownBtn2");
+      const dropdownContent2 = document.getElementById("dropdownContent2");
+
+      if (dropdownBtn1) {
+        dropdownBtn1.addEventListener("click", (e) => {
+          if (window.innerWidth <= 992) {
+            e.preventDefault();
+            dropdownContent1.classList.toggle("show");
+            dropdownBtn1.classList.toggle("active");
+          }
+        });
+      }
+
+      if (dropdownBtn2) {
+        dropdownBtn2.addEventListener("click", (e) => {
+          if (window.innerWidth <= 992) {
+            e.preventDefault();
+            dropdownContent2.classList.toggle("show");
+            dropdownBtn2.classList.toggle("active");
+          }
+        });
+      }
+
+      window.addEventListener("click", (e) => {
+        if (!e.target.closest(".dropdown")) {
+          if (dropdownContent1) dropdownContent1.classList.remove("show");
+          if (dropdownContent2) dropdownContent2.classList.remove("show");
+          if (dropdownBtn1) dropdownBtn1.classList.remove("active");
+          if (dropdownBtn2) dropdownBtn2.classList.remove("active");
+        }
+      });
+
+      // 4. Activity Filter Tabs Controller
+      function filterActivity(category) {
+        const buttons = document.querySelectorAll(".filter-sub-nav .tab-btn, .sub-menu-nav .tab-btn");
+        buttons.forEach((btn) => btn.classList.remove("active"));
+
+        if (category === "all") document.getElementById("filterAll").classList.add("active");
+        if (category === "piket") document.getElementById("filterPiket").classList.add("active");
+        if (category === "asts") document.getElementById("filterAsts").classList.add("active");
+        if (category === "lomba") document.getElementById("filterLomba").classList.add("active");
+
+        const cards = document.querySelectorAll(".activity-item");
+        cards.forEach((card) => {
+          const cardCat = card.getAttribute("data-category");
+          if (category === "all" || cardCat === category) {
+            card.style.display = "block";
+            setTimeout(() => {
+              card.style.opacity = "1";
+              card.style.transform = "translateY(0)";
+            }, 50);
+          } else {
+            card.style.opacity = "0";
+            card.style.transform = "translateY(15px)";
+            setTimeout(() => {
+              card.style.display = "none";
+            }, 300);
+          }
+        });
+
+        setTimeout(revealOnScroll, 100);
+      }
+
+      // 5. Photo Lightbox Modal Handlers
+      function openLightbox(imgSrc, caption) {
+        const modal = document.getElementById("lightboxModal");
+        const modalImg = document.getElementById("lightboxImg");
+        const modalCaption = document.getElementById("lightboxCaption");
+
+        if (modalImg) modalImg.src = imgSrc;
+        if (modalCaption) modalCaption.textContent = caption;
+        if (modal) {
+          modal.classList.add("show");
+          document.body.style.overflow = "hidden";
+        }
+      }
+
+      function closeLightbox() {
+        const modal = document.getElementById("lightboxModal");
+        if (modal) {
+          modal.classList.remove("show");
+          document.body.style.overflow = "auto";
+        }
+      }
+
+      window.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          closeLightbox();
+        }
+      });
+
+      // Close modal on clicking backdrop
+      const lightboxModal = document.getElementById("lightboxModal");
+      if (lightboxModal) {
+        lightboxModal.addEventListener("click", (e) => {
+          if (e.target === lightboxModal) {
+            closeLightbox();
+          }
+        });
+      }
+
+      // 6. Scroll Reveal Observer
+      function revealOnScroll() {
+        const reveals = document.querySelectorAll(".reveal");
+        const windowHeight = window.innerHeight;
+        const revealPoint = 100;
+
+        reveals.forEach((el) => {
+          const revealTop = el.getBoundingClientRect().top;
+          if (revealTop < windowHeight - revealPoint) {
+            el.classList.add("active");
+          }
+        });
+      }
+
+      window.addEventListener("scroll", revealOnScroll);
+      window.addEventListener("DOMContentLoaded", revealOnScroll);
+    </script>
+  </body>
+</html>
