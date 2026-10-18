@@ -72,23 +72,23 @@
           <h1 class="reveal">Kegiatan <span class="text-blue">Non-Mengajar</span></h1>
           <p class="reveal">
             Dokumentasi kontribusi aktif mahasiswa PPG Prajabatan PJOK dalam ekosistem persekolahan di SMAN 4 Yogyakarta.
-            Meliputi pelaksanaan piket kantor dan ketertiban sekolah, pengawasan Asesmen Sumatif Tengah Semester (ASTS), 
-            serta kepanitiaan Semarak Lomba Kemerdekaan 12 Agustus.
+            Meliputi pelaksanaan pengawasan Asesmen Sumatif Tengah Semester (ASTS), pendampingan pemeriksaan dan skrining kesehatan fisik murid bersama tim UKS, 
+            serta kepanitiaan Semarak Peringatan Hari Kemerdekaan RI ke-79 (Lomba 17 Agustus).
           </p>
 
           <!-- Quick Stats Highlights -->
           <div class="quick-stats-bar reveal">
             <div class="stat-pill">
-              <i class="fa-solid fa-building-columns"></i>
-              <span>Piket Kantor & Lobi</span>
-            </div>
-            <div class="stat-pill">
-              <i class="fa-solid fa-pen-nib"></i>
+              <i class="fa-solid fa-clipboard-user"></i>
               <span>Pengawas Ujian ASTS</span>
             </div>
             <div class="stat-pill">
+              <i class="fa-solid fa-heart-pulse"></i>
+              <span>Cek Kesehatan Murid</span>
+            </div>
+            <div class="stat-pill">
               <i class="fa-solid fa-flag"></i>
-              <span>Panitia Lomba 12 Agustus</span>
+              <span>Panitia 17 Agustus</span>
             </div>
             <div class="stat-pill">
               <i class="fa-solid fa-award"></i>
@@ -108,113 +108,31 @@
                 <i class="fa-solid fa-layer-group"></i>
                 <span>Semua Kegiatan</span>
               </button>
-              <button class="tab-btn" id="filterPiket" onclick="filterActivity('piket')">
-                <i class="fa-solid fa-id-badge"></i>
-                <span>Piket Kantor</span>
-              </button>
               <button class="tab-btn" id="filterAsts" onclick="filterActivity('asts')">
                 <i class="fa-solid fa-clipboard-user"></i>
-                <span>Ujian ASTS</span>
+                <span>Mengawas ASTS</span>
+              </button>
+              <button class="tab-btn" id="filterKesehatan" onclick="filterActivity('kesehatan')">
+                <i class="fa-solid fa-heart-pulse"></i>
+                <span>Cek Kesehatan Murid</span>
               </button>
               <button class="tab-btn" id="filterLomba" onclick="filterActivity('lomba')">
                 <i class="fa-solid fa-trophy"></i>
-                <span>Lomba 12 Ags</span>
+                <span>Lomba 17 Agustus</span>
               </button>
             </div>
           </div>
 
           <!-- =======================================================
-               KEGIATAN 1: PIKET KANTOR & ADMINISTRASI SEKOLAH
-          ======================================================== -->
-          <div class="non-activity-card activity-item reveal" data-category="piket">
-            <div class="activity-card-header">
-              <div class="activity-header-left">
-                <i class="fa-solid fa-id-card-clip"></i>
-                <div>
-                  <h3>1. Piket Kantor & Pelayanan Administrasi Sekolah</h3>
-                  <span>Kategori: Manajerial Sekolah & Kedisiplinan • Pelaksanaan: Terjadwal Berkala PPL 2</span>
-                </div>
-              </div>
-              <div class="banner-tags">
-                <span class="badge-outline" style="background: rgba(255,255,255,0.15); color: white; border-color: rgba(255,255,255,0.3);">
-                  <i class="fa-solid fa-school"></i> Lobi & Tata Usaha
-                </span>
-                <span class="badge-outline" style="background: rgba(255,255,255,0.15); color: white; border-color: rgba(255,255,255,0.3);">
-                  <i class="fa-solid fa-users"></i> Pelayanan Publik
-                </span>
-              </div>
-            </div>
-
-            <div class="activity-card-body">
-              <!-- Left Description Column -->
-              <div class="activity-desc-col">
-                <h4><i class="fa-solid fa-circle-info text-blue"></i> Uraian Pelaksanaan Kegiatan</h4>
-                <p>
-                  Sebagai bagian integral dari penugasan non-mengajar PPL 2 di SMAN 4 Yogyakarta, saya melaksanakan tugas piket kantor dan lobi sekolah. Kegiatan ini bertujuan mendukung kelancaran operasional administrasi sekolah, menjembatani komunikasi dengan wali murid dan tamu dinas, serta mengawal ketertiban siswa selama jam kegiatan belajar mengajar berlangsung.
-                </p>
-
-                <h4><i class="fa-solid fa-list-check text-blue"></i> Peran & Tanggung Jawab Utama</h4>
-                <ul class="activity-duties-list">
-                  <li>
-                    <i class="fa-solid fa-circle-check"></i>
-                    <strong>Penerimaan Tamu Sekolah:</strong> Menyambut, mencatat buku tamu kedinasan, orang tua murid, serta mengarahkan ke bagian kepala sekolah, humas, atau guru yang bersangkutan dengan ramah dan santun.
-                  </li>
-                  <li>
-                    <i class="fa-solid fa-circle-check"></i>
-                    <strong>Penertiban Presensi & Izin Masuk/Keluar:</strong> Menangani peserta didik yang terlambat, memeriksa alasan kedatangan, memberikan kartu disposisi izin masuk kelas, serta mencatat siswa yang izin meninggalkan sekolah karena sakit atau urusan mendesak.
-                  </li>
-                  <li>
-                    <i class="fa-solid fa-circle-check"></i>
-                    <strong>Pendampingan Kelas Pengganti (*Guru Inval*):</strong> Mendampingi kelas yang gurunya berhalangan hadir untuk memberikan tugas atau memastikan suasana belajar mandiri tetap kondusif dan tertib.
-                  </li>
-                  <li>
-                    <i class="fa-solid fa-circle-check"></i>
-                    <strong>Pusat Informasi & Komunikasi Cepat:</strong> Menyampaikan pengumuman penting sekolah melalui pengeras suara sentral dan membantu pengarsipan dokumen surat masuk/keluar.
-                  </li>
-                </ul>
-
-                <div class="competency-impact-box">
-                  <h5><i class="fa-solid fa-award"></i> Refleksi Pengembangan Kompetensi Guru:</h5>
-                  <p>
-                    Tugas piket kantor memperkuat <strong>Kompetensi Kepribadian</strong> (kedisiplinan, integritas, keramahan) dan <strong>Kompetensi Sosial</strong> guru dalam memahami alur manajerial persekolahan, membangun empati terhadap siswa yang menghadapi masalah di rumah, serta menjalin kerja sama harmonis dengan tenaga kependidikan (TU dan staf keamanan).
-                  </p>
-                </div>
-              </div>
-
-              <!-- Right Photo Showcase Column -->
-              <div class="activity-gallery-col">
-                <div class="activity-main-photo-frame" onclick="openLightbox('../IMG/kunjungan.jpeg', 'Dokumentasi Piket Kantor: Pelayanan Administrasi & Koordinasi Meja Piket SMAN 4 Yogyakarta')">
-                  <img src="../IMG/kunjungan.jpeg" alt="Foto Piket Kantor" onerror="this.src='../IMG/cover dokumentasi.jpeg';" />
-                  <div class="photo-badge-label">
-                    <span><i class="fa-solid fa-camera"></i> Meja Piket & Layanan Tamu</span>
-                    <i class="fa-solid fa-magnifying-glass-plus"></i>
-                  </div>
-                </div>
-
-                <div class="activity-thumb-grid">
-                  <div class="activity-thumb-item" onclick="openLightbox('../IMG/orientasi.jpeg', 'Dokumentasi Koordinasi Harian & Penertiban Presensi Siswa')">
-                    <img src="../IMG/orientasi.jpeg" alt="Foto Koordinasi Piket" onerror="this.src='../IMG/profil.png';" />
-                    <div class="thumb-zoom-icon"><i class="fa-solid fa-expand"></i></div>
-                  </div>
-                  <div class="activity-thumb-item" onclick="openLightbox('../IMG/cover dokumentasi.jpeg', 'Dokumentasi Pengawasan Tata Tertib dan Lingkungan Sekolah')">
-                    <img src="../IMG/cover dokumentasi.jpeg" alt="Foto Ketertiban Sekolah" onerror="this.src='../IMG/logo.png';" />
-                    <div class="thumb-zoom-icon"><i class="fa-solid fa-expand"></i></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- =======================================================
-               KEGIATAN 2: MENGAWAS UJIAN ASTS
+               KEGIATAN 1: MENGAWAS UJIAN ASTS
           ======================================================== -->
           <div class="non-activity-card activity-item reveal" data-category="asts">
             <div class="activity-card-header">
               <div class="activity-header-left">
                 <i class="fa-solid fa-clipboard-check"></i>
                 <div>
-                  <h3>2. Mengawas Ujian ASTS (Asesmen Sumatif Tengah Semester)</h3>
-                  <span>Kategori: Evaluasi Akademik & Tata Tertib • Pelaksanaan: Pekan Ujian ASTS Semester Ganjil</span>
+                  <h3>1. Mengawas Ujian ASTS (Asesmen Sumatif Tengah Semester)</h3>
+                  <span>Kategori: Evaluasi Akademik & Tata Tertib • Lokasi: Ruang Asesmen SMAN 4 Yogyakarta</span>
                 </div>
               </div>
               <div class="banner-tags">
@@ -222,7 +140,7 @@
                   <i class="fa-solid fa-pen-ruler"></i> Asesmen Sumatif
                 </span>
                 <span class="badge-outline" style="background: rgba(255,255,255,0.15); color: white; border-color: rgba(255,255,255,0.3);">
-                  <i class="fa-solid fa-scale-balanced"></i> Integritas Ujian
+                  <i class="fa-solid fa-scale-balanced"></i> Integritas Akademik
                 </span>
               </div>
             </div>
@@ -232,41 +150,41 @@
               <div class="activity-desc-col">
                 <h4><i class="fa-solid fa-circle-info text-blue"></i> Uraian Pelaksanaan Kegiatan</h4>
                 <p>
-                  Dalam penyelenggaraan Asesmen Sumatif Tengah Semester (ASTS), saya ditugaskan oleh pihak kurikulum sekolah sebagai pengawas ruang ujian. Tugas ini menuntut ketelitian tinggi, objektivitas, serta kemampuan menciptakan suasana ruang ujian yang tenang, adil, dan menjunjung tinggi nilai kejujuran akademik.
+                  Dalam penyelenggaraan Asesmen Sumatif Tengah Semester (ASTS) di SMAN 4 Yogyakarta, saya diberi amanah oleh tim kurikulum sekolah untuk bertugas sebagai pengawas ruang ujian. Pelaksanaan tugas ini berfokus pada penegakan tata tertib resmi asesmen, penciptaan iklim kelas yang tenang, adil, dan kondusif, serta pembinaan karakter kejujuran akademik peserta didik selama proses asesmen berlangsung.
                 </p>
 
                 <h4><i class="fa-solid fa-list-check text-blue"></i> Peran & Tanggung Jawab Utama</h4>
                 <ul class="activity-duties-list">
                   <li>
                     <i class="fa-solid fa-circle-check"></i>
-                    <strong>Sterilisasi & Pengkondisian Ruang:</strong> Memastikan denah duduk siswa sesuai nomor ujian, papan tulis bersih, serta tas dan telepon genggam terkumpul rapi di bagian depan kelas.
+                    <strong>Sterilisasi & Pengkondisian Ruang Ujian:</strong> Mengatur denah meja kursi peserta ujian agar berjarak proporsional, memastikan papan tulis bersih, serta menginstruksikan penyimpanan tas dan telepon genggam secara rapi di bagian depan kelas.
                   </li>
                   <li>
                     <i class="fa-solid fa-circle-check"></i>
-                    <strong>Pembacaan Tata Tertib & Verifikasi Peserta:</strong> Membacakan tata tertib resmi ASTS, memeriksa kesesuaian kartu peserta ujian dengan lembar presensi, dan membagikan naskah soal/token digital tepat waktu.
+                    <strong>Verifikasi Identitas & Pembacaan Tata Tertib:</strong> Memeriksa kartu peserta ujian, mencocokkannya dengan daftar hadir presensi, membacakan instruksi tata tertib resmi, serta mendistribusikan lembar soal atau token ujian digital tepat waktu.
                   </li>
                   <li>
                     <i class="fa-solid fa-circle-check"></i>
-                    <strong>Pengawasan Kepatuhan Akademik:</strong> Berkeliling secara berkala untuk mencegah praktik kecurangan, mengawasi kepatuhan durasi pengerjaan, serta melayani pertanyaan administratif siswa secara netral.
+                    <strong>Pengawasan Kepatuhan & Mitigasi Kecurangan:</strong> Mengawasi jalannya ujian secara berkala dengan pendekatan humanis namun berwibawa, mencegah praktik menyontek, serta mengawal ketepatan durasi waktu pengerjaan soal.
                   </li>
                   <li>
                     <i class="fa-solid fa-circle-check"></i>
-                    <strong>Pemberkasan & Berita Acara Ujian:</strong> Menghitung kelengkapan lembar jawab, mengisi dan menandatangani Berita Acara Pelaksanaan Asesmen, serta menyerahkan berkas ke sekretariat panitia ASTS.
+                    <strong>Pemberkasan & Berita Acara Pelaksanaan:</strong> Menghitung kelengkapan lembar jawab ujian (LJU), mencatat rekapitulasi siswa hadir maupun yang berhalangan izin/sakit, menandatangani Berita Acara Ujian, dan menyerahkan berkas ke sekretariat panitia ASTS.
                   </li>
                 </ul>
 
                 <div class="competency-impact-box">
                   <h5><i class="fa-solid fa-award"></i> Refleksi Pengembangan Kompetensi Guru:</h5>
                   <p>
-                    Pengalaman mengawas ASTS melatih <strong>Kompetensi Pedagogik</strong> dalam memahami alur asesmen sumatif terstandar, serta menumbuhkan ketegasan humanis guru dalam mendidik karakter integritas, kejujuran, dan kemandirian siswa sejak dini.
+                    Tugas pengawasan ASTS memperkuat <strong>Kompetensi Pedagogik</strong> dalam memahami prosedur baku evaluasi sumatif sekolah, serta mengasah <strong>Kompetensi Kepribadian</strong> guru dalam ketegasan penegakan aturan, ketelitian administrasi, dan keteladanan integritas moral bagi peserta didik.
                   </p>
                 </div>
               </div>
 
               <!-- Right Photo Showcase Column -->
               <div class="activity-gallery-col">
-                <div class="activity-main-photo-frame" onclick="openLightbox('../IMG/asesmen basket.jpeg', 'Dokumentasi Pengawasan Ujian: Pemantauan Ketertiban Ruang Asesmen ASTS')">
-                  <img src="../IMG/asesmen basket.jpeg" alt="Foto Pengawas Ujian ASTS" onerror="this.src='../IMG/praktik.jpeg';" />
+                <div class="activity-main-photo-frame" onclick="openLightbox('../IMG/PPL_2/Mengawas ASTS 1.jpg', 'Dokumentasi Pengawasan ASTS: Pemantauan Ketertiban dan Integritas Ruang Ujian Siswa di SMAN 4 Yogyakarta')">
+                  <img src="../IMG/PPL_2/Mengawas ASTS 1.jpg" alt="Foto Pengawas Ujian ASTS 1" onerror="this.src='../IMG/PPL_2/Mengawas ASTS.jpeg';" />
                   <div class="photo-badge-label">
                     <span><i class="fa-solid fa-camera"></i> Ruang Pengawasan Ujian ASTS</span>
                     <i class="fa-solid fa-magnifying-glass-plus"></i>
@@ -274,12 +192,12 @@
                 </div>
 
                 <div class="activity-thumb-grid">
-                  <div class="activity-thumb-item" onclick="openLightbox('../IMG/praktik.jpeg', 'Dokumentasi Verifikasi Presensi Peserta dan Lembar Ujian')">
-                    <img src="../IMG/praktik.jpeg" alt="Foto Berkas Ujian" onerror="this.src='../IMG/profil.png';" />
+                  <div class="activity-thumb-item" onclick="openLightbox('../IMG/PPL_2/Mengawas ASTS 2.jpg', 'Dokumentasi Pengawasan Ujian: Memastikan Kondusivitas dan Kepatuhan Tata Tertib Peserta ASTS')">
+                    <img src="../IMG/PPL_2/Mengawas ASTS 2.jpg" alt="Foto Pengawasan ASTS 2" onerror="this.src='../IMG/PPL_2/Mengawas ASTS 1.jpg';" />
                     <div class="thumb-zoom-icon"><i class="fa-solid fa-expand"></i></div>
                   </div>
-                  <div class="activity-thumb-item" onclick="openLightbox('../IMG/baner observasi.jpeg', 'Dokumentasi Penyerahan Berita Acara ke Panitia ASTS')">
-                    <img src="../IMG/baner observasi.jpeg" alt="Foto Panitia ASTS" onerror="this.src='../IMG/logo.png';" />
+                  <div class="activity-thumb-item" onclick="openLightbox('../IMG/PPL_2/Mengawas ASTS.jpeg', 'Dokumentasi Verifikasi Berkas Presensi dan Administrasi Ruang Ujian ASTS')">
+                    <img src="../IMG/PPL_2/Mengawas ASTS.jpeg" alt="Foto Administrasi ASTS" onerror="this.src='../IMG/PPL_2/Mengawas ASTS 1.jpg';" />
                     <div class="thumb-zoom-icon"><i class="fa-solid fa-expand"></i></div>
                   </div>
                 </div>
@@ -288,23 +206,23 @@
           </div>
 
           <!-- =======================================================
-               KEGIATAN 3: PANITIA LOMBA 12 AGUSTUS
+               KEGIATAN 2: CEK KESEHATAN MURID (UKS)
           ======================================================== -->
-          <div class="non-activity-card activity-item reveal" data-category="lomba">
+          <div class="non-activity-card activity-item reveal" data-category="kesehatan">
             <div class="activity-card-header">
               <div class="activity-header-left">
-                <i class="fa-solid fa-trophy"></i>
+                <i class="fa-solid fa-heart-pulse"></i>
                 <div>
-                  <h3>3. Panitia Kegiatan Lomba 12 Agustus (HUT Kemerdekaan RI)</h3>
-                  <span>Kategori: Kepanitiaan Event & Olahraga Rekreasi • Pelaksanaan: 12 Agustus</span>
+                  <h3>2. Cek Kesehatan Murid (Skrining Kesehatan Fisik & UKS)</h3>
+                  <span>Kategori: Pembinaan Kesehatan Sekolah & UKS • Kolaborasi: Tim UKS SMAN 4 Yogyakarta & Puskesmas</span>
                 </div>
               </div>
               <div class="banner-tags">
                 <span class="badge-outline" style="background: rgba(255,255,255,0.15); color: white; border-color: rgba(255,255,255,0.3);">
-                  <i class="fa-solid fa-flag"></i> Semarak 17 Agustus
+                  <i class="fa-solid fa-stethoscope"></i> Skrining Fisik
                 </span>
                 <span class="badge-outline" style="background: rgba(255,255,255,0.15); color: white; border-color: rgba(255,255,255,0.3);">
-                  <i class="fa-solid fa-volleyball"></i> Olahraga Rekreasi
+                  <i class="fa-solid fa-weight-scale"></i> Antropometri Siswa
                 </span>
               </div>
             </div>
@@ -314,54 +232,136 @@
               <div class="activity-desc-col">
                 <h4><i class="fa-solid fa-circle-info text-blue"></i> Uraian Pelaksanaan Kegiatan</h4>
                 <p>
-                  Dalam rangka memperingati Hari Ulang Tahun Kemerdekaan Republik Indonesia, SMAN 4 Yogyakarta menyelenggarakan rangkaian perlombaan kebersamaan pada tanggal 12 Agustus. Saya dipercaya menjadi bagian dari panitia pelaksana sekaligus koordinator lapangan untuk mengelola pertandingan olahraga rekreasi dan ketangkasan tradisional antar kelas.
+                  Kesehatan fisik dan kebugaran jasmani peserta didik merupakan prasyarat mutlak bagi keberhasilan proses pembelajaran, khususnya dalam ranah PJOK. Pada kegiatan non-mengajar ini, saya berkolaborasi aktif dengan Pengelola Usaha Kesehatan Sekolah (UKS) SMAN 4 Yogyakarta dan tenaga kesehatan dalam menyelenggarakan pemeriksaan dan skrining kesehatan berkala bagi peserta didik.
                 </p>
 
                 <h4><i class="fa-solid fa-list-check text-blue"></i> Peran & Tanggung Jawab Utama</h4>
                 <ul class="activity-duties-list">
                   <li>
                     <i class="fa-solid fa-circle-check"></i>
-                    <strong>Perancangan Teknis Perlombaan:</strong> Menyusun petunjuk teknis (*technical guidelines*) dan bagan pertandingan untuk cabang lomba (voli terpal air, estafet balap karung helm, tarik tambang, dan estafet ketangkasan).
+                    <strong>Pengukuran Antropometri Lengkap:</strong> Mengukur tinggi badan (TB), berat badan (BB), dan menghitung Indeks Massa Tubuh (IMT) guna mendeteksi status gizi peserta didik (gizi kurang, normal, atau kelebihan berat badan).
                   </li>
                   <li>
                     <i class="fa-solid fa-circle-check"></i>
-                    <strong>Penyusunan Sarana & Keamanan Lapangan:</strong> Mengatur layout lapangan pertandingan, memastikan ketersediaan batas garis aman, serta menginspeksi peralatan lomba agar tidak mencederai peserta.
+                    <strong>Pemeriksaan Tanda Vital & Postur:</strong> Membantu pemantauan denyut nadi istirahat, pengamatan postur tulang belakang (deteksi dini skoliosis/lordosis), serta koordinasi gerak fisik dasar siswa.
                   </li>
                   <li>
                     <i class="fa-solid fa-circle-check"></i>
-                    <strong>Wasit & Juri Pertandingan Lapangan:</strong> Memimpin jalannya perlombaan sebagai wasit utama, menegakkan peraturan secara adil dan tegas, serta meredakan potensi gesekan suporter antar kelas.
+                    <strong>Skrining Indera & Higiene Personal:</strong> Mendampingi tes ketajaman penglihatan (Snellen Chart), pemeriksaan kebersihan telinga, gigi, dan kuku sebagai wujud pembiasaan Perilaku Hidup Bersih dan Sehat (PHBS).
                   </li>
                   <li>
                     <i class="fa-solid fa-circle-check"></i>
-                    <strong>Rekapitulasi Poin & Seremoni Apresiasi:</strong> Mencatat hasil kemenangan setiap babak, menentukan juara umum lomba kemerdekaan, serta membantu jalannya penganugerahan piala dan hadiah.
+                    <strong>Pencatatan Rekam Medis UKS & Edukasi Gaya Hidup:</strong> Membantu perekaman data kesehatan ke buku rekam medis UKS serta memberikan edukasi personal terkait pentingnya hidrasi air putih, kecukupan tidur, dan nutrisi gizi seimbang.
                   </li>
                 </ul>
 
                 <div class="competency-impact-box">
                   <h5><i class="fa-solid fa-award"></i> Refleksi Pengembangan Kompetensi Guru:</h5>
                   <p>
-                    Sebagai calon guru PJOK, kegiatan kepanitiaan ini menjadi wadah konkret mengaplikasikan <strong>Manajemen Penyelenggaraan Pertandingan Olahraga</strong>, kepemimpinan lapangan (*field leadership*), mitigasi keselamatan, serta mempererat hubungan emosional yang hangat dengan seluruh warga sekolah.
+                    Kegiatan skrining kesehatan ini memperdalam pemahaman guru terhadap <strong>Karakteristik Fisiologis dan Profil Kesiapan Belajar Siswa</strong>. Data kesehatan fisik ini menjadi rujukan vital bagi guru PJOK dalam mendesain diferensiasi intensitas latihan gerak di lapangan agar aman dan tepat sasaran.
                   </p>
                 </div>
               </div>
 
               <!-- Right Photo Showcase Column -->
               <div class="activity-gallery-col">
-                <div class="activity-main-photo-frame" onclick="openLightbox('../IMG/foto voli.jpeg', 'Dokumentasi Panitia Lomba 12 Agustus: Lapangan Pertandingan Olahraga Rekreasi & Voli Terpal')">
-                  <img src="../IMG/foto voli.jpeg" alt="Foto Panitia Lomba Kemerdekaan" onerror="this.src='../IMG/gaya voli.jpeg';" />
+                <div class="activity-main-photo-frame" onclick="openLightbox('../IMG/PPL_2/Cek Kesehatan Murid.jpeg', 'Dokumentasi Cek Kesehatan Murid: Pemeriksaan Antropometri dan Skrining Fisik Berkala di SMAN 4 Yogyakarta')">
+                  <img src="../IMG/PPL_2/Cek Kesehatan Murid.jpeg" alt="Foto Cek Kesehatan Murid" onerror="this.src='../IMG/PPL_2/Cek Kesehatan Murid 2.jpeg';" />
                   <div class="photo-badge-label">
-                    <span><i class="fa-solid fa-camera"></i> Kemeriahan Lomba 12 Agustus</span>
+                    <span><i class="fa-solid fa-camera"></i> Skrining & Cek Kesehatan Murid</span>
                     <i class="fa-solid fa-magnifying-glass-plus"></i>
                   </div>
                 </div>
 
                 <div class="activity-thumb-grid">
-                  <div class="activity-thumb-item" onclick="openLightbox('../IMG/gaya voli.jpeg', 'Dokumentasi Aksi Perlombaan dan Semangat Antar Kelas')">
-                    <img src="../IMG/gaya voli.jpeg" alt="Aksi Lomba" onerror="this.src='../IMG/silat.jpeg';" />
+                  <div class="activity-thumb-item" onclick="openLightbox('../IMG/PPL_2/Cek Kesehatan Murid 2.jpeg', 'Dokumentasi Pengukuran Fisik Siswa dan Pendampingan Konseling Kesehatan Remaja')">
+                    <img src="../IMG/PPL_2/Cek Kesehatan Murid 2.jpeg" alt="Foto Pengukuran Siswa" onerror="this.src='../IMG/PPL_2/Cek UKS 2.jpg';" />
                     <div class="thumb-zoom-icon"><i class="fa-solid fa-expand"></i></div>
                   </div>
-                  <div class="activity-thumb-item" onclick="openLightbox('../IMG/silat.jpeg', 'Dokumentasi Kebersamaan Panitia Guru, Mahasiswa PPL & Siswa')">
-                    <img src="../IMG/silat.jpeg" alt="Kebersamaan Panitia" onerror="this.src='../IMG/mendaki.jpg';" />
+                  <div class="activity-thumb-item" onclick="openLightbox('../IMG/PPL_2/Cek UKS 2.jpg', 'Dokumentasi Pencatatan Rekam Medis Kesehatan dan Koordinasi Layanan UKS Sekolah')">
+                    <img src="../IMG/PPL_2/Cek UKS 2.jpg" alt="Foto Ruang UKS" onerror="this.src='../IMG/PPL_2/Cek Kesehatan Murid.jpeg';" />
+                    <div class="thumb-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- =======================================================
+               KEGIATAN 3: PANITIA LOMBA 17 AGUSTUS
+          ======================================================== -->
+          <div class="non-activity-card activity-item reveal" data-category="lomba">
+            <div class="activity-card-header">
+              <div class="activity-header-left">
+                <i class="fa-solid fa-trophy"></i>
+                <div>
+                  <h3>3. Panitia Kegiatan Lomba 17 Agustus (HUT Kemerdekaan RI)</h3>
+                  <span>Kategori: Kepanitiaan Event & Olahraga Rekreasi • Pelaksanaan: Semarak HUT RI ke-79 di SMAN 4 Yogyakarta</span>
+                </div>
+              </div>
+              <div class="banner-tags">
+                <span class="badge-outline" style="background: rgba(255,255,255,0.15); color: white; border-color: rgba(255,255,255,0.3);">
+                  <i class="fa-solid fa-flag"></i> Semarak 17 Agustus
+                </span>
+                <span class="badge-outline" style="background: rgba(255,255,255,0.15); color: white; border-color: rgba(255,255,255,0.3);">
+                  <i class="fa-solid fa-users"></i> Kolaborasi Warga Sekolah
+                </span>
+              </div>
+            </div>
+
+            <div class="activity-card-body">
+              <!-- Left Description Column -->
+              <div class="activity-desc-col">
+                <h4><i class="fa-solid fa-circle-info text-blue"></i> Uraian Pelaksanaan Kegiatan</h4>
+                <p>
+                  Dalam rangka memperingati Hari Ulang Tahun ke-79 Kemerdekaan Republik Indonesia, SMAN 4 Yogyakarta mengadakan pesta perayaan kemerdekaan yang sarat makna kebersamaan dan sportivitas. Saya dipercaya mengemban tugas sebagai panitia pelaksana sekaligus koordinator lapangan perlombaan olahraga rekreasi antarkelas dan antarguru, mengawal jalannya event dari tahap perencanaan teknis hingga puncak penganugerahan pemenang.
+                </p>
+
+                <h4><i class="fa-solid fa-list-check text-blue"></i> Peran & Tanggung Jawab Utama</h4>
+                <ul class="activity-duties-list">
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <strong>Penyusunan Petunjuk Teknis Perlombaan:</strong> Merancang petunjuk teknis (juknis), bagan sistem gugur, serta peraturan baku untuk ragam cabang lomba ketangkasan, estafet tradisional, dan olahraga gembira.
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <strong>Manajemen Tata Letak & Keamanan Lapangan:</strong> Menata pembagian zona lapangan perlombaan, memasang batas garis aman suporter, memeriksa keamanan alat permainan, serta memitigasi resiko benturan atau cedera peserta.
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <strong>Kepemimpinan Wasit & Juri Utama:</strong> Bertindak sebagai wasit pemimpin pertandingan di lapangan, menegakkan aturan secara adil dan objektif, serta membangun atmosfer perlombaan yang meriah, sportif, dan tertib.
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <strong>Rekapitulasi Skor & Penganugerahan Juara:</strong> Menghimpun perolehan poin tiap babak, mengumumkan para juara lomba, dan mendampingi seremoni penyerahan piala dan sertifikat apresiasi.
+                  </li>
+                </ul>
+
+                <div class="competency-impact-box">
+                  <h5><i class="fa-solid fa-award"></i> Refleksi Pengembangan Kompetensi Guru:</h5>
+                  <p>
+                    Sebagai calon pendidik PJOK, kepanitiaan ini menjadi laboratorium autentik dalam mengasah <strong>Manajemen Event Olahraga dan Kompetensi Sosial</strong>. Pengalaman ini menguatkan keterampilan kepemimpinan publik (*crowd management*), komunikasi asertif antarlini, kerja sama tim lintas komunitas sekolah, serta pemupukan semangat nasionalisme.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Right Photo Showcase Column -->
+              <div class="activity-gallery-col">
+                <div class="activity-main-photo-frame" onclick="openLightbox('../IMG/PPL_2/Panitia Lomba 1.jpeg', 'Dokumentasi Panitia Lomba 17 Agustus: Pengarahan Teknis dan Koordinasi Perlombaan Antar Kelas di SMAN 4 Yogyakarta')">
+                  <img src="../IMG/PPL_2/Panitia Lomba 1.jpeg" alt="Foto Panitia Lomba 1" onerror="this.src='../IMG/PPL_2/Panitia Lomba 2.jpeg';" />
+                  <div class="photo-badge-label">
+                    <span><i class="fa-solid fa-camera"></i> Kemeriahan Lomba 17 Agustus</span>
+                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                  </div>
+                </div>
+
+                <div class="activity-thumb-grid">
+                  <div class="activity-thumb-item" onclick="openLightbox('../IMG/PPL_2/Panitia Lomba 2.jpeg', 'Dokumentasi Kemeriahan Perlombaan Ketangkasan, Olahraga Rekreasi, dan Soliditas Siswa')">
+                    <img src="../IMG/PPL_2/Panitia Lomba 2.jpeg" alt="Foto Kemeriahan Lomba 2" onerror="this.src='../IMG/PPL_2/Panitia Lomba 3.jpeg';" />
+                    <div class="thumb-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+                  </div>
+                  <div class="activity-thumb-item" onclick="openLightbox('../IMG/PPL_2/Panitia Lomba 3.jpeg', 'Dokumentasi Sinergi Panitia Guru, Mahasiswa PPL, dan Penganugerahan Juara Lomba')">
+                    <img src="../IMG/PPL_2/Panitia Lomba 3.jpeg" alt="Foto Bersama Panitia Lomba 3" onerror="this.src='../IMG/PPL_2/Panitia Lomba 1.jpeg';" />
                     <div class="thumb-zoom-icon"><i class="fa-solid fa-expand"></i></div>
                   </div>
                 </div>
@@ -504,8 +504,8 @@
         buttons.forEach((btn) => btn.classList.remove("active"));
 
         if (category === "all") document.getElementById("filterAll").classList.add("active");
-        if (category === "piket") document.getElementById("filterPiket").classList.add("active");
         if (category === "asts") document.getElementById("filterAsts").classList.add("active");
+        if (category === "kesehatan") document.getElementById("filterKesehatan").classList.add("active");
         if (category === "lomba") document.getElementById("filterLomba").classList.add("active");
 
         const cards = document.querySelectorAll(".activity-item");

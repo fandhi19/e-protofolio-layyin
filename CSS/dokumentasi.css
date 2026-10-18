@@ -457,9 +457,12 @@ body {
   border: none;
   background: white;
   color: var(--blue-primary);
-  cursor: pointer;
   font-size: 1.2rem;
   transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
 }
 
 .dok-item:hover img {
@@ -470,7 +473,7 @@ body {
   opacity: 1;
 }
 
-.zoom-btn:hover {
+.dok-item:hover .zoom-btn {
   transform: rotate(90deg) scale(1.1);
 }
 
@@ -503,6 +506,7 @@ body {
   background: var(--text-dark);
   color: white;
   padding: 100px 0 0;
+  margin-top: 80px;
 }
 
 .footer .container {
@@ -825,4 +829,215 @@ body {
     grid-template-columns: 1fr;
     gap: 40px;
   }
+}
+
+
+/* =========================================
+   DOKUMENTASI PPL 1 & PPL 2 FILTER & SECTIONS
+========================================= */
+.dok-filter-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -35px auto 45px;
+  position: relative;
+  z-index: 20;
+}
+
+.dok-filter-bar {
+  display: inline-flex;
+  gap: 12px;
+  background: white;
+  padding: 8px 14px;
+  border-radius: 50px;
+  box-shadow: 0 12px 35px rgba(0, 86, 210, 0.1);
+  border: 1px solid rgba(0, 86, 210, 0.12);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.dok-tab-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 26px;
+  border-radius: 40px;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--text-gray);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.dok-tab-btn i {
+  font-size: 1.05rem;
+  transition: var(--transition);
+}
+
+.dok-tab-btn:hover {
+  color: var(--blue-primary);
+  background: rgba(0, 86, 210, 0.05);
+}
+
+.dok-tab-btn.active {
+  background: linear-gradient(135deg, var(--blue-primary), #0077ff);
+  color: white;
+  box-shadow: 0 6px 20px rgba(0, 86, 210, 0.3);
+  border-color: transparent;
+}
+
+.dok-tab-btn.active i {
+  color: white;
+}
+
+/* Dok Section Container */
+.dok-section-block {
+  margin-bottom: 70px;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.dok-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 35px;
+  padding-bottom: 22px;
+  border-bottom: 2px solid #e2e8f0;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.dok-header-left {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.dok-header-icon {
+  width: 58px;
+  height: 58px;
+  background: linear-gradient(135deg, rgba(0, 86, 210, 0.12), rgba(0, 195, 255, 0.18));
+  color: var(--blue-primary);
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  box-shadow: 0 6px 20px rgba(0, 86, 210, 0.08);
+  flex-shrink: 0;
+}
+
+.dok-header-text h2 {
+  font-family: var(--font-heading);
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 6px;
+  line-height: 1.25;
+}
+
+.dok-header-text p {
+  color: var(--text-gray);
+  font-size: 0.96rem;
+  max-width: 680px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.dok-badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 20px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 0.88rem;
+  letter-spacing: 0.5px;
+}
+
+.badge-ppl1 {
+  background: rgba(0, 86, 210, 0.1);
+  color: var(--blue-primary);
+  border: 1px solid rgba(0, 86, 210, 0.25);
+}
+
+.badge-ppl2 {
+  background: rgba(16, 185, 129, 0.12);
+  color: #059669;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+/* Lightbox Modal */
+.dok-lightbox-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(10, 25, 47, 0.96);
+  z-index: 10000;
+  padding: 30px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  backdrop-filter: blur(10px);
+}
+
+.dok-lightbox-modal.show {
+  display: flex;
+}
+
+.dok-lightbox-box {
+  max-width: 90%;
+  max-height: 80vh;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+  position: relative;
+}
+
+.dok-lightbox-box img {
+  width: 100%;
+  height: 100%;
+  max-height: 78vh;
+  object-fit: contain;
+  display: block;
+  background: #061020;
+}
+
+.dok-lightbox-caption {
+  color: white;
+  margin-top: 18px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-align: center;
+  max-width: 750px;
+  line-height: 1.5;
+}
+
+.dok-lightbox-close {
+  position: absolute;
+  top: 25px;
+  right: 35px;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  border: none;
+  font-size: 1.8rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+
+.dok-lightbox-close:hover {
+  background: #ff5252;
+  transform: rotate(90deg);
 }

@@ -6,16 +6,14 @@
     <title>Dokumentasi PPL | E-Portofolio PPG PJOK</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,900;1,800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="shortcut icon" href="IMG/logo.png" type="image/x-icon" />
-
     <link rel="stylesheet" href="CSS/dokumentasi.css" />
   </head>
 
   <body>
     <!-- =========================================
-         NAVBAR (SAMA PERSIS INDEX)
+         NAVBAR (KONSISTEN SEMUA HALAMAN)
     ========================================== -->
     <header class="navbar" id="navbar">
       <div class="nav-container">
@@ -65,167 +63,310 @@
     </header>
 
     <!-- =========================================
-         MAIN (TETAP SAMA PERSIS)
+         MAIN
     ========================================== -->
     <main>
+      <!-- HERO SECTION -->
       <section class="hero-dok">
         <div class="hero-dok-overlay"></div>
 
         <div class="container hero-dok-content reveal">
           <div class="badge-tech">
-            <i class="fa-solid fa-film"></i>
-            Highlight Reel
+            <i class="fa-solid fa-camera-retro"></i>
+            Galeri Kegiatan PPL
           </div>
 
           <h1>
-            Galeri & <br />
-            <span class="text-blue">Dokumentasi Praktik</span>
+            Dokumentasi <br />
+            <span class="text-blue">PPL 1 & PPL 2</span>
           </h1>
 
-          <p>Rekam jejak visual dan audiovisual dari implementasi Modul Ajar, interaksi dengan peserta didik, serta dinamika pembelajaran PJOK di lapangan maupun di kelas.</p>
+          <p>
+            Koleksi visual perjalanan PPG Prajabatan PJOK di SMAN 4 Yogyakarta. Terbagi antara 
+            <strong>PPL 1 (Praktik Terbimbing)</strong> berfokus pada observasi dan asistensi mengajar terpandu, serta 
+            <strong>PPL 2 (Praktik Mandiri)</strong> dengan implementasi pembelajaran mandiri penuh dan pengabdian sekolah.
+          </p>
         </div>
       </section>
 
-      <!-- <section class="video-highlight-section">
+      <!-- GALLERY SECTION WITH FILTER TABS -->
+      <section class="photo-gallery-section" style="padding-top: 20px;">
         <div class="container">
-          <div class="section-title text-center reveal">
-            <h2>Video <span class="text-blue">Praktik Mengajar</span></h2>
-
-            <p>Cuplikan pelaksanaan pembelajaran siklus PPL yang terintegrasi TPACK.</p>
-          </div>
-
-          <div class="video-monitor-frame reveal glass-card">
-            <div class="monitor-header">
-              <div class="dots">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-
-              <div class="monitor-title">
-                <i class="fa-solid fa-video"></i>
-                PPL_Siklus_1_Agasta.mp4
-              </div>
-            </div>
-
-            <div class="video-wrapper">
-              <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video Praktik PPL" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-          </div>
-        </div>
-      </section> -->
-
-      <section class="photo-gallery-section">
-        <div class="container">
-          <div class="gallery-header reveal">
-            <div class="section-title" style="margin-bottom: 0">
-              <h2>Koleksi <span class="text-blue">Foto</span></h2>
-
-              <p style="margin-bottom: 0">Potret aksi dan kolaborasi selama kegiatan.</p>
+          <!-- Filter Sub-Menu Bar -->
+          <div class="dok-filter-wrapper reveal">
+            <div class="dok-filter-bar">
+              <button class="dok-tab-btn active" id="btnFilterAll" onclick="filterGallery('all')">
+                <i class="fa-solid fa-layer-group"></i>
+                <span>Semua Dokumentasi</span>
+              </button>
+              <button class="dok-tab-btn" id="btnFilterPpl1" onclick="filterGallery('ppl1')">
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <span>PPL 1 (Terbimbing)</span>
+              </button>
+              <button class="dok-tab-btn" id="btnFilterPpl2" onclick="filterGallery('ppl2')">
+                <i class="fa-solid fa-person-chalkboard"></i>
+                <span>PPL 2 (Mandiri)</span>
+              </button>
             </div>
           </div>
 
-          <div class="dok-grid">
-            <div class="dok-item large reveal">
-              <img src="IMG/orientasi.jpeg" alt="Orientasi PPL Terbimbing" />
-
-              <div class="dok-overlay">
-                <div class="dok-meta">
-                  <h3>Orientasi PPL Terbimbing</h3>
-
+          <!-- =======================================================
+               BAGIAN 1: DOKUMENTASI PPL 1 (PPL TERBIMBING)
+          ======================================================== -->
+          <div class="dok-section-block" id="sectionPpl1" data-category="ppl1">
+            <div class="dok-section-header reveal">
+              <div class="dok-header-left">
+                <div class="dok-header-icon">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div class="dok-header-text">
+                  <h2>Dokumentasi <span class="text-blue">PPL 1 (Terbimbing)</span></h2>
                   <p>
-                    <i class="fa-solid fa-location-dot"></i>
-                    SMAN 4 Yogyakarta
+                    Rangkaian orientasi sekolah, observasi karakteristik peserta didik, asistensi mengajar terbimbing, 
+                    dan monitoring langsung bersama Guru Pamong serta Dosen Pembimbing Lapangan di SMAN 4 Yogyakarta.
                   </p>
                 </div>
-
-                <button class="zoom-btn">
-                  <i class="fa-solid fa-expand"></i>
-                </button>
+              </div>
+              <div>
+                <span class="dok-badge-pill badge-ppl1">
+                  <i class="fa-solid fa-handshake-angle"></i> PPL 1 • Terbimbing
+                </span>
               </div>
             </div>
 
-            <div class="dok-item reveal" style="transition-delay: 0.1s">
-              <img src="IMG/praktik.jpeg" alt="Praktik Mengajar" />
-
-              <div class="dok-overlay">
-                <div class="dok-meta">
-                  <h3>Praktik Mengajar</h3>
-
-                  <p>
-                    <i class="fa-solid fa-chalkboard-user"></i>
-                    Murid Kelas XIF6
-                  </p>
+            <div class="dok-grid">
+              <!-- Item 1: Orientasi PPL Terbimbing (Large) -->
+              <div class="dok-item large reveal" onclick="openDokLightbox('IMG/orientasi.jpeg', 'Orientasi PPL 1 Terbimbing: Penerimaan dan Pengenalan Kultur Lingkungan Persekolahan SMAN 4 Yogyakarta bersama DPL & Pihak Sekolah')">
+                <img src="IMG/orientasi.jpeg" alt="Orientasi PPL Terbimbing" />
+                <div class="dok-overlay">
+                  <div class="dok-meta">
+                    <span class="dok-badge-pill badge-ppl1" style="margin-bottom: 8px; font-size: 0.75rem; padding: 4px 12px;">PPL Terbimbing</span>
+                    <h3>Orientasi PPL Terbimbing</h3>
+                    <p>
+                      <i class="fa-solid fa-location-dot"></i>
+                      SMAN 4 Yogyakarta • Pengenalan Kultur Sekolah
+                    </p>
+                  </div>
+                  <button class="zoom-btn" title="Perbesar Gambar">
+                    <i class="fa-solid fa-expand"></i>
+                  </button>
                 </div>
-
-                <button class="zoom-btn">
-                  <i class="fa-solid fa-expand"></i>
-                </button>
               </div>
-            </div>
 
-            <div class="dok-item reveal" style="transition-delay: 0.2s">
-              <img src="IMG/kunjungan.jpeg" alt="Kunjungan Sekolah" />
-
-              <div class="dok-overlay">
-                <div class="dok-meta">
-                  <h3>Kunjungan DPL</h3>
-
-                  <p>
-                    <i class="fa-solid fa-laptop-code"></i>
-                    Monitoring DPL
-                  </p>
+              <!-- Item 2: Praktik Mengajar Terbimbing -->
+              <div class="dok-item reveal" style="transition-delay: 0.1s" onclick="openDokLightbox('IMG/praktik.jpeg', 'Praktik Mengajar Terbimbing: Pembelajaran PJOK di Lapangan Bersama Peserta Didik Kelas XI F6 dengan Arahan Guru Pamong')">
+                <img src="IMG/praktik.jpeg" alt="Praktik Mengajar Terbimbing" />
+                <div class="dok-overlay">
+                  <div class="dok-meta">
+                    <span class="dok-badge-pill badge-ppl1" style="margin-bottom: 8px; font-size: 0.75rem; padding: 4px 12px;">PPL Terbimbing</span>
+                    <h3>Praktik Mengajar Terbimbing</h3>
+                    <p>
+                      <i class="fa-solid fa-chalkboard-user"></i>
+                      Murid Kelas XI F6 • Pembelajaran Lapangan
+                    </p>
+                  </div>
+                  <button class="zoom-btn" title="Perbesar Gambar">
+                    <i class="fa-solid fa-expand"></i>
+                  </button>
                 </div>
-
-                <button class="zoom-btn">
-                  <i class="fa-solid fa-expand"></i>
-                </button>
               </div>
-            </div>
 
-            <div class="dok-item landscape reveal">
-              <img src="IMG/asesmen basket.jpeg" alt="Asesmen bola basket" />
-
-              <div class="dok-overlay">
-                <div class="dok-meta">
-                  <h3>Asesmen Bola Baket</h3>
-
-                  <p>
-                    <i class="fa-solid fa-users"></i>
-                    Penilaian materi Bola Basket
-                  </p>
+              <!-- Item 3: Kunjungan & Monitoring DPL -->
+              <div class="dok-item reveal" style="transition-delay: 0.2s" onclick="openDokLightbox('IMG/kunjungan.jpeg', 'Monitoring & Supervisi DPL: Sesi Refleksi, Diskusi Evaluasi Pengajaran, dan Arahan Akademik dari Dosen Pembimbing Lapangan')">
+                <img src="IMG/kunjungan.jpeg" alt="Kunjungan Sekolah" />
+                <div class="dok-overlay">
+                  <div class="dok-meta">
+                    <span class="dok-badge-pill badge-ppl1" style="margin-bottom: 8px; font-size: 0.75rem; padding: 4px 12px;">PPL Terbimbing</span>
+                    <h3>Kunjungan & Monev DPL</h3>
+                    <p>
+                      <i class="fa-solid fa-laptop-code"></i>
+                      Supervisi & Bimbingan DPL UNY
+                    </p>
+                  </div>
+                  <button class="zoom-btn" title="Perbesar Gambar">
+                    <i class="fa-solid fa-expand"></i>
+                  </button>
                 </div>
-
-                <button class="zoom-btn">
-                  <i class="fa-solid fa-expand"></i>
-                </button>
               </div>
-            </div>
 
-            <div class="dok-item reveal" style="transition-delay: 0.1s">
-              <img src="IMG/baner observasi.jpeg" alt="foto bersama kelas" />
-
-              <div class="dok-overlay">
-                <div class="dok-meta">
-                  <h3>Kelas XIF6</h3>
-
-                  <p>
-                    <i class="fa-solid fa-handshake-angle"></i>
-                    Foto bersama murid XIF6
-                  </p>
+              <!-- Item 4: Asesmen Pembelajaran Basket (Landscape) -->
+              <div class="dok-item landscape reveal" onclick="openDokLightbox('IMG/asesmen basket.jpeg', 'Asesmen Keterampilan Bola Basket: Pengambilan Nilai Kinerja Gerak dan Observasi Keterampilan Siswa Menggunakan Rubrik Asesmen')">
+                <img src="IMG/asesmen basket.jpeg" alt="Asesmen bola basket" />
+                <div class="dok-overlay">
+                  <div class="dok-meta">
+                    <span class="dok-badge-pill badge-ppl1" style="margin-bottom: 8px; font-size: 0.75rem; padding: 4px 12px;">PPL Terbimbing</span>
+                    <h3>Asesmen Bola Basket</h3>
+                    <p>
+                      <i class="fa-solid fa-basketball"></i>
+                      Penilaian Formatif Kinerja Gerak Peserta Didik
+                    </p>
+                  </div>
+                  <button class="zoom-btn" title="Perbesar Gambar">
+                    <i class="fa-solid fa-expand"></i>
+                  </button>
                 </div>
+              </div>
 
-                <button class="zoom-btn">
-                  <i class="fa-solid fa-expand"></i>
-                </button>
+              <!-- Item 5: Foto Bersama Murid XI F6 -->
+              <div class="dok-item reveal" style="transition-delay: 0.1s" onclick="openDokLightbox('IMG/baner observasi.jpeg', 'Refleksi Akhir Pembelajaran: Foto Bersama Siswa Kelas XI F6 SMAN 4 Yogyakarta Usai Praktik Pembelajaran Terbimbing')">
+                <img src="IMG/baner observasi.jpeg" alt="foto bersama kelas" />
+                <div class="dok-overlay">
+                  <div class="dok-meta">
+                    <span class="dok-badge-pill badge-ppl1" style="margin-bottom: 8px; font-size: 0.75rem; padding: 4px 12px;">PPL Terbimbing</span>
+                    <h3>Kelas XI F6 SMAN 4</h3>
+                    <p>
+                      <i class="fa-solid fa-users"></i>
+                      Foto Bersama & Membangun Relasi Positif
+                    </p>
+                  </div>
+                  <button class="zoom-btn" title="Perbesar Gambar">
+                    <i class="fa-solid fa-expand"></i>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="text-center reveal" style="margin-top: 50px">
-            <a href="#" class="btn-outline">
+          <!-- =======================================================
+               BAGIAN 2: DOKUMENTASI PPL 2 (PPL MANDIRI)
+          ======================================================== -->
+          <div class="dok-section-block" id="sectionPpl2" data-category="ppl2" style="margin-top: 60px;">
+            <div class="dok-section-header reveal">
+              <div class="dok-header-left">
+                <div class="dok-header-icon" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.12), rgba(0, 195, 255, 0.18)); color: #059669;">
+                  <i class="fa-solid fa-award"></i>
+                </div>
+                <div class="dok-header-text">
+                  <h2>Dokumentasi <span class="text-blue">PPL 2 (Mandiri)</span></h2>
+                  <p>
+                    Implementasi praktik pembelajaran mandiri penuh, kepanitiaan event sekolah, serta kontribusi aktif 
+                    dalam kegiatan non-mengajar (ASTS, UKS, & HUT Kemerdekaan RI) di SMAN 4 Yogyakarta.
+                  </p>
+                </div>
+              </div>
+              <div>
+                <span class="dok-badge-pill badge-ppl2">
+                  <i class="fa-solid fa-person-chalkboard"></i> PPL 2 • Mandiri
+                </span>
+              </div>
+            </div>
+
+            <div class="dok-grid">
+              <!-- Item 1: Praktik Mengajar Mandiri (Large) -->
+              <div class="dok-item large reveal" onclick="openDokLightbox('IMG/PPL_2/Praktik Mengajar 1.jpeg', 'Praktik Mengajar Mandiri PJOK: Pengelolaan Kelas Mandiri, Penerapan Model Pembelajaran Inovatif, dan Interaksi Aktif Siswa di Lapangan')">
+                <img src="IMG/PPL_2/Praktik Mengajar 1.jpeg" alt="Praktik Mengajar Mandiri PJOK" />
+                <div class="dok-overlay">
+                  <div class="dok-meta">
+                    <span class="dok-badge-pill badge-ppl2" style="margin-bottom: 8px; font-size: 0.75rem; padding: 4px 12px;">PPL Mandiri</span>
+                    <h3>Praktik Mengajar Mandiri</h3>
+                    <p>
+                      <i class="fa-solid fa-person-chalkboard"></i>
+                      Pembelajaran Mandiri PJOK di Lapangan SMAN 4
+                    </p>
+                  </div>
+                  <button class="zoom-btn" title="Perbesar Gambar">
+                    <i class="fa-solid fa-expand"></i>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Item 2: Upacara Seremoni Penarikan PPL 2 (Landscape) -->
+              <div class="dok-item landscape reveal" onclick="openDokLightbox('IMG/PPL_2/Penarikan PPL.jpeg', 'Seremoni Penarikan PPL 2 Mandiri: Pelepasan Resmi Mahasiswa PPG Prajabatan oleh Kepala Sekolah SMAN 4 Yogyakarta, Guru Pamong, dan DPL UNY')">
+                <img src="IMG/PPL_2/Penarikan PPL.jpeg" alt="Penarikan PPL Mandiri" />
+                <div class="dok-overlay">
+                  <div class="dok-meta">
+                    <span class="dok-badge-pill badge-ppl2" style="margin-bottom: 8px; font-size: 0.75rem; padding: 4px 12px;">PPL Mandiri</span>
+                    <h3>Penarikan PPL 2 Mandiri</h3>
+                    <p>
+                      <i class="fa-solid fa-building-columns"></i>
+                      Seremoni Pelepasan Bersama Pihak Sekolah & UNY
+                    </p>
+                  </div>
+                  <button class="zoom-btn" title="Perbesar Gambar">
+                    <i class="fa-solid fa-expand"></i>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Item 3: Pengawasan Ujian ASTS -->
+              <div class="dok-item reveal" style="transition-delay: 0.1s" onclick="openDokLightbox('IMG/PPL_2/Mengawas ASTS 1.jpg', 'Pengawasan Ujian ASTS: Memastikan Tata Tertib, Kejujuran Akademik, dan Ketertiban Pelaksanaan Asesmen Sumatif Tengah Semester')">
+                <img src="IMG/PPL_2/Mengawas ASTS 1.jpg" alt="Pengawasan Ujian ASTS" />
+                <div class="dok-overlay">
+                  <div class="dok-meta">
+                    <span class="dok-badge-pill badge-ppl2" style="margin-bottom: 8px; font-size: 0.75rem; padding: 4px 12px;">Non-Mengajar</span>
+                    <h3>Pengawas Ujian ASTS</h3>
+                    <p>
+                      <i class="fa-solid fa-clipboard-user"></i>
+                      Penegakan Tata Tertib & Kondusivitas Asesmen
+                    </p>
+                  </div>
+                  <button class="zoom-btn" title="Perbesar Gambar">
+                    <i class="fa-solid fa-expand"></i>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Item 4: Cek Kesehatan Murid (UKS) -->
+              <div class="dok-item reveal" style="transition-delay: 0.2s" onclick="openDokLightbox('IMG/PPL_2/Cek Kesehatan Murid.jpeg', 'Cek Kesehatan Murid: Skrining Antropometri (TB/BB), Deteksi Postur Tubuh, dan Koordinasi Layanan Bersama Tim UKS SMAN 4 Yogyakarta')">
+                <img src="IMG/PPL_2/Cek Kesehatan Murid.jpeg" alt="Cek Kesehatan Murid UKS" />
+                <div class="dok-overlay">
+                  <div class="dok-meta">
+                    <span class="dok-badge-pill badge-ppl2" style="margin-bottom: 8px; font-size: 0.75rem; padding: 4px 12px;">Non-Mengajar</span>
+                    <h3>Cek Kesehatan Murid</h3>
+                    <p>
+                      <i class="fa-solid fa-heart-pulse"></i>
+                      Skrining Fisik & Antropometri Bersama Tim UKS
+                    </p>
+                  </div>
+                  <button class="zoom-btn" title="Perbesar Gambar">
+                    <i class="fa-solid fa-expand"></i>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Item 5: Panitia Lomba 17 Agustus -->
+              <div class="dok-item reveal" style="transition-delay: 0.1s" onclick="openDokLightbox('IMG/PPL_2/Panitia Lomba 1.jpeg', 'Panitia Lomba 17 Agustus: Pengarahan Teknis, Kepemimpinan Wasit Lapangan, dan Semarak Olahraga Rekreasi HUT RI ke-79')">
+                <img src="IMG/PPL_2/Panitia Lomba 1.jpeg" alt="Panitia Lomba 17 Agustus" />
+                <div class="dok-overlay">
+                  <div class="dok-meta">
+                    <span class="dok-badge-pill badge-ppl2" style="margin-bottom: 8px; font-size: 0.75rem; padding: 4px 12px;">Non-Mengajar</span>
+                    <h3>Panitia Lomba 17 Agustus</h3>
+                    <p>
+                      <i class="fa-solid fa-trophy"></i>
+                      Kepanitiaan Event & Olahraga Rekreasi Siswa
+                    </p>
+                  </div>
+                  <button class="zoom-btn" title="Perbesar Gambar">
+                    <i class="fa-solid fa-expand"></i>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Item 6: Pengukuran & Konseling Kesehatan Siswa -->
+              <div class="dok-item reveal" style="transition-delay: 0.2s" onclick="openDokLightbox('IMG/PPL_2/Cek Kesehatan Murid 2.jpeg', 'Pemeriksaan Kesehatan Fisik Siswa: Pemantauan Indeks Massa Tubuh (IMT), Tanda Vital, dan Edukasi Pola Hidup Bersih & Sehat (PHBS)')">
+                <img src="IMG/PPL_2/Cek Kesehatan Murid 2.jpeg" alt="Pemeriksaan Fisik Murid" />
+                <div class="dok-overlay">
+                  <div class="dok-meta">
+                    <span class="dok-badge-pill badge-ppl2" style="margin-bottom: 8px; font-size: 0.75rem; padding: 4px 12px;">Non-Mengajar</span>
+                    <h3>Skrining Fisik Berkala</h3>
+                    <p>
+                      <i class="fa-solid fa-stethoscope"></i>
+                      Edukasi Gaya Hidup Sehat & Kebugaran Siswa
+                    </p>
+                  </div>
+                  <button class="zoom-btn" title="Perbesar Gambar">
+                    <i class="fa-solid fa-expand"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- DRIVE LINK CALLOUT -->
+          <div class="text-center reveal" style="margin-top: 60px">
+            <a href="https://drive.google.com" target="_blank" class="btn-outline">
               <i class="fa-brands fa-google-drive"></i>
-              Lihat Semua di Google Drive
+              Lihat Arsip Lengkap di Google Drive
             </a>
           </div>
         </div>
@@ -233,7 +374,20 @@
     </main>
 
     <!-- =========================================
-         FOOTER (SAMA PERSIS INDEX)
+         LIGHTBOX MODAL INTERAKTIF
+    ========================================== -->
+    <div class="dok-lightbox-modal" id="dokLightboxModal">
+      <button class="dok-lightbox-close" id="dokLightboxCloseBtn" onclick="closeDokLightbox()">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="dok-lightbox-box">
+        <img id="dokLightboxImg" src="" alt="Dokumentasi Fullsize" />
+      </div>
+      <div class="dok-lightbox-caption" id="dokLightboxCaption"></div>
+    </div>
+
+    <!-- =========================================
+         FOOTER (DENGAN JARAK LUAS & LENGKAP)
     ========================================== -->
     <footer class="footer">
       <div class="container footer-grid">
@@ -247,16 +401,13 @@
 
           <div class="social-icons">
             <a href="#"><i class="fa-brands fa-instagram"></i></a>
-
             <a href="#"><i class="fa-brands fa-youtube"></i></a>
-
             <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
           </div>
         </div>
 
         <div class="footer-links">
           <h3>Jejak PPL 1</h3>
-
           <ul>
             <li><a href="PPL_1/observasi.html">Observasi</a></li>
             <li><a href="PPL_1/modulajar.html">Modul Ajar</a></li>
@@ -268,7 +419,6 @@
 
         <div class="footer-links">
           <h3>Jejak PPL 2</h3>
-
           <ul>
             <li><a href="PPL_2/rancangan.html">Rancangan Pembelajaran</a></li>
             <li><a href="PPL_2/materi.html">Materi Pembelajaran</a></li>
@@ -281,7 +431,6 @@
 
         <div class="footer-contact">
           <h3>Info LPTK</h3>
-
           <p>
             <i class="fa-solid fa-school"></i>
             Universitas Negeri Yogyakarta (UNY)
@@ -300,13 +449,12 @@
     </footer>
 
     <!-- =========================================
-         SCRIPT
+         SCRIPT INTERAKTIF
     ========================================== -->
     <script>
-      // Navbar Scroll Effect
+      // 1. Navbar Scroll Effect
       window.addEventListener("scroll", function () {
         const navbar = document.getElementById("navbar");
-
         if (window.scrollY > 50) {
           navbar.classList.add("scrolled");
         } else {
@@ -314,44 +462,41 @@
         }
       });
 
-      // Hamburger Menu
+      // 2. Hamburger Mobile Menu
       const hamburger = document.getElementById("hamburger");
       const navLinks = document.getElementById("nav-links");
 
-      hamburger.addEventListener("click", () => {
-        hamburger.classList.toggle("active");
-        navLinks.classList.toggle("active");
+      if (hamburger) {
+        hamburger.addEventListener("click", () => {
+          hamburger.classList.toggle("active");
+          navLinks.classList.toggle("active");
 
-        if (navLinks.classList.contains("active")) {
-          document.body.style.overflow = "hidden";
-        } else {
-          document.body.style.overflow = "auto";
-        }
-      });
+          if (navLinks.classList.contains("active")) {
+            document.body.style.overflow = "hidden";
+          } else {
+            document.body.style.overflow = "auto";
+          }
+        });
+      }
 
-      // Dropdown Mobile Logic
+      // 3. Dropdown Mobile Logic
       const dropdownBtns = document.querySelectorAll(".dropbtn");
-
       dropdownBtns.forEach((btn) => {
         btn.addEventListener("click", function (e) {
           if (window.innerWidth <= 900) {
             e.preventDefault();
-
             const content = this.nextElementSibling;
             const chevron = this.querySelector(".chevron");
 
             document.querySelectorAll(".dropdown-content.show").forEach((openContent) => {
               if (openContent !== content) {
                 openContent.classList.remove("show");
-
                 const otherChevron = openContent.previousElementSibling?.querySelector(".chevron");
-
                 if (otherChevron) otherChevron.style.transform = "rotate(0deg)";
               }
             });
 
             content.classList.toggle("show");
-
             if (chevron) {
               chevron.style.transform = content.classList.contains("show") ? "rotate(180deg)" : "rotate(0deg)";
             }
@@ -359,28 +504,114 @@
         });
       });
 
-      // Klik luar dropdown
       document.addEventListener("click", function (e) {
         if (!e.target.closest(".dropdown")) {
           document.querySelectorAll(".dropdown-content.show").forEach((content) => {
             content.classList.remove("show");
-
             const chevron = content.previousElementSibling?.querySelector(".chevron");
-
             if (chevron) chevron.style.transform = "rotate(0deg)";
           });
         }
       });
 
-      // Reveal Animation
+      // 4. Filter Gallery Controller (PPL 1 Terbimbing vs PPL 2 Mandiri)
+      function filterGallery(category) {
+        const btnAll = document.getElementById("btnFilterAll");
+        const btnPpl1 = document.getElementById("btnFilterPpl1");
+        const btnPpl2 = document.getElementById("btnFilterPpl2");
+
+        const buttons = [btnAll, btnPpl1, btnPpl2];
+        buttons.forEach((btn) => {
+          if (btn) btn.classList.remove("active");
+        });
+
+        if (category === "all" && btnAll) btnAll.classList.add("active");
+        if (category === "ppl1" && btnPpl1) btnPpl1.classList.add("active");
+        if (category === "ppl2" && btnPpl2) btnPpl2.classList.add("active");
+
+        const secPpl1 = document.getElementById("sectionPpl1");
+        const secPpl2 = document.getElementById("sectionPpl2");
+
+        if (category === "all") {
+          showSection(secPpl1);
+          showSection(secPpl2);
+        } else if (category === "ppl1") {
+          showSection(secPpl1);
+          hideSection(secPpl2);
+        } else if (category === "ppl2") {
+          hideSection(secPpl1);
+          showSection(secPpl2);
+        }
+
+        setTimeout(revealElements, 100);
+      }
+
+      function showSection(section) {
+        if (!section) return;
+        section.style.display = "block";
+        setTimeout(() => {
+          section.style.opacity = "1";
+          section.style.transform = "translateY(0)";
+        }, 30);
+      }
+
+      function hideSection(section) {
+        if (!section) return;
+        section.style.opacity = "0";
+        section.style.transform = "translateY(15px)";
+        setTimeout(() => {
+          section.style.display = "none";
+        }, 300);
+      }
+
+      // 5. Lightbox Modal Controller
+      function openDokLightbox(src, caption) {
+        const modal = document.getElementById("dokLightboxModal");
+        const img = document.getElementById("dokLightboxImg");
+        const captionEl = document.getElementById("dokLightboxCaption");
+
+        if (img) img.src = src;
+        if (captionEl) captionEl.textContent = caption;
+
+        if (modal) {
+          modal.classList.add("show");
+          document.body.style.overflow = "hidden";
+        }
+      }
+
+      function closeDokLightbox() {
+        const modal = document.getElementById("dokLightboxModal");
+        if (modal) {
+          modal.classList.remove("show");
+          document.body.style.overflow = "auto";
+        }
+      }
+
+      // Close modal on click outside image
+      const modalElement = document.getElementById("dokLightboxModal");
+      if (modalElement) {
+        modalElement.addEventListener("click", function (e) {
+          if (e.target === modalElement) {
+            closeDokLightbox();
+          }
+        });
+      }
+
+      // Close modal on pressing ESC
+      window.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") {
+          closeDokLightbox();
+        }
+      });
+
+      // 6. Scroll Reveal Observer
       function revealElements() {
         const reveals = document.querySelectorAll(".reveal");
+        const windowHeight = window.innerHeight;
+        const elementVisible = 80;
 
         for (let i = 0; i < reveals.length; i++) {
-          const windowHeight = window.innerHeight;
           const elementTop = reveals[i].getBoundingClientRect().top;
-          const elementVisible = 100;
-
           if (elementTop < windowHeight - elementVisible) {
             reveals[i].classList.add("active");
           }
@@ -388,7 +619,7 @@
       }
 
       window.addEventListener("scroll", revealElements);
-
+      window.addEventListener("DOMContentLoaded", revealElements);
       revealElements();
     </script>
   </body>
